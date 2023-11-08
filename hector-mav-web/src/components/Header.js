@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 function Header(){
+    
     return(
         <>
             <nav className='header'>
@@ -14,6 +15,13 @@ function Header(){
                     </Link>
                 </div>
             </nav>
+        </>
+    )
+}
+
+function MobileHeader(){
+    return(
+        <>
         </>
     )
 }
