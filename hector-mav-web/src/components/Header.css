@@ -1,6 +1,13 @@
 @media only screen and (max-width: 720px){
     .header-mobile{
-        display: grid;
+        display: flex;
+        overflow: scroll;
+        opacity: 98%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 20px;
+
     }
     .header{
         display: none;
@@ -10,9 +17,15 @@
 
 @media only screen and (min-width: 721px){
     .header{
-        display: grid;
+        display: flex;
     }
     .header-mobile{
         display: none;
-    }  
+    }
+}
+
+/* must swap this to index css, cannot make child component bigger than what it is allowed. */
+
+*{
+    box-sizing: border-box;
 }

@@ -23,15 +23,18 @@ function Header(){
     return(
         <>
         <nav className='header-mobile'>
-            <p>
-                mobile test
-            </p>
+            <Link to='/' className='hec-mav-logo'>
+                test
+            </Link>
+            <div className='navbar-mobile'>
+                
+            </div>
         </nav>
-        <nav className='header'>
+        <div className='header'>
             <p>
                 non-mobile test
             </p>
-        </nav>
+        </div>
         </>
     )
 
@@ -55,15 +58,5 @@ function getMobile() {
     const innerWidth = window.innerWidth;
     return (innerWidth < 720);
   }
-
-function MobileHeader(){
-    return(
-        <>
-            <div>
-                test
-            </div>
-        </>
-    )
-}
 
 export default Header;
