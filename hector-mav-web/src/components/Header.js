@@ -35,7 +35,7 @@ function Header(){
         </nav>
         <div className='header'>
           {/* <div className='placeholder-one'/> */}
-          <Link to='/' className='hec-mav-logo'>HECK MAVRAKIS</Link>
+          <Link to='/' className='hec-mav-logo'>HECTOR MAVRAKIS</Link>
           <div className='placeholder-mid'/>
           <div className='header-rightside-nav'>
             <Link to='/brands' className='brands-link'>BRANDS</Link>
