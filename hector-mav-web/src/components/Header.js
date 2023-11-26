@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import "./Header.css";
 import {} from '@mui/material'
 
-import {ReactComponent as Logo} from '../assets/hector-mav-vector.svg'
+import logo from '../assets/hector-mav-vector.svg'
 import {ReactComponent as Arrow} from '../assets/Vectorarrow.svg'
 
 
@@ -67,7 +67,7 @@ function Header(){
         <>
         <nav className='header-mobile'>
             <Link to='/' className='hec-mav-logo'>
-              <Logo className='hec-logo'/>
+              <img src={logo} className='hec-logo'/>
             </Link>
 
             
@@ -80,21 +80,15 @@ function Header(){
 
         
         <div className='header'>
-          <div className='header-nav-box'>
-            <div className='header-link-box'>
-              <Link to='/' className='hec-mav-logo'>
-                <Logo className='hec-logo'/>
-              </Link>
-              <div className='page-link-box'>
-                <Link to='/brands' className='links'>BRANDS</Link>
-                <Link to='#projects' className='links'>PROJECTS</Link>
-                <Link to='/about' className='links'>ABOUT</Link>
-              </div>
+          <div className='nav-container'>
+            <Link to='/' className='hec-mav-logo'>
+              <img src={logo} className='hec-logo'/>
+            </Link>
+            <div className='header-nav-box'>
+              <Link to='/brands' className='links'>BRANDS</Link>
+              <Link to='#projects' className='links'>PROJECTS</Link>
+              <Link to='/about' className='links'>ABOUT</Link>
             </div>
-            <Link to='#projects' className='view-projects-box'>
-                <div className='links'>View projects</div>
-                <Arrow/>    
-            </Link>    
           </div>
         </div>
 

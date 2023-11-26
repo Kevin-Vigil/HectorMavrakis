@@ -20,15 +20,17 @@
 
 @media only screen and (min-width: 721px){
     .header{
+        margin: auto;
         display: flex;
         opacity: 98%;
+        backdrop-filter: blur(250px);
         position: fixed;
         background-color: rgb(255, 255, 255);
         align-items: center;
         top: 0;
         width: 100%;
         height: 75px;
-        justify-content: space-around;
+        justify-content: space-between;
         border-bottom: 1px solid rgba(30,29,29,.12);
     }
     .header-mobile{
@@ -37,26 +39,39 @@
 
 
 }
+
 .hec-logo{
     background-color: white;
     color-scheme: light dark;
+    align-self: center;
+    transform: translateY(2px);
+    margin-top: auto;
     
 }
 @media(prefers-color-scheme:dark){
     .hec-logo{
         background-color: black;
+        color: white;
     }
 }
-.header-nav-box{
+.nav-container{
     display: flex;
-    width: 100%;
+    margin: auto;
+    width: 85%;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
-    margin-top: 3.5px;
+}
+.header-nav-box{
+    align-self: center;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.25rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    
     
 }
-.header-link-box{
+/* .header-link-box{
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -71,15 +86,18 @@
     gap: 5px;
     margin: auto;
     padding:5px;
-}
+} */
 .links{
     color: rgb(38 38 38);
     font-weight: 600;
     font-size: 1rem;
     line-height: 1rem;
     text-decoration-line: none;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-.view-projects-box{
+/* .view-projects-box{
     align-items: stretch;
     border-width: 1px;
     align-items: stretch;
@@ -93,5 +111,6 @@
     border-style: solid;
     border-color: black;
     text-decoration-line: none;
+    height: 100%;
 
-}
+} */
