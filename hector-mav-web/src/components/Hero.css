@@ -1,0 +1,9 @@
+.hero-container{
+    display: flex;
+    top: 80px;
+    justify-content: center;
+}
+.view-projects-container{
+    display: flex;
+    border: 1px solid black;
+}

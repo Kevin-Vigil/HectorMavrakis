@@ -1,3 +1,5 @@
+import Hero from "../components/Hero"
+
 export default function Home(){
 
     const divStyle_placeholder = {
@@ -6,6 +8,9 @@ export default function Home(){
 
     return(
     <>
+
+        <Hero/>
+
         <div className="placeholder" style={divStyle_placeholder}>
 
         </div>
