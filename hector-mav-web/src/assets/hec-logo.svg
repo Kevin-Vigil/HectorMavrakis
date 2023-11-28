@@ -1,5 +1,11 @@
-<svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="47" height="46" fill="url(#pattern0)"/>
+<svg id="svg1" width="47" height="46" viewBox="0 0 47 46" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+    svg#svg1 rect#background {fill: white}
+    @media (prefers-color-scheme: dark) {
+        svg#svg1 rect#background {fill: black}
+    }
+</style>
+<rect id="background" width="47" height="46" />
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1125_423" transform="matrix(0.00615549 0 0 0.00628931 -0.00475043 0)"/>

@@ -8,7 +8,6 @@ export default function Home(){
 
     return(
     <>
-
         <Hero/>
 
         <div className="placeholder" style={divStyle_placeholder}>

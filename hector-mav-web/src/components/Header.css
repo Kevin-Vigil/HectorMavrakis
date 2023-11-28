@@ -23,7 +23,7 @@
         margin: auto;
         display: flex;
         opacity: 98%;
-        backdrop-filter: blur(250px);
+        backdrop-filter: blur(50%);
         position: fixed;
         background-color: rgb(255, 255, 255);
         align-items: center;

@@ -1,5 +1,7 @@
 import React from "react";
+import './Hero.css'
 import { Link } from "react-router-dom";
+import phoneDemo from '../assets/phoneDemo.png'
 import {ReactComponent as Arrow} from '../assets/Vectorarrow.svg'
 
 export default function Hero(props){
@@ -10,14 +12,14 @@ export default function Hero(props){
 
                 </div>
                 <div className="hero-content">
-                    <h3 className="statement">I DESIGN WHAT PEOPLE</h3>
-                    <h1 className="envision">ENVISION</h1>
+                    <div className="statement">I DESIGN WHAT PEOPLE</div>
+                    <div className="envision">ENVISION</div>
                     <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
                     <Link to='#projects'className="view-projects-container">
                         <div className="view-projects-text">View projects</div>
-                        <Arrow/>
+                        <Arrow className='arrow'/>
                     </Link>
-                    <img src="../assets/phoneDemo.png"></img>
+                    <img src={phoneDemo}></img>
                 </div>
             </div>  
         </>
