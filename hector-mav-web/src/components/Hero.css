@@ -1,0 +1,119 @@
+.hero-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 85px;
+}
+
+
+.hero-content{
+    align-self: stretch;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    max-width: 100%;
+}
+.statement{
+    justify-content: center;
+    color: #1e1d1d;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    max-width: 596px;
+    font: 700 20px/68px Mona Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+
+}
+
+.envision{
+    color: #1e1d1d;
+    text-align: center;
+    text-transform: uppercase;
+    font: 800 171px/102px Mona Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+    max-width: 100%;
+    font-size: 100px;
+    line-height: 26px;
+    margin-top: 40px;
+
+}
+
+
+.hero-purpose{
+    color: #1e1d1d;
+    text-align: center;
+    align-self: center;
+    max-width: 515px;
+    font: 500 18px/28px Mona Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.phone-demo-img{
+    margin-top: 20px;
+}
+
+/*Project button*/
+.view-projects-container{
+    text-decoration-line: none;
+    border-radius: 6px;
+    background-color: #1e1d1d;
+    align-self: center;
+    display: flex;
+    width: 185px;
+    max-width: 100%;
+    align-items: start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+}
+.view-projects-text{
+    color: #fff;
+    font: 500 16px/28px Mona Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+    margin: auto;
+}
+.arrow{
+    margin: auto;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    *{
+        background-color: #1e1d1d;
+    }
+    
+    .hero-container{
+        background-color: #1e1d1d;
+        
+    }   
+    .hero-content{
+        background-color: #1e1d1d;
+    }
+    .statement{
+        color: white;
+    }
+    .envision{
+        color: white;
+    }
+    .hero-purpose{
+        color: white;
+    }
+
+
+    .view-projects-container{
+        background-color: white;
+    }
+    .view-projects-text{
+        color: #1e1d1d;
+        background-color: white;
+    }
+    .arrow{
+        background-color: white;
+    }
+
+}
