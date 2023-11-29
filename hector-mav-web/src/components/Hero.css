@@ -39,6 +39,8 @@
     margin-top: 40px;
 
 }
+
+
 .hero-purpose{
     color: #1e1d1d;
     text-align: center;
@@ -48,6 +50,10 @@
     sans-serif;
     max-width: 100%;
     margin-top: 40px;
+}
+
+.phone-demo-img{
+    margin-top: 20px;
 }
 
 /*Project button*/
@@ -72,4 +78,42 @@
 }
 .arrow{
     margin: auto;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    *{
+        background-color: #1e1d1d;
+    }
+    
+    .hero-container{
+        background-color: #1e1d1d;
+        
+    }   
+    .hero-content{
+        background-color: #1e1d1d;
+    }
+    .statement{
+        color: white;
+    }
+    .envision{
+        color: white;
+    }
+    .hero-purpose{
+        color: white;
+    }
+
+
+    .view-projects-container{
+        background-color: white;
+    }
+    .view-projects-text{
+        color: #1e1d1d;
+        background-color: white;
+    }
+    .arrow{
+        background-color: white;
+    }
+
 }

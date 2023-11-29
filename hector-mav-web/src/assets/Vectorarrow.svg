@@ -7,7 +7,7 @@
     <style>
         svg#svg-arrow path#path1 {fill: white}
         @media (prefers-color-scheme: dark){
-            svg#svg-arrow path#path1 { fill: black}
+            svg#svg-arrow path#path1 { fill: #1e1d1d}
         }
     </style>
     <path 

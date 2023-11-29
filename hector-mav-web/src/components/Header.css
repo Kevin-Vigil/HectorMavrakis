@@ -114,3 +114,23 @@
     height: 100%;
 
 } */
+
+@media (prefers-color-scheme: dark) {
+    *{
+        background-color: #1e1d1d;
+        color: white;
+    }
+    .header{
+        background-color: #1e1d1d;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .hec-mav-logo{
+        background-color: #1e1d1d;
+    }
+    .hec-logo{
+        background-color: #1e1d1d;
+    }
+    .links{
+        color: white;
+    }
+}

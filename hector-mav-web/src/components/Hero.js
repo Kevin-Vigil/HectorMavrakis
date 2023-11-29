@@ -19,7 +19,7 @@ export default function Hero(props){
                         <div className="view-projects-text">View projects</div>
                         <Arrow className='arrow'/>
                     </Link>
-                    <img src={phoneDemo}></img>
+                    <img className='phone-demo-img' src={phoneDemo}></img>
                 </div>
             </div>  
         </>
