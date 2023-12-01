@@ -9,7 +9,12 @@ export default function Hero(props){
         <>
             <div className="hero-container">
                 <div className="scroll-down">
-
+                    <div className="line1"/>
+                    <div className="scroll-text">SCROLL DOWN</div>
+                    <div className="arrow">
+                        <div className="line2"/>
+                        <div className="arrowhead"/>
+                    </div>
                 </div>
                 <div className="hero-content">
                     <div className="statement">I DESIGN WHAT PEOPLE</div>
