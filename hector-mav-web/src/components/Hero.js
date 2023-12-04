@@ -9,7 +9,12 @@ export default function Hero(props){
         <>
             <div className="hero-container">
                 <div className="scroll-down">
-
+                    <div className="line1"/>
+                    <div className="scroll-text">SCROLL DOWN</div>
+                    <div className="arrow">
+                        <div className="line2"/>
+                        <div className="arrowhead"/>
+                    </div>
                 </div>
                 <div className="hero-content">
                     <div className="statement">I DESIGN WHAT PEOPLE</div>
@@ -19,7 +24,9 @@ export default function Hero(props){
                         <div className="view-projects-text">View projects</div>
                         <Arrow className='arrow'/>
                     </Link>
-                    <img className='phone-demo-img' src={phoneDemo}></img>
+                    <div className="hero-phone-img-container">
+                        <img loading='lazy' className='phone-demo-img' src={phoneDemo}/>
+                    </div>
                 </div>
             </div>  
         </>

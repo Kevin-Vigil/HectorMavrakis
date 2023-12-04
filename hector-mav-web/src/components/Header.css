@@ -1,7 +1,6 @@
 @media only screen and (max-width: 720px){
     .header-mobile{
         display: flex;
-        
         overflow: scroll;
         opacity: 98%;
         position: fixed;
@@ -20,6 +19,7 @@
 
 @media only screen and (min-width: 721px){
     .header{
+        z-index: 999;
         margin: auto;
         display: flex;
         opacity: 98%;
