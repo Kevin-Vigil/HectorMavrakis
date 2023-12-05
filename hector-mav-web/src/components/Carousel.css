@@ -1,0 +1,41 @@
+.caro-container{
+    display: flex;
+    margin-top: 85px;
+    justify-content: center;
+}
+
+.caro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text{
+    align-self: center;
+    color: rgba(30, 29, 29, 0.72);
+    font-size: 24;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font: 600 14px/24px Mona Sans, sans-serif;
+}
+.subtitle{
+    align-self: center;
+    color: #1e1d1d;
+    width: 100%;
+    font: 700 30px/43px Mona Sans, sans-serif;
+}
+
+
+@media (prefers-color-scheme: dark){
+    *{
+        background-color: #1e1d1d;
+        color: white;
+    }
+    .text{
+        color: #FFFFFF;
+        opacity: 72%;
+    }
+    .subtitle{
+        color: white;
+    }
+}

@@ -1,4 +1,6 @@
+import Carousel from "../components/Carousel"
 import Hero from "../components/Hero"
+import './Home.css'
 
 export default function Home(){
 
@@ -9,6 +11,8 @@ export default function Home(){
     return(
     <>
         <Hero/>
+
+        <Carousel/>
 
         <div className="placeholder" style={divStyle_placeholder}>
 
