@@ -11,5 +11,5 @@ export default function Carousel(props){
 
             </div>
         </div>
-    );
-};
+    )
+}
