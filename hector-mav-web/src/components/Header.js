@@ -4,6 +4,7 @@ import "./Header.css";
 import {} from '@mui/material'
 
 import {ReactComponent as Logo} from '../assets/hmLogo.svg'
+import {ReactComponent as ColorSwitch} from '../assets/Switch.svg'
 
 function Header(){
     const [mobile, setMobile] = useState(getMobile())
@@ -32,7 +33,7 @@ function Header(){
 
             
             <div className='navbar-mobile'>
-                
+                <ColorSwitch className='header-switch'/>
             </div>
         </nav>
 
@@ -48,6 +49,9 @@ function Header(){
               <Link to='/brands' className='links'>BRANDS</Link>
               <Link to='#projects' className='links'>PROJECTS</Link>
               <Link to='/about' className='links'>ABOUT</Link>
+              <button className='header-button-container'>
+                <ColorSwitch onHover className='header-switch'/>
+              </button>
             </div>
           </div>
         </div>
