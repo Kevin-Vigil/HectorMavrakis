@@ -1,4 +1,10 @@
 <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    path {fill: black;}
+    @media (prefers-color-scheme: dark){
+        path {fill: white;}
+    }
+</style>
 <path d="M24.5 0V45.825L15 41.3421V28.8897L6.5 27.3954V38.3535L0 35.3649V6.47527L6.5 4.98098V17.9315H15V2.49049L24.5 0Z" fill="black"/>
 <path d="M30 40.3459L35 41.8402L30 14.4448V40.3459Z" fill="black"/>
 <path d="M35 5.47908L39 27.8935L42.5 5.47908H35Z" fill="black"/>

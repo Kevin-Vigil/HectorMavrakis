@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom';
 import "./Header.css";
 import {} from '@mui/material'
 
-import logo from '../assets/hector-mav-vector.svg'
-import {ReactComponent as Logo} from "../assets/hec-logo.svg"
+import {ReactComponent as Logo} from '../assets/hmLogo.svg'
 
 function Header(){
     const [mobile, setMobile] = useState(getMobile())
@@ -43,7 +42,7 @@ function Header(){
         <div className='header'>
           <div className='nav-container'>
             <Link to='/' className='hec-mav-logo'>
-              <img src={logo} className='hec-logo'/>
+              <Logo/>
             </Link>
             <div className='header-nav-box'>
               <Link to='/brands' className='links'>BRANDS</Link>
