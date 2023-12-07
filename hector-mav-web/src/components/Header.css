@@ -40,6 +40,14 @@
 
 }
 
+Logo {
+    fill: black;
+}
+
+.dark-mode Logo{
+    path {fill: white;}
+}
+
 .hec-logo{
     background-color: white;
     color-scheme: light dark;
@@ -48,12 +56,10 @@
     margin-top: auto;
     
 }
-@media(prefers-color-scheme:dark){
-    .hec-logo{
+    .dark-mode .hec-logo{
         background-color: black;
         color: white;
     }
-}
 .nav-container{
     display: flex;
     margin: auto;
@@ -127,25 +133,23 @@
 
 } */
 
-@media (prefers-color-scheme: dark) {
     *{
         background-color: #1e1d1d;
         color: white;
     }
-    .header{
+    .dark-mode .header{
         background-color: #1e1d1d;
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     }
-    .hec-mav-logo{
+    .dark-mode .hec-mav-logo{
         background-color: #1e1d1d;
     }
-    .hec-logo{
+    .dark-mode .hec-logo{
         background-color: #1e1d1d;
     }
-    .links{
+    .dark-mode .links{
         color: white;
     }
-    .header-button-container{
+    /* .header-button-container{
         background-color: #1e1d1d;
-    }
-}
+    } */

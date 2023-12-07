@@ -7,20 +7,23 @@ import {ReactComponent as Logo} from '../assets/hmLogo.svg'
 import {ReactComponent as ColorSwitch} from '../assets/Switch.svg'
 
 function Header(){
-    const [mobile, setMobile] = useState(getMobile())
 
-    useEffect(() => {
-        function handleWindowResize() {
-          setMobile(getMobile());
-        }
+    let darkModeState = false;
     
-        window.addEventListener('resize', handleWindowResize);
-    
-        return () => {
-          window.removeEventListener('resize', handleWindowResize);
-        };
-      }, []
-    );
+    const button = document.querySelector(".header-button-container")
+
+    const useDark = window.matchMedia("(prefers-color-scheme: dark)")
+
+    function toggleDarkMode(state){
+      document.documentElement.classList.toggle("dark-mode", state)
+    }
+
+    toggleDarkMode(localStorage.getItem("dark-mode") == "true")
+
+    button.addEventListener("click", () => {
+      darkModeState = !darkModeState
+      toggleDarkMode(darkModeState)
+    });
 
     
     return(
@@ -86,12 +89,5 @@ function scrollFunction() {
     document.getElementsByClassName("header-mobile")[0].style.height = "100px";
   }
 } 
-
-
-
-function getMobile() {
-    const innerWidth = window.innerWidth;
-    return (innerWidth < 720);
-  }
 
 export default Header;

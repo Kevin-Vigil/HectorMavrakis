@@ -126,38 +126,35 @@
 
 
 
-@media (prefers-color-scheme: dark) {
-    *{
+    .dark-mode *{
         background-color: #1e1d1d;
     }
     
-    .hero-container{
+    .dark-mode .hero-container{
         background-color: #1e1d1d;
         
     }   
-    .hero-content{
+    .dark-mode .hero-content{
         background-color: #1e1d1d;
     }
-    .statement{
+    .dark-mode .statement{
         color: white;
     }
-    .envision{
+    .dark-mode .envision{
         color: white;
     }
-    .hero-purpose{
+    .dark-mode .hero-purpose{
         color: white;
     }
 
 
-    .view-projects-container{
+    .dark-mode .view-projects-container{
         background-color: white;
     }
-    .view-projects-text{
+    .dark-mode .view-projects-text{
         color: #1e1d1d;
         background-color: white;
     }
-    .arrow{
+    .dark-mode .arrow{
         background-color: white;
     }
-
-}
