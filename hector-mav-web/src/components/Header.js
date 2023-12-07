@@ -50,7 +50,7 @@ function Header(){
               <Link to='#projects' className='links'>PROJECTS</Link>
               <Link to='/about' className='links'>ABOUT</Link>
               <button className='header-button-container'>
-                <ColorSwitch onHover className='header-switch'/>
+                <ColorSwitch className='header-switch'/>
               </button>
             </div>
           </div>

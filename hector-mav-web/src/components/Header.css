@@ -77,11 +77,11 @@
     width: fit-content;
     block-size: fit-content;
     border: none;
+    background-color: white;
 }
 .header-switch{
     align-self: center;
-    margin-left: -20px;
-    margin-top: -7px;
+    margin-left: -10px;
 }
 /* .header-link-box{
     display: flex;
@@ -144,5 +144,8 @@
     }
     .links{
         color: white;
+    }
+    .header-button-container{
+        background-color: #1e1d1d;
     }
 }
