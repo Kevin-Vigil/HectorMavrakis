@@ -8,6 +8,7 @@ import {ReactComponent as ColorSwitch} from '../assets/Switch.svg'
 
 function Header(){
 
+  function load(){
     let darkModeState = false;
     
     const button = document.querySelector(".header-button-container")
@@ -24,7 +25,11 @@ function Header(){
       darkModeState = !darkModeState
       toggleDarkMode(darkModeState)
     });
+  }
+  window.addEventListener("DOMContentLoaded", load);
 
+
+  
     
     return(
         <>
@@ -46,7 +51,7 @@ function Header(){
         <div className='header'>
           <div className='nav-container'>
             <Link to='/' className='hec-mav-logo'>
-              <Logo/>
+              <Logo className='logo-svg'/>
             </Link>
             <div className='header-nav-box'>
               <Link to='/brands' className='links'>BRANDS</Link>

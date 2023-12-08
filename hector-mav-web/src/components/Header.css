@@ -40,26 +40,6 @@
 
 }
 
-Logo {
-    fill: black;
-}
-
-.dark-mode Logo{
-    path {fill: white;}
-}
-
-.hec-logo{
-    background-color: white;
-    color-scheme: light dark;
-    align-self: center;
-    transform: translateY(2px);
-    margin-top: auto;
-    
-}
-    .dark-mode .hec-logo{
-        background-color: black;
-        color: white;
-    }
 .nav-container{
     display: flex;
     margin: auto;
@@ -79,32 +59,6 @@ Logo {
     
 }
 
-.header-button-container{
-    width: fit-content;
-    block-size: fit-content;
-    border: none;
-    background-color: white;
-}
-.header-switch{
-    align-self: center;
-    margin-left: -10px;
-}
-/* .header-link-box{
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 5px;
-    margin: auto;
-}
-.page-link-box{
-    align-items: stretch;
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    margin: auto;
-    padding:5px;
-} */
 .links{
     color: rgb(38 38 38);
     font-weight: 600;
@@ -115,41 +69,31 @@ Logo {
     margin-top: auto;
     margin-bottom: auto;
 }
-/* .view-projects-box{
-    align-items: stretch;
-    border-width: 1px;
-    align-items: stretch;
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-style: solid;
-    border-color: black;
-    text-decoration-line: none;
-    height: 100%;
 
-} */
+.header-button-container{
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+.header-switch{
+    align-self: center;
+}
 
-    *{
-        background-color: #1e1d1d;
-        color: white;
-    }
-    .dark-mode .header{
-        background-color: #1e1d1d;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    }
-    .dark-mode .hec-mav-logo{
-        background-color: #1e1d1d;
-    }
-    .dark-mode .hec-logo{
-        background-color: #1e1d1d;
-    }
-    .dark-mode .links{
-        color: white;
-    }
-    /* .header-button-container{
-        background-color: #1e1d1d;
-    } */
+
+
+.dark-mode *{
+    background-color: #1e1d1d;
+    color: white;
+}
+.dark-mode .header{
+    background-color: #1e1d1d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.dark-mode .logo-svg{
+    background-color: #1e1d1d;
+    fill: white;
+}
+.dark-mode .links{
+    color: white;
+}
