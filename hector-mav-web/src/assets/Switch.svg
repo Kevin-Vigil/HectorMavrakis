@@ -67,7 +67,7 @@
 
     <rect id="lightContainer" x="0" y="0" width="51" height="26" rx="13" fill-opacity="100%">
         <animate id="light-to-dark-animation" dur="1.001s" attributeName="width" 
-            values="51; 0" fill="freeze" begin="click" />
+            values="51; 0" fill="freeze" begin="indefinite" />
         <animate dur="1.001s" attributeName="width" values="0; 51" 
             begin="dark-to-light-animation.end" fill="freeze" />
 

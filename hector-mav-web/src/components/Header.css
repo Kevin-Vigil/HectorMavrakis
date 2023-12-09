@@ -73,11 +73,24 @@
 .header-button-container{
     display: block;
     cursor: pointer;
-    border: none;
     background-color: white;
+    position: relative;
 }
 .header-switch{
     align-self: center;
+}
+/* next 2 are buttons for animation script */
+.switch-disabled{
+    position: absolute;
+    width: 51px;
+    height: 26px;
+    display: inherit;
+}
+.switch-enabled{
+    position: absolute;
+    width: 51px;
+    height: 26px;
+    display: none;
 }
 
 

@@ -29,7 +29,11 @@ function Header(){
   window.addEventListener("DOMContentLoaded", load);
 
 
-  
+  // .addEventListener('mySpecialEvent',function(){
+  //   myAnimationElement.beginElement();
+  // },false);
+
+
     
     return(
         <>
@@ -58,6 +62,12 @@ function Header(){
               <Link to='#projects' className='links'>PROJECTS</Link>
               <Link to='/about' className='links'>ABOUT</Link>
               <button className='header-button-container'>
+                <button className='switch-disabled'>
+
+                </button>
+                <button className='switch-enabled'>
+
+                </button>
                 <ColorSwitch className='header-switch'/>
               </button>
             </div>
