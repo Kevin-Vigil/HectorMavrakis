@@ -1,59 +1,79 @@
 import React, { useRef, useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import "./Header.css";
+import "./Animations.css"
 import {} from '@mui/material'
 
-import logo from '../assets/hector-mav-vector.svg'
-import {ReactComponent as Logo} from "../assets/hec-logo.svg"
+import {ReactComponent as Logo} from '../assets/hmLogo.svg'
+import {ReactComponent as ColorSwitch} from '../assets/Switch.svg'
 
 function Header(){
-    const [mobile, setMobile] = useState(getMobile())
 
-    useEffect(() => {
-        function handleWindowResize() {
-          setMobile(getMobile());
-        }
+  function load(){
+    let darkModeState = false;
     
-        window.addEventListener('resize', handleWindowResize);
-    
-        return () => {
-          window.removeEventListener('resize', handleWindowResize);
-        };
-      }, []
-    );
+    const button = document.querySelector("#cSwitch")
 
+    const useDark = window.matchMedia("(prefers-color-scheme: dark)")
+
+    function toggleDarkMode(state){
+      document.documentElement.classList.toggle("dark-mode", state)
+    }
+
+    function setDarkModeLocalStorage(state) {
+      localStorage.setItem("dark-mode", state);
+    }
+
+    toggleDarkMode(localStorage.getItem("dark-mode") == "true")
+
+    button.addEventListener("click", () => {
+      darkModeState = !darkModeState
+      toggleDarkMode(darkModeState)
+      setDarkModeLocalStorage(darkModeState);
+    });
     
+  }
+  window.addEventListener("DOMContentLoaded", ()=>{
+    load();
+  });
+
+  
+
+  
+
+
     return(
-        <>
-        <nav className='header-mobile'>
+        <body className='preload'>
+          <nav className='header-mobile'>
             <Link to='/' className='hec-mav-logo'>
               {/* <img src={logo} className='hec-logo'/> */}
               <Logo/>
             </Link>
-
             
             <div className='navbar-mobile'>
-                
+              <ColorSwitch className='header-switch'/>
             </div>
-        </nav>
+          </nav>
 
 
 
-        
-        <div className='header'>
-          <div className='nav-container'>
-            <Link to='/' className='hec-mav-logo'>
-              <img src={logo} className='hec-logo'/>
-            </Link>
-            <div className='header-nav-box'>
-              <Link to='/brands' className='links'>BRANDS</Link>
-              <Link to='#projects' className='links'>PROJECTS</Link>
-              <Link to='/about' className='links'>ABOUT</Link>
+          
+          <div className='header'>
+            <div className='nav-container'>
+              <Link to='/' className='hec-mav-logo'>
+                <Logo className='logo-svg'/>
+              </Link>
+              <div className='header-nav-box'>
+                <Link to='/brands' className='links'>BRANDS</Link>
+                <Link to='#projects' className='links'>PROJECTS</Link>
+                <Link to='/about' className='links'>ABOUT</Link>
+                <ColorSwitch id='cSwitch' className='header-switch'/>
+             
+              </div>
             </div>
           </div>
-        </div>
 
-        </>
+        </body>
     )
 
     // return(
@@ -83,12 +103,5 @@ function scrollFunction() {
     document.getElementsByClassName("header-mobile")[0].style.height = "100px";
   }
 } 
-
-
-
-function getMobile() {
-    const innerWidth = window.innerWidth;
-    return (innerWidth < 720);
-  }
 
 export default Header;

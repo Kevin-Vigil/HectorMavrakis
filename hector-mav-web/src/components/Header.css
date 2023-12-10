@@ -19,19 +19,19 @@
 
 @media only screen and (min-width: 721px){
     .header{
+        opacity: 0;
         z-index: 999;
         margin: auto;
         display: flex;
-        opacity: 98%;
         backdrop-filter: blur(50%);
         position: fixed;
-        background-color: rgb(255, 255, 255);
+        animation: genColorL 0.5s linear forwards, pageLoad 0.5s 0.5s linear forwards;
         align-items: center;
         top: 0;
         width: 100%;
         height: 75px;
         justify-content: space-between;
-        border-bottom: 1px solid rgba(30,29,29,.12);
+        /* border-bottom: 1px solid rgba(30,29,29,.12); */
     }
     .header-mobile{
         display: none;
@@ -40,26 +40,14 @@
 
 }
 
-.hec-logo{
-    background-color: white;
-    color-scheme: light dark;
-    align-self: center;
-    transform: translateY(2px);
-    margin-top: auto;
-    
-}
-@media(prefers-color-scheme:dark){
-    .hec-logo{
-        background-color: black;
-        color: white;
-    }
-}
+/* header content */
 .nav-container{
     display: flex;
     margin: auto;
     width: 85%;
     align-items: center;
     justify-content: space-between;
+    animation: genColorL 0.5s linear forwards;
 }
 .header-nav-box{
     align-self: center;
@@ -68,27 +56,16 @@
     gap: 1.25rem;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: -20px;
+    animation: genColorL 0.5s linear forwards;
     
     
 }
-/* .header-link-box{
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 5px;
-    margin: auto;
+.hec-mav-logo{
+    animation: genColorL 0.5s linear forwards;
 }
-.page-link-box{
-    align-items: stretch;
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    margin: auto;
-    padding:5px;
-} */
 .links{
-    color: rgb(38 38 38);
+    color: #1e1d1d;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1rem;
@@ -96,41 +73,79 @@
     align-self: center;
     margin-top: auto;
     margin-bottom: auto;
+
+    animation: genColorL 0.5s linear forwards;
 }
-/* .view-projects-box{
-    align-items: stretch;
-    border-width: 1px;
-    align-items: stretch;
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-style: solid;
-    border-color: black;
-    text-decoration-line: none;
-    height: 100%;
 
-} */
+/* dark mode toggle */
+.header-switch{
+    cursor: pointer;
+    /* animation: switch-to-light 0.5s 0s 1 normal forwards; */
+    align-self: center;
+    animation: genColorL 0.5s linear forwards;
+    
+}
+rect#container {
+    animation: switchColorL 0.5s linear forwards;
+}
+circle#circ {
+    fill: #F6C34A;
+    animation: fade-in 0.5s linear forwards;
+}
+circle#dCirc{
+    animation: fade-out 0.5s linear forwards;
+    fill: #4C6FB6;
+}
+path#sun{
+    animation: sunMoonColorFadeIn 0.5s linear forwards;
+}
+path#moon{
+    animation: sunMoonColorFadeOut 0.5s linear forwards;
+}
 
-@media (prefers-color-scheme: dark) {
-    *{
-        background-color: #1e1d1d;
-        color: white;
-    }
-    .header{
-        background-color: #1e1d1d;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    }
-    .hec-mav-logo{
-        background-color: #1e1d1d;
-    }
-    .hec-logo{
-        background-color: #1e1d1d;
-    }
-    .links{
-        color: white;
-    }
+
+
+
+
+.dark-mode .header{
+    animation: genColorD 0.5s linear forwards, pageLoad 0.5s 0.5s linear forwards;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.12); */
+}
+
+/* Hector Mavrakis Logo */
+.dark-mode .hec-mav-logo{
+    animation: genColorD 0.5s linear forwards;
+}
+.dark-mode .logo-svg{
+    animation: genColorD 0.5s linear forwards;
+}
+
+.dark-mode .links{
+    animation: genColorD 0.5s linear forwards;
+}
+.dark-mode .nav-container{
+    animation: genColorD 0.5s linear forwards;
+}
+.dark-mode .header-nav-box{
+    animation: genColorD 0.5s linear forwards;
+}
+
+/* d mode switch */
+.dark-mode .header-switch{
+    animation: genColorD 0.5s linear forwards;
+}
+.dark-mode rect#container{
+    animation: switchColorD 0.5s linear forwards;
+}
+.dark-mode circle#circ{
+    animation: fade-out 0.5s linear forwards;
+}
+.dark-mode circle#dCirc{
+    animation: fade-in 0.5s linear forwards;
+}
+.dark-mode path#sun{
+    animation: sunMoonColorFadeOut 0.5s linear forwards;
+}
+.dark-mode path#moon{
+    animation: sunMoonColorFadeIn 0.5s linear forwards;
 }
