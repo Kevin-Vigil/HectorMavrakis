@@ -25,54 +25,63 @@ function Header(){
       darkModeState = !darkModeState
       toggleDarkMode(darkModeState)
     });
+
+
+    // const colorSwitchObject = document.getElementById("cSwitch")
+    
+    // colorSwitchObject.addEventListener("load", () =>{
+    //   const switchDoc = colorSwitchObject.contentDocument || colorSwitchObject.contentWindow.document;
+    //   const dis = document.querySelector("#switch-disabled")
+    //   const en = document.querySelector("#switch-enabled")
+      
+    //   dis.addEventListener("click", () =>{
+    //     switchDoc.getElementById("light-to-dark-circle").beginElement()
+    //   })
+    //   en.addEventListener("click", () =>{
+    //     switchDoc.getElementById("dark-to-light-circle").beginElement()
+    //     })
+    // })
+
+    
   }
   window.addEventListener("DOMContentLoaded", load);
 
+  
 
-  // .addEventListener('mySpecialEvent',function(){
-  //   myAnimationElement.beginElement();
-  // },false);
+  
 
 
-    
     return(
         <>
-        <nav className='header-mobile'>
+          <nav className='header-mobile'>
             <Link to='/' className='hec-mav-logo'>
               {/* <img src={logo} className='hec-logo'/> */}
               <Logo/>
             </Link>
-
             
             <div className='navbar-mobile'>
-                <ColorSwitch className='header-switch'/>
+              <ColorSwitch className='header-switch'/>
             </div>
-        </nav>
+          </nav>
 
 
 
-        
-        <div className='header'>
-          <div className='nav-container'>
-            <Link to='/' className='hec-mav-logo'>
-              <Logo className='logo-svg'/>
-            </Link>
-            <div className='header-nav-box'>
-              <Link to='/brands' className='links'>BRANDS</Link>
-              <Link to='#projects' className='links'>PROJECTS</Link>
-              <Link to='/about' className='links'>ABOUT</Link>
-              <button className='header-button-container'>
-                <button className='switch-disabled'>
-
+          
+          <div className='header'>
+            <div className='nav-container'>
+              <Link to='/' className='hec-mav-logo'>
+                <Logo className='logo-svg'/>
+              </Link>
+              <div className='header-nav-box'>
+                <Link to='/brands' className='links'>BRANDS</Link>
+                <Link to='#projects' className='links'>PROJECTS</Link>
+                <Link to='/about' className='links'>ABOUT</Link>
+                <button className='header-button-container'>
+                  <ColorSwitch id='cSwitch' className='header-switch'/>
                 </button>
-                <button className='switch-enabled'>
-
-                </button>
-                <ColorSwitch className='header-switch'/>
-              </button>
+              </div>
             </div>
           </div>
-        </div>
 
         </>
     )

@@ -25,13 +25,13 @@
         opacity: 98%;
         backdrop-filter: blur(50%);
         position: fixed;
-        background-color: rgb(255, 255, 255);
+        animation: genColorL 0.5s linear forwards;
         align-items: center;
         top: 0;
         width: 100%;
         height: 75px;
         justify-content: space-between;
-        border-bottom: 1px solid rgba(30,29,29,.12);
+        /* border-bottom: 1px solid rgba(30,29,29,.12); */
     }
     .header-mobile{
         display: none;
@@ -40,12 +40,127 @@
 
 }
 
+/* animations */
+
+@keyframes fade-in {
+    0%{
+        opacity: 0%;
+        fill-opacity: 0%;
+    }
+    50%{
+        opacity: 50%;
+        fill-opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+        fill-opacity: 100%;
+    }
+    
+}
+@keyframes fade-out {
+    0%{
+        opacity: 100%;
+        fill-opacity: 100%;
+    }
+    50%{
+        opacity: 50%;
+        fill-opacity: 50%;
+    }
+    100%{
+        opacity: 0%;
+        fill-opacity: 0%;
+    }
+    
+}
+
+@keyframes sunMoonColorFadeIn {
+    0%{
+        fill: #989898;
+    }
+    100%{
+        fill: #FFFFFF;
+    }
+    
+}
+@keyframes sunMoonColorFadeOut {
+    0%{
+        fill: #FFFFFF;
+    }
+    100%{
+        fill: #989898;
+    }
+    
+}
+
+@keyframes switchColorL {
+    0%{
+        fill: #292929;
+    }
+    100%{
+        fill: #F9F9F9;
+    }
+}
+@keyframes switchColorD {
+    0%{
+        fill: #F9F9F9;
+    }
+    100%{
+        fill: #292929;
+        
+    }
+}
+
+@keyframes r-slide {
+    0%{
+        left: 14;
+    }
+    100%{
+        left: 37;
+    }
+    
+}
+@keyframes l-slide {
+    0%{
+        left: 37;
+    }
+    100%{
+        left: 14;
+    }
+    
+}
+
+@keyframes genColorD {
+    0%{
+        background-color: white;
+        color: #1e1d1d;
+        fill: black;
+    }
+    100%{
+        background-color: #1e1d1d;
+        color: white;
+        fill: white;
+    }
+}
+@keyframes genColorL {
+    0%{
+        background-color: #1e1d1d;
+        color: white;
+        fill: white;
+    }
+    100%{
+        background-color: white;
+        color: #1e1d1d;
+        fill: black;
+    }
+}
+
 .nav-container{
     display: flex;
     margin: auto;
     width: 85%;
     align-items: center;
     justify-content: space-between;
+    animation: genColorL 0.5s linear forwards;
 }
 .header-nav-box{
     align-self: center;
@@ -55,12 +170,19 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-right: -20px;
+    animation: genColorL 0.5s linear forwards;
     
     
 }
+.hec-mav-logo{
+    animation: genColorL 0.5s linear forwards;
+}
+.dark-mode .hec-mav-logo{
+    animation: genColorD 0.5s linear forwards;
+}
 
 .links{
-    color: rgb(38 38 38);
+    color: #1e1d1d;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1rem;
@@ -68,45 +190,107 @@
     align-self: center;
     margin-top: auto;
     margin-bottom: auto;
+
+    animation: genColorL 0.5s linear forwards;
 }
 
 .header-button-container{
     display: block;
-    cursor: pointer;
-    background-color: white;
     position: relative;
+    border: none;
+    animation: genColorL 0.5s linear forwards;
 }
+.dark-mode .header-button-container{
+    animation: genColorD 0.5s linear forwards;
+}
+
 .header-switch{
+    cursor: pointer;
+    /* animation: switch-to-light 0.5s 0s 1 normal forwards; */
     align-self: center;
+    animation: genColorL 0.5s linear forwards;
+    
 }
+.dark-mode .header-switch{
+    animation: genColorD 0.5s linear forwards;
+}
+
+rect#container {
+    animation: switchColorL 0.5s linear forwards;
+}
+circle#circ {
+    fill: #F6C34A;
+    animation: fade-in 0.5s linear forwards;
+}
+circle#dCirc{
+    animation: fade-out 0.5s linear forwards;
+    fill: #4C6FB6;
+}
+path#sun{
+    animation: sunMoonColorFadeIn 0.5s linear forwards;
+}
+path#moon{
+    animation: sunMoonColorFadeOut 0.5s linear forwards;
+}
+
+/* d mode switch */
+.dark-mode rect#container{
+    animation: switchColorD 0.5s linear forwards;
+}
+.dark-mode circle#circ{
+    animation: fade-out 0.5s linear forwards;
+}
+.dark-mode circle#dCirc{
+    animation: fade-in 0.5s linear forwards;
+}
+.dark-mode path#sun{
+    animation: sunMoonColorFadeOut 0.5s linear forwards;
+}
+.dark-mode path#moon{
+    animation: sunMoonColorFadeIn 0.5s linear forwards;
+}
+
 /* next 2 are buttons for animation script */
-.switch-disabled{
+/* #switch-disabled{
     position: absolute;
     width: 51px;
     height: 26px;
     display: inherit;
+    opacity: 0%;
+    background-color: red;
 }
-.switch-enabled{
+#switch-enabled{
     position: absolute;
     width: 51px;
     height: 26px;
     display: none;
+    opacity: 0%;
+    background-color: green;
 }
 
-
-
-.dark-mode *{
-    background-color: #1e1d1d;
-    color: white;
+.dark-mode #switch-disabled{
+    display: none;
 }
+.dark-mode #switch-enabled{
+    display: inherit;
+} */
+
+
+
+
 .dark-mode .header{
-    background-color: #1e1d1d;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    animation: genColorD 0.5s linear forwards;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.12); */
 }
 .dark-mode .logo-svg{
-    background-color: #1e1d1d;
-    fill: white;
+    animation: genColorD 0.5s linear forwards;
 }
 .dark-mode .links{
-    color: white;
+    animation: genColorD 0.5s linear forwards;
+}
+.dark-mode .nav-container{
+    animation: genColorD 0.5s linear forwards;
+}
+.dark-mode .header-nav-box{
+    animation: genColorD 0.5s linear forwards;
 }

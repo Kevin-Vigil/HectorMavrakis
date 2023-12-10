@@ -7,11 +7,26 @@
 }
 
 
+/* animations */
+@keyframes load-in {
+    0%{
+        opacity: 0%;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(20px);
+    }
+}
+
 /* scroll container */
 .scroll-down{
+    opacity: 0%;
+    
+
     display: flex;
     flex-direction: row;
-    transform: rotate(90deg);
+    rotate: 90deg;
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -19,6 +34,9 @@
     left: 0px;
     margin-left: -170px;
     gap: 20px;
+    z-index: 99;
+
+    animation: load-in 0.75s 1s forwards;
 }
 .line1{
     border-bottom: 3px solid #D9D9D9;
@@ -57,8 +75,12 @@
     flex-basis: 0%;
     flex-direction: column;
     max-width: 100%;
+    
 }
 .statement{
+    opacity: 0%;
+    transform: translateY(-20px);
+
     justify-content: center;
     color: #1e1d1d;
     text-align: center;
@@ -68,10 +90,15 @@
     font: 700 1.25vmax/68px Mona Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
 
+    animation: load-in 0.75s forwards;
+
 
 }
 
 .envision{
+    opacity: 0%;
+    transform: translateY(-20px);
+
     color: #1e1d1d;
     text-align: center;
     text-transform: uppercase;
@@ -81,11 +108,15 @@
     font-size: 8vmax;
     line-height: 26px;
     margin-top: 3.5vmax;
+    animation: load-in 0.75s forwards;
 
 }
 
 
 .hero-purpose{
+    opacity: 0%;
+    transform: translateY(-20px);
+
     color: #1e1d1d;
     text-align: center;
     align-self: center;
@@ -94,14 +125,23 @@
     sans-serif;
     max-width: 100%;
     margin-top: 3vmax;
+
+    animation: load-in 0.75s 0.5s forwards;
 }
 
 .hero-phone-img-container{
+    opacity: 0%;
+    transform: translateY(-20px);
+
     align-self: center;
+    animation: load-in 0.75s 0.5s forwards;
 }
 
 /*Project button*/
 .view-projects-container{
+    opacity: 0%;
+    transform: translateY(-20px);
+
     text-decoration-line: none;
     border-radius: 6px;
     background-color: #1e1d1d;
@@ -113,6 +153,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 40px;
+    animation: load-in 0.75s 0.5s forwards;
 }
 .view-projects-text{
     color: #fff;
@@ -126,9 +167,7 @@
 
 
 
-    .dark-mode *{
-        background-color: #1e1d1d;
-    }
+
     
     .dark-mode .hero-container{
         background-color: #1e1d1d;
