@@ -1,10 +1,4 @@
-.hero-container{
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-top: 100px;
-}
+
 
 
 /* animations */
@@ -19,6 +13,35 @@
     }
 }
 
+.hero-container{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+
+/* special animations for scroll box */
+@keyframes lineColorL {
+    0%{
+        fill: white;
+    }
+    100%{
+        fill: #D9D9D9;
+    }
+    
+}
+@keyframes lineColorD {
+    0%{
+        
+        fill: #D9D9D9;
+    }
+    100%{
+        fill: white;
+    }
+    
+}
 /* scroll container */
 .scroll-down{
     opacity: 0%;
@@ -37,29 +60,33 @@
     gap: 20px;
     z-index: 99;
 
-    animation: load-in 0.75s 1s forwards;
+    animation: load-in 0.5s 0.5s forwards, lineColorL 0.5s linear forwards;
 }
 .line1{
+    background-color: none;
     border-bottom: 3px solid #D9D9D9;
     width: 128px;
     height: 3px;
+    animation: lineColorL 0.5s linear forwards;
 }
 .scroll-text{
+    background-color: none;
     transform: rotate(180deg);
-}
-.arrow{
-    display: flex;
-    align-items: center;
-    align-self: center;
+    animation: lineColorL 0.5s linear forwards;
 }
 .line2{
+    z-index: 2;
+    background-color: none;
     border-bottom: 3px solid #D9D9D9;
     width: 128px;
     height: 3px;
+    animation: lineColorL 0.5s linear forwards;
 
 }
 .arrowhead{
+    background-color: none;
     border: solid #D9D9D9;
+    animation: lineColorL 0.5s linear forwards;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 7px;
@@ -69,13 +96,18 @@
 }
 
 
+
+/* hero content */
+
 .hero-content{
+    transform: translateY(20px);
     align-self: stretch;
     display: flex;
     flex-grow: 1;
     flex-basis: 0%;
     flex-direction: column;
     max-width: 100%;
+    animation: load-in 0.5s linear forwards;
     
 }
 .statement{
@@ -91,8 +123,7 @@
     font: 700 1.25vmax/68px Mona Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
 
-    animation: load-in 0.75s forwards;
-
+    animation: load-in 0.75s linear forwards, genColorL 0.5s linear forwards;
 
 }
 
@@ -100,7 +131,6 @@
     opacity: 0%;
     transform: translateY(20px);
 
-    color: #1e1d1d;
     text-align: center;
     text-transform: uppercase;
     font: 800 171px/102px Mona Sans, -apple-system, Roboto, Helvetica,
@@ -109,7 +139,7 @@
     font-size: 8vmax;
     line-height: 26px;
     margin-top: 3.5vmax;
-    animation: load-in 0.75s forwards;
+    animation: load-in 0.75s forwards, genColorL 0.5s linear forwards;
 
 }
 
@@ -117,8 +147,6 @@
 .hero-purpose{
     opacity: 0%;
     transform: translateY(20px);
-
-    color: #1e1d1d;
     text-align: center;
     align-self: center;
     max-width: 515px;
@@ -127,25 +155,22 @@
     max-width: 100%;
     margin-top: 3vmax;
 
-    animation: load-in 0.75s 0.5s forwards;
+    animation: load-in 0.75s 0.5s forwards, genColorL 0.5s linear forwards;
 }
 
 .hero-phone-img-container{
     opacity: 0%;
     transform: translateY(20px);
-
     align-self: center;
-    animation: load-in 0.75s 0.5s forwards;
+    animation: load-in 0.75s 0.5s forwards, genColorL 0.5s linear forwards;
 }
 
 /*Project button*/
 .view-projects-container{
-    opacity: 0%;
-    transform: translateY(20px);
 
+    z-index: 2;
     text-decoration-line: none;
     border-radius: 6px;
-    background-color: #1e1d1d;
     align-self: center;
     display: flex;
     width: 185px;
@@ -154,16 +179,59 @@
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 40px;
-    animation: load-in 0.75s 0.5s forwards;
+    animation: arrowColorL 0.5s linear forwards;
 }
 .view-projects-text{
-    color: #fff;
+    animation: arrowColorL 0.5s linear forwards;
     font: 500 16px/28px Mona Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
     margin: auto;
+
+}
+
+/* animations for arrow svg */
+@keyframes arrowColorL {
+    0%{
+        background-color: white;
+        fill: #1e1d1d;
+        color: #1e1d1d;
+    }
+    100%{
+        background-color: #1e1d1d;
+        fill: white;
+        color: white;
+    }
+    
+}
+@keyframes arrowColorD {
+    0%{
+        background-color: #1e1d1d;
+        fill: white;
+        color: white;
+    }
+    100%{
+        background-color: white;
+        fill:#1e1d1d;
+        color: #1e1d1d;
+    }
+    
 }
 .arrow{
     margin: auto;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    animation: arrowColorL 0.5s linear forwards;
+}
+
+
+
+
+
+
+.phone-demo-img{
+    content: url("../assets/lightPhoneDemo.png");
 }
 
 
@@ -171,8 +239,7 @@
 
     
     .dark-mode .hero-container{
-        background-color: #1e1d1d;
-        
+        animation: genColorD 0.5s linear forwards;  
     }   
     .dark-mode .hero-content{
         background-color: #1e1d1d;
@@ -189,12 +256,28 @@
 
 
     .dark-mode .view-projects-container{
-        background-color: white;
+        animation: arrowColorD 0.5s linear forwards;
     }
     .dark-mode .view-projects-text{
-        color: #1e1d1d;
-        background-color: white;
+        animation: arrowColorD 0.5s linear forwards;
     }
     .dark-mode .arrow{
-        background-color: white;
+        animation: arrowColorD 0.5s linear forwards;
+    }
+
+
+
+
+    .dark-mode .line1{
+        animation: lineColorD 0.5s linear forwards;
+    }
+    .dark-mode .line2{
+        animation: lineColorD 0.5s linear forwards;
+    }
+    .dark-mode .arrowhead{
+        animation: lineColorD 0.5s linear forwards;
+    }
+
+    .dark-mode .phone-demo-img{
+        content: url("../assets/darkPhoneDemo.png");
     }

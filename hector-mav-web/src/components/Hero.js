@@ -1,7 +1,9 @@
 import React from "react";
 import './Hero.css'
+import './Animations.css'
 import { Link } from "react-router-dom";
-import phoneDemo from '../assets/phoneDemo.png'
+import phoneLight from '../assets/lightPhoneDemo.png'
+import phoneDark from "../assets/darkPhoneDemo.png"
 import {ReactComponent as Arrow} from '../assets/Vectorarrow.svg'
 
 export default function Hero(props){
@@ -25,7 +27,7 @@ export default function Hero(props){
                         <Arrow className='arrow'/>
                     </Link>
                     <div className="hero-phone-img-container">
-                        <img loading='lazy' className='phone-demo-img' src={phoneDemo}/>
+                        <img loading='lazy' className='phone-demo-img' src={phoneLight}/>
                     </div>
                 </div>
             </div>  

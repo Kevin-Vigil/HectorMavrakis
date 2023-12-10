@@ -4,12 +4,6 @@
     height="13" 
     viewBox="0 0 14 13"
     xmlns="http://www.w3.org/2000/svg">
-    <style>
-        svg#svg-arrow path#path1 {fill: white}
-        @media (prefers-color-scheme: dark){
-            svg#svg-arrow path#path1 { fill: #1e1d1d}
-        }
-    </style>
     <path 
         id="path1"
         fill-rule="evenodd" 
