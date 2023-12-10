@@ -20,32 +20,22 @@ function Header(){
       document.documentElement.classList.toggle("dark-mode", state)
     }
 
+    function setDarkModeLocalStorage(state) {
+      localStorage.setItem("dark-mode", state);
+    }
+
     toggleDarkMode(localStorage.getItem("dark-mode") == "true")
 
     button.addEventListener("click", () => {
       darkModeState = !darkModeState
       toggleDarkMode(darkModeState)
+      setDarkModeLocalStorage(darkModeState);
     });
-
-
-    // const colorSwitchObject = document.getElementById("cSwitch")
-    
-    // colorSwitchObject.addEventListener("load", () =>{
-    //   const switchDoc = colorSwitchObject.contentDocument || colorSwitchObject.contentWindow.document;
-    //   const dis = document.querySelector("#switch-disabled")
-    //   const en = document.querySelector("#switch-enabled")
-      
-    //   dis.addEventListener("click", () =>{
-    //     switchDoc.getElementById("light-to-dark-circle").beginElement()
-    //   })
-    //   en.addEventListener("click", () =>{
-    //     switchDoc.getElementById("dark-to-light-circle").beginElement()
-    //     })
-    // })
-
     
   }
-  window.addEventListener("DOMContentLoaded", load);
+  window.addEventListener("DOMContentLoaded", ()=>{
+    load();
+  });
 
   
 
@@ -53,7 +43,7 @@ function Header(){
 
 
     return(
-        <>
+        <body className='preload'>
           <nav className='header-mobile'>
             <Link to='/' className='hec-mav-logo'>
               {/* <img src={logo} className='hec-logo'/> */}
@@ -83,7 +73,7 @@ function Header(){
             </div>
           </div>
 
-        </>
+        </body>
     )
 
     // return(

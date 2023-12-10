@@ -1,5 +1,3 @@
-
-
 @media only screen and (max-width: 720px){
     .header-mobile{
         display: flex;
@@ -21,13 +19,13 @@
 
 @media only screen and (min-width: 721px){
     .header{
+        opacity: 0;
         z-index: 999;
         margin: auto;
         display: flex;
-        opacity: 98%;
         backdrop-filter: blur(50%);
         position: fixed;
-        animation: genColorL 0.5s linear forwards;
+        animation: genColorL 0.5s linear forwards, pageLoad 0.5s 0.5s linear forwards;
         align-items: center;
         top: 0;
         width: 100%;
@@ -110,7 +108,7 @@ path#moon{
 
 
 .dark-mode .header{
-    animation: genColorD 0.5s linear forwards;
+    animation: genColorD 0.5s linear forwards, pageLoad 0.5s 0.5s linear forwards;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.12); */
 }
 
