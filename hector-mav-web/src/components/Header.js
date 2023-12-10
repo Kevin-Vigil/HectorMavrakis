@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import "./Header.css";
+import "./Animations.css"
 import {} from '@mui/material'
 
 import {ReactComponent as Logo} from '../assets/hmLogo.svg'
@@ -11,7 +12,7 @@ function Header(){
   function load(){
     let darkModeState = false;
     
-    const button = document.querySelector(".header-button-container")
+    const button = document.querySelector("#cSwitch")
 
     const useDark = window.matchMedia("(prefers-color-scheme: dark)")
 
@@ -76,9 +77,8 @@ function Header(){
                 <Link to='/brands' className='links'>BRANDS</Link>
                 <Link to='#projects' className='links'>PROJECTS</Link>
                 <Link to='/about' className='links'>ABOUT</Link>
-                <button className='header-button-container'>
-                  <ColorSwitch id='cSwitch' className='header-switch'/>
-                </button>
+                <ColorSwitch id='cSwitch' className='header-switch'/>
+             
               </div>
             </div>
           </div>
