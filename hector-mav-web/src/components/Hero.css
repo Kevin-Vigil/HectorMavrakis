@@ -11,11 +11,11 @@
 @keyframes load-in {
     0%{
         opacity: 0%;
-        transform: translateY(-20px);
+        
     }
     100%{
         opacity: 100%;
-        transform: translateY(20px);
+        transform: translateY(-20px);
     }
 }
 
@@ -30,6 +30,7 @@
     position: absolute;
     justify-content: center;
     align-items: center;
+    transform: translateY(20px);
     bottom: 300px;
     left: 0px;
     margin-left: -170px;
@@ -79,7 +80,7 @@
 }
 .statement{
     opacity: 0%;
-    transform: translateY(-20px);
+    transform: translateY(20px);
 
     justify-content: center;
     color: #1e1d1d;
@@ -97,7 +98,7 @@
 
 .envision{
     opacity: 0%;
-    transform: translateY(-20px);
+    transform: translateY(20px);
 
     color: #1e1d1d;
     text-align: center;
@@ -115,7 +116,7 @@
 
 .hero-purpose{
     opacity: 0%;
-    transform: translateY(-20px);
+    transform: translateY(20px);
 
     color: #1e1d1d;
     text-align: center;
@@ -131,7 +132,7 @@
 
 .hero-phone-img-container{
     opacity: 0%;
-    transform: translateY(-20px);
+    transform: translateY(20px);
 
     align-self: center;
     animation: load-in 0.75s 0.5s forwards;
@@ -140,7 +141,7 @@
 /*Project button*/
 .view-projects-container{
     opacity: 0%;
-    transform: translateY(-20px);
+    transform: translateY(20px);
 
     text-decoration-line: none;
     border-radius: 6px;
