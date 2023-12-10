@@ -7,9 +7,15 @@ import phoneDark from "../assets/darkPhoneDemo.png"
 import {ReactComponent as Arrow} from '../assets/Vectorarrow.svg'
 
 export default function Hero(props){
+    
+    function load(){
+        var animationEnd = "webkitAnimationEnd oanimationend oAnimationEnd msAnimationEnd animationend"
+    }
+
+    document.addEventListener("DOMContentLoaded",load)
     return(
         <>
-            <div className="hero-container">
+            <div className=" hero-container">
                 <div className="scroll-down">
                     <div className="line1"/>
                     <div className="scroll-text">SCROLL DOWN</div>
