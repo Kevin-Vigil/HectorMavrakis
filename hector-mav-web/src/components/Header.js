@@ -27,6 +27,7 @@ function Header(){
     toggleDarkMode(localStorage.getItem("dark-mode") == "true")
 
     button.addEventListener("click", () => {
+      document.documentElement.classList.toggle("light-mode", darkModeState)
       darkModeState = !darkModeState
       toggleDarkMode(darkModeState)
       setDarkModeLocalStorage(darkModeState);
@@ -43,37 +44,36 @@ function Header(){
 
 
     return(
-        <body className='preload'>
-          <nav className='header-mobile'>
-            <Link to='/' className='hec-mav-logo'>
-              {/* <img src={logo} className='hec-logo'/> */}
-              <Logo/>
-            </Link>
-            
-            <div className='navbar-mobile'>
-              <ColorSwitch className='header-switch'/>
-            </div>
-          </nav>
-
-
-
+      <>
+        <nav className='header-mobile'>
+          <Link to='/' className='hec-mav-logo'>
+            {/* <img src={logo} className='hec-logo'/> */}
+            <Logo/>
+          </Link>
           
-          <div className='header'>
-            <div className='nav-container'>
-              <Link to='/' className='hec-mav-logo'>
-                <Logo className='logo-svg'/>
-              </Link>
-              <div className='header-nav-box'>
-                <Link to='/brands' className='links'>BRANDS</Link>
-                <Link to='#projects' className='links'>PROJECTS</Link>
-                <Link to='/about' className='links'>ABOUT</Link>
-                <ColorSwitch id='cSwitch' className='header-switch'/>
-             
-              </div>
+          <div className='navbar-mobile'>
+            <ColorSwitch className='header-switch'/>
+          </div>
+        </nav>
+
+
+
+        
+        <div className='header'>
+          <div className='nav-container'>
+            <Link to='/' className='hec-mav-logo'>
+              <Logo className='logo-svg'/>
+            </Link>
+            <div className='header-nav-box'>
+              <Link to='/brands' className='links'>BRANDS</Link>
+              <Link to='#projects' className='links'>PROJECTS</Link>
+              <Link to='/about' className='links'>ABOUT</Link>
+              <ColorSwitch id='cSwitch' className='header-switch'/>
+            
             </div>
           </div>
-
-        </body>
+        </div>
+      </>
     )
 
     // return(

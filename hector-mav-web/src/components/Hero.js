@@ -9,13 +9,26 @@ import {ReactComponent as Arrow} from '../assets/Vectorarrow.svg'
 export default function Hero(props){
     
     function load(){
-        var animationEnd = "webkitAnimationEnd oanimationend oAnimationEnd msAnimationEnd animationend"
+        document.documentElement.classList.toggle("loadin", true)
+        
+        const aniEnd = document.querySelector(".scroll-down")
+        aniEnd.addEventListener("animationend", (event) =>{
+            if (event.animationName === 'load-in')
+                document.documentElement.classList.toggle("loadin", false)
+        })
+
+        
+
+
+
     }
 
     document.addEventListener("DOMContentLoaded",load)
+    
+
     return(
         <>
-            <div className=" hero-container">
+            <div className="hero-container">
                 <div className="scroll-down">
                     <div className="line1"/>
                     <div className="scroll-text">SCROLL DOWN</div>
@@ -30,7 +43,7 @@ export default function Hero(props){
                     <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
                     <Link to='#projects'className="view-projects-container">
                         <div className="view-projects-text">View projects</div>
-                        <Arrow className='arrow'/>
+                        <Arrow className='view-projects-arrow-svg'/>
                     </Link>
                     <div className="hero-phone-img-container">
                         <img loading='lazy' className='phone-demo-img' src={phoneLight}/>
