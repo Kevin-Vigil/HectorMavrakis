@@ -8,6 +8,7 @@ export default function Carousel(props){
                 <div className='subtitle'>Some of the brands that I've worked with.</div>
             </div>
             <div className='carousel'>
+                
 
             </div>
         </div>

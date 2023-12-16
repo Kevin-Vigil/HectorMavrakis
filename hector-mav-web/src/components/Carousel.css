@@ -25,14 +25,10 @@
     font: 700 30px/43px Mona Sans, sans-serif;
 }
 
-    .dark-mode *{
-        background-color: #1e1d1d;
-        color: white;
-    }
-    .dark-mode .text{
-        color: #FFFFFF;
-        opacity: 72%;
-    }
-    .dark-mode .subtitle{
-        color: white;
-    }
+.dark-mode .text{
+    animation: genColorD 0.5s linear forwards;
+    opacity: 72%;
+}
+.dark-mode .subtitle{
+    animation: genColorD 0.5s linear forwards;
+}
