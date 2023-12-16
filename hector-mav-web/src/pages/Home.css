@@ -25,9 +25,9 @@
 
 .light-mode #homepage{
     z-index: 0;
-    animation: lMode 0.5s linear forwards;
+    animation: lMode 0.25s linear forwards;
 }
 .dark-mode #homepage{
     z-index: 0;
-    animation: dMode 0.5s linear forwards;
+    animation: dMode 0.25s linear forwards;
 }

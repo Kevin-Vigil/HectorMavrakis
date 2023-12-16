@@ -1,7 +1,10 @@
 .caro-container{
     display: flex;
-    margin-top: 85px;
+    flex-direction: column;
+    margin-top: 65px;
     justify-content: center;
+    align-self: center;
+    width: 100%;
 }
 
 .caro-text{
@@ -21,14 +24,28 @@
 .subtitle{
     align-self: center;
     color: #1e1d1d;
-    width: 100%;
     font: 700 30px/43px Mona Sans, sans-serif;
+}
+.carousel{
+    overflow-x: hidden;
 }
 
 .dark-mode .text{
-    animation: genColorD 0.5s linear forwards;
+    animation: genColorD 0.25s linear forwards;
     opacity: 72%;
 }
 .dark-mode .subtitle{
-    animation: genColorD 0.5s linear forwards;
+    animation: genColorD 0.25s linear forwards;
+}
+
+.card-box{
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    width: 305px;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 60px;
+}
+.caro-svg{
 }
