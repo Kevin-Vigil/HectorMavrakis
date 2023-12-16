@@ -1,10 +1,31 @@
 import React from "react";
 import './Hero.css'
+import './Animations.css'
 import { Link } from "react-router-dom";
-import phoneDemo from '../assets/phoneDemo.png'
+import phoneLight from '../assets/lightPhoneDemo.png'
+import phoneDark from "../assets/darkPhoneDemo.png"
 import {ReactComponent as Arrow} from '../assets/Vectorarrow.svg'
 
 export default function Hero(props){
+    
+    function load(){
+        document.documentElement.classList.toggle("loadin", true)
+        
+        const aniEnd = document.querySelector(".scroll-down")
+        aniEnd.addEventListener("animationend", (event) =>{
+            if (event.animationName === 'load-in')
+                document.documentElement.classList.toggle("loadin", false)
+        })
+
+        
+
+
+
+    }
+
+    document.addEventListener("DOMContentLoaded",load)
+    
+
     return(
         <>
             <div className="hero-container">
@@ -22,10 +43,10 @@ export default function Hero(props){
                     <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
                     <Link to='#projects'className="view-projects-container">
                         <div className="view-projects-text">View projects</div>
-                        <Arrow className='arrow'/>
+                        <Arrow className='view-projects-arrow-svg'/>
                     </Link>
                     <div className="hero-phone-img-container">
-                        <img loading='lazy' className='phone-demo-img' src={phoneDemo}/>
+                        <img loading='lazy' className='phone-demo-img' src={phoneLight}/>
                     </div>
                 </div>
             </div>  

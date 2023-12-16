@@ -1,6 +1,7 @@
 import Carousel from "../components/Carousel"
 import Hero from "../components/Hero"
 import './Home.css'
+import '../components/Animations.css'
 
 export default function Home(){
 
@@ -9,7 +10,8 @@ export default function Home(){
     }
 
     return(
-    <>
+    <div id="homepage">
+    
         <Hero/>
 
         <Carousel/>
@@ -65,7 +67,7 @@ export default function Home(){
         <p>
             mobile test
         </p>
-    </>
+    </div>
     )
 
 }
