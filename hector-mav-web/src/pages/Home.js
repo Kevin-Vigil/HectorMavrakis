@@ -10,7 +10,7 @@ export default function Home(){
     }
 
     return(
-    <>
+    <div id="homepage">
     
         <Hero/>
 
@@ -67,7 +67,7 @@ export default function Home(){
         <p>
             mobile test
         </p>
-    </>
+    </div>
     )
 
 }

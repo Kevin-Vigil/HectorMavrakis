@@ -133,13 +133,16 @@
     flex-basis: 0%;
     flex-direction: column;
     max-width: 100%;
+    z-index: 1;
     /*  */
     
 }
 .light-mode .hero-container{
+    z-index: 1;
     animation: genColorL 0.5s linear forwards
 }
 .loadin .hero-container{
+    z-index: 1;
     opacity: 0;
     animation: load-in 0.5s linear forwards;
 }
@@ -400,6 +403,7 @@
     }
     
     .dark-mode .hero-content{
+        z-index: 1;
         align-self: stretch;
         display: flex;
         flex-grow: 1;

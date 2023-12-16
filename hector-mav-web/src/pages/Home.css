@@ -1,0 +1,31 @@
+@keyframes dMode {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: #1e1d1d;
+    }
+    
+}
+
+@keyframes lMode {
+    0%{
+        background-color: #1e1d1d;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+#homepage{
+    z-index: 0;
+}
+
+.light-mode #homepage{
+    z-index: 0;
+    animation: lMode 0.5s linear forwards;
+}
+.dark-mode #homepage{
+    z-index: 0;
+    animation: dMode 0.5s linear forwards;
+}
