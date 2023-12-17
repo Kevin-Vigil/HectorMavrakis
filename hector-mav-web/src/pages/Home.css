@@ -20,6 +20,7 @@
 #homepage{
     z-index: 0;
     display: flex;
+    gap: 85px;
     flex-direction: column;
 }
 
