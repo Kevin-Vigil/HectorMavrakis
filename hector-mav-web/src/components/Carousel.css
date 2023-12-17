@@ -6,6 +6,7 @@
     align-self: center;
     width: 100%;
     overflow-x: hidden;
+    gap: 85px;
 }
 
 .caro-text{
@@ -17,15 +18,14 @@
 .text{
     align-self: center;
     color: rgba(30, 29, 29, 0.72);
-    font-size: 24;
     text-transform: uppercase;
     white-space: nowrap;
-    font: 600 14px/24px Mona Sans, sans-serif;
+    font: 600 24px/24px 'Mona Sans', sans-serif;
 }
 .subtitle{
     align-self: center;
     color: #1e1d1d;
-    font: 700 30px/43px Mona Sans, sans-serif;
+    font: 700 42px/43px 'Mona Sans', sans-serif;
 }
 
 
