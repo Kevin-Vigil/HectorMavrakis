@@ -1,16 +1,4 @@
 /* animations */
-@keyframes load-in {
-    0%{
-        opacity: 0%;
-        transform: translateY(20px);
-        
-    }
-    100%{
-        opacity: 100%;
-        transform: translateY(0);
-    }
-}
-
 @keyframes heroLoad {
     0%{
         opacity: 0%;
@@ -32,10 +20,10 @@
 .light-mode .hero-container{
     animation: genColorL 0.25s linear forwards;
 }
-.loadin .hero-container{
+/* .loadin .hero-container{
     opacity: 0%;
     animation: heroLoad 0.5s 0.25s linear forwards;
-}
+} */
 
 
 /* special animations for scroll box */
