@@ -1,0 +1,24 @@
+.loadin #projects-list-textbox{
+    animation: load-in 0.5s forwards;
+}
+
+#projects-list-textbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.loadin #projects-list-header{
+    animation: genColorL 0.25s linear forwards;
+}
+
+#projects-list-header{
+
+    opacity: 72%;
+    align-self: center;
+}
+.light-mode #projects-list-header{
+    animation: genColorL 0.25s linear forwards;
+}
+.dark-mode #projects-list-header{
+    animation: genColorD 0.25s linear forwards;
+}

@@ -2,6 +2,7 @@ import Carousel from "../components/Carousel"
 import Hero from "../components/Hero"
 import './Home.css'
 import '../components/Animations.css'
+import Projects from "../components/Projects"
 
 export default function Home(){
 
@@ -15,6 +16,8 @@ export default function Home(){
         <Hero/>
 
         <Carousel/>
+
+        <Projects/>
 
         <div className="placeholder" style={divStyle_placeholder}>
 
