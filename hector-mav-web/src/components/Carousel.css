@@ -17,14 +17,15 @@
 
 .text{
     align-self: center;
-    color: rgba(30, 29, 29, 0.72);
+    color: #151515;
+    opacity: 72%;
     text-transform: uppercase;
     white-space: nowrap;
     font: 600 24px/24px 'Mona Sans', sans-serif;
 }
 .subtitle{
     align-self: center;
-    color: #1e1d1d;
+    color: #151515;
     font: 700 42px/43px 'Mona Sans', sans-serif;
 }
 
@@ -47,8 +48,16 @@
     
 }
 
-.carousel{
+.carousel-box{
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    align-self: center;
     width: calc(325px*12);
+}
+
+.carousel{
+    width: calc(325px*16);
     overflow-x: hidden;
     display: flex;
     gap: 20px;
