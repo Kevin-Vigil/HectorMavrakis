@@ -1,184 +1,202 @@
-.caro-container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 65px;
-    justify-content: center;
-    align-self: center;
-    width: 100%;
-    overflow-x: hidden;
-    gap: 85px;
+.caro-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  overflow-x: hidden;
+  gap: 85px;
 }
 
-.caro-text{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.caro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.text{
-    align-self: center;
-    color: #151515;
-    opacity: 72%;
-    text-transform: uppercase;
-    white-space: nowrap;
-    font: 600 24px/24px 'Mona Sans', sans-serif;
+.text {
+  align-self: center;
+  color: #151515;
+  opacity: 72%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font: 600 24px/24px 'Mona Sans', sans-serif;
 }
-.subtitle{
-    align-self: center;
-    color: #151515;
-    font: 700 42px/43px 'Mona Sans', sans-serif;
+
+.subtitle {
+  align-self: center;
+  color: #151515;
+  font: 700 42px/43px 'Mona Sans', sans-serif;
 }
 
 
-.dark-mode .text{
-    animation: genColorD 0.25s linear forwards;
-    opacity: 72%;
+.dark-mode .text {
+  animation: genColorD 0.25s linear forwards;
+  opacity: 72%;
 }
-.dark-mode .subtitle{
-    animation: genColorD 0.25s linear forwards;
+
+.dark-mode .subtitle {
+  animation: genColorD 0.25s linear forwards;
 }
 
 @keyframes carousel-move {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-325px * 4));
-    }
-    
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-325px * 4));
+  }
+
 }
 
-.carousel-box{
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    align-self: center;
-    width: calc(325px*12);
+.carousel-box {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  align-self: center;
+  width: calc(325px*12);
 }
 
-.carousel{
-    width: calc(325px*16);
-    overflow-x: hidden;
-    display: flex;
-    gap: 20px;
-    animation: carousel-move 30s linear infinite;
+.carousel {
+  width: calc(325px*16);
+  overflow-x: hidden;
+  display: flex;
+  gap: 20px;
+  animation: carousel-move 30s linear infinite;
 }
 
-.card-box{
-    border-radius: 10px;
-    background-color: #f8f8f8;
-    min-width: 305px;
-    min-height: 135px;
-    width: 305px;
-    height: 135px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.card-box:hover{
-    
+.card-box {
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  min-width: 305px;
+  min-height: 135px;
+  width: 305px;
+  height: 135px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.light-mode .card-box{
-    animation: cardColorL 0.25s linear forwards;
+.card-box:hover {}
+
+.light-mode .card-box {
+  animation: cardColorL 0.25s linear forwards;
 }
-.dark-mode .card-box{
-    animation: cardColorD 0.25s linear forwards;
+
+.dark-mode .card-box {
+  animation: cardColorD 0.25s linear forwards;
 }
 
 
 
 /* UPS SVGs */
-.ups-svg{
-    transform: scale(.5) translateX(-20px);
-    margin: auto;
-    align-self: center;
-    height: 100%;
+.ups-svg {
+  transform: scale(.5) translateX(-20px);
+  margin: auto;
+  align-self: center;
+  height: 100%;
 }
-.light-mode .ups-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.light-mode .ups-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
-.dark-mode .ups-svg{
-    animation: fade-out-svg-change 0.25s linear forwards;
+
+.dark-mode .ups-svg {
+  animation: fade-out-svg-change 0.25s linear forwards;
 }
 
 /* .loadin .ups-d-svg{
     animation: fade-out-svg-change 0.25s linear forwards;
 } */
-.ups-d-svg{
-    animation: fade-out-svg-change 0.25s linear forwards;
-    margin: auto;
-    height: 100%;
-    transform: scale(1.07) translateY(-130px) translateX(124px);
+.ups-d-svg {
+  animation: fade-out-svg-change 0.25s linear forwards;
+  margin: auto;
+  height: 100%;
+  transform: scale(1.07) translateY(-130px) translateX(124px);
 }
-.dark-mode .ups-d-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.dark-mode .ups-d-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
 
 /* Disney SVGS */
-.disney-svg{
-    height: 100%;
-    transform: translateX(-170px);
-    margin: auto;
+.disney-svg {
+  height: 100%;
+  transform: translateX(-170px);
+  margin: auto;
 }
-.light-mode .disney-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.light-mode .disney-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
-.dark-mode .disney-svg{
-    animation: fade-out-svg-change 0.25s linear forwards;
+
+.dark-mode .disney-svg {
+  animation: fade-out-svg-change 0.25s linear forwards;
 }
-.disney-d-svg{
-    margin: auto;
-    height: 100%;
-    transform: scale(0.75) translateY(-185px) translateX(97px);
-    animation: fade-out-svg-change 0.25s linear forwards;
+
+.disney-d-svg {
+  margin: auto;
+  height: 100%;
+  transform: scale(0.75) translateY(-185px) translateX(97px);
+  animation: fade-out-svg-change 0.25s linear forwards;
 }
-.dark-mode .disney-d-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.dark-mode .disney-d-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
 
 /* Keurig SVGs */
-.keurig-svg{
-    transform: scale(0.3) translateX(-175px) translateY(25px);
-    height: 100%;
-    align-self: center;
-    margin: auto;
+.keurig-svg {
+  transform: scale(0.3) translateX(-175px) translateY(25px);
+  height: 100%;
+  align-self: center;
+  margin: auto;
 }
-.light-mode .keurig-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.light-mode .keurig-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
-.dark-mode .keurig-svg{
-    animation: fade-out-svg-change 0.25s linear forwards;
+
+.dark-mode .keurig-svg {
+  animation: fade-out-svg-change 0.25s linear forwards;
 }
-.keurig-d-svg{
-    margin: auto;
-    height: 100%;
-    transform: scale(0.95) translateY(-146px) translateX(95px);
-    animation: fade-out-svg-change 0.25s linear forwards;
+
+.keurig-d-svg {
+  margin: auto;
+  height: 100%;
+  transform: scale(0.95) translateY(-146px) translateX(95px);
+  animation: fade-out-svg-change 0.25s linear forwards;
 }
-.dark-mode .keurig-d-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.dark-mode .keurig-d-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
 
 /* Discover SVGs */
-.discover-svg{
-    align-self: center;
-    margin: auto;
-    height: 100%;
-    transform: scale(1.3) translateX(80px);
+.discover-svg {
+  align-self: center;
+  margin: auto;
+  height: 100%;
+  transform: scale(1.3) translateX(80px);
 }
-.light-mode .discover-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.light-mode .discover-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
-.dark-mode .discover-svg{
-    animation: fade-out-svg-change 0.25s linear forwards;
+
+.dark-mode .discover-svg {
+  animation: fade-out-svg-change 0.25s linear forwards;
 }
-.discover-d-svg{
-    margin: auto;
-    height: 100%;
-    transform: scale(.71) translateX(-50px) translateY(1px);
-    animation: fade-out-svg-change 0.25s linear forwards;
+
+.discover-d-svg {
+  margin: auto;
+  height: 100%;
+  transform: scale(.71) translateX(-50px) translateY(1px);
+  animation: fade-out-svg-change 0.25s linear forwards;
 }
-.dark-mode .discover-d-svg{
-    animation: fade-in-svg-change 0.25s linear forwards;
+
+.dark-mode .discover-d-svg {
+  animation: fade-in-svg-change 0.25s linear forwards;
 }
