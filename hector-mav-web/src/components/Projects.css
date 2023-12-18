@@ -176,8 +176,9 @@
 
 .project-arrow-icon {
   position: absolute;
-  margin-top: 27px;
+  top: 27px;
   right: 26px;
+  z-index: 5;
 }
 
 .project-title {
@@ -198,6 +199,7 @@
   margin-top: 70px;
   gap: 20px;
   padding-right: 48px;
+  z-index: 2;
 }
 
 .project-img {
@@ -248,13 +250,7 @@
 
 
 /* Discover */
-#discover-textbox {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-left: 48px;
-  margin-top: 70px
-}
+
 
 /* Fund */
 #fund-container {
