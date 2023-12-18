@@ -9,13 +9,13 @@ import Header from './components/Header';
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
       <div className='container'>
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home />} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
