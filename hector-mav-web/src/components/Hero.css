@@ -218,11 +218,11 @@
 @keyframes arrowColorL {
     0%{
         background-color: white;
-        fill: #1e1d1d;
-        color: #1e1d1d;
+        fill: #151515;
+        color: #151515;
     }
     100%{
-        background-color: #1e1d1d;
+        background-color: #151515;
         fill: white;
         color: white;
     }
@@ -230,20 +230,20 @@
 }
 @keyframes arrowColorD {
     0%{
-        background-color: #1e1d1d;
+        background-color: #151515;
         fill: white;
         color: white;
     }
     100%{
         background-color: white;
-        fill:#1e1d1d;
-        color: #1e1d1d;
+        fill:#151515;
+        color: #151515;
     }
     
 }
 
 .view-projects-container{
-    background-color: #1e1d1d;
+    background-color: #151515;
     z-index: 2;
     text-decoration-line: none;
     border-radius: 6px;
