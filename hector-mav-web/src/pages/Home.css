@@ -3,14 +3,14 @@
         background-color: white;
     }
     100%{
-        background-color: #1e1d1d;
+        background-color: #151515;
     }
     
 }
 
 @keyframes lMode {
     0%{
-        background-color: #1e1d1d;
+        background-color: #151515;
     }
     100%{
         background-color: white;

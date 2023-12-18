@@ -20,57 +20,6 @@ export default function Home(){
 
         <Projects/>
 
-        <div className="placeholder" style={divStyle_placeholder}>
-
-        </div>
-        <h1>
-            HOME
-        </h1>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
     </div>
     )
 
