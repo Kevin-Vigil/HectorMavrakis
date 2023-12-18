@@ -130,7 +130,7 @@
     }
     100%{
         background-color: #F8F8F8;
-        color: #1e1d1d;
+        color: #151515;
         fill: black;
     }
 }
@@ -142,7 +142,7 @@
     }
     100%{
         background-color: #292929;
-        color: #1e1d1d;
+        color: #151515;
         fill: black;
     }
 }
@@ -150,24 +150,24 @@
 @keyframes genColorD {
     0%{
         background-color: white;
-        color: #1e1d1d;
+        color: #151515;
         fill: black;
     }
     100%{
-        background-color: #1e1d1d;
+        background-color: #151515;
         color: white;
         fill: white;
     }
 }
 @keyframes genColorL {
     0%{
-        background-color: #1e1d1d;
+        background-color: #151515;
         color: white;
         fill: white;
     }
     100%{
         background-color: white;
-        color: #1e1d1d;
+        color: #151515;
         fill: black;
     }
 }
