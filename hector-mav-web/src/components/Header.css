@@ -1,151 +1,169 @@
-@media only screen and (max-width: 720px){
-    .header-mobile{
-        display: flex;
-        overflow: scroll;
-        opacity: 98%;
-        position: fixed;
-        background-color: aqua;
-        align-items: center;
-        top: 0;
-        width: 100%;
-        height: 75px;
+@media only screen and (max-width: 720px) {
+  .header-mobile {
+    display: flex;
+    overflow: scroll;
+    opacity: 98%;
+    position: fixed;
+    background-color: aqua;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 75px;
 
-    }
-    .header{
-        display: none;
-    }
+  }
+
+  .header {
+    display: none;
+  }
 
 }
 
-@media only screen and (min-width: 721px){
-    .header{
-        opacity: 0;
-        z-index: 999;
-        margin: auto;
-        display: flex;
-        backdrop-filter: blur(50%);
-        position: fixed;
-        animation: genColorL 0.25s linear forwards, pageLoad 0.5s 0.5s linear forwards;
-        align-items: center;
-        top: 0;
-        width: 100%;
-        height: 75px;
-        justify-content: space-between;
-        /* border-bottom: 1px solid rgba(30,29,29,.12); */
-    }
-    .header-mobile{
-        display: none;
-    }
+@media only screen and (min-width: 721px) {
+  .header {
+    opacity: 0;
+    z-index: 999;
+    margin: auto;
+    display: flex;
+    backdrop-filter: blur(50%);
+    position: fixed;
+    animation: genColorL 0.25s linear forwards, pageLoad 0.5s 0.5s linear forwards;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgba(30,29,29,.12); */
+  }
+
+  .header-mobile {
+    display: none;
+  }
 
 
 }
 
 /* header content */
-.nav-container{
-    display: flex;
-    margin: auto;
-    width: 85%;
-    align-items: center;
-    justify-content: space-between;
-    animation: genColorL 0.25s linear forwards;
+.nav-container {
+  display: flex;
+  margin: auto;
+  width: 85%;
+  align-items: center;
+  justify-content: space-between;
+  animation: genColorL 0.25s linear forwards;
 }
-.header-nav-box{
-    align-self: center;
-    display: flex;
-    align-items: flex-end;
-    gap: 1.25rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: -20px;
-    animation: genColorL 0.25s linear forwards;
-    
-    
-}
-.hec-mav-logo{
-    animation: genColorL 0.25s linear forwards;
-}
-.links{
-    color: #151515;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1rem;
-    text-decoration-line: none;
-    align-self: center;
-    margin-top: auto;
-    margin-bottom: auto;
 
-    animation: genColorL 0.25s linear forwards;
+.header-nav-box {
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.25rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: -20px;
+  animation: genColorL 0.25s linear forwards;
+
+
+}
+
+.hec-mav-logo {
+  animation: genColorL 0.25s linear forwards;
+}
+
+.links {
+  color: #151515;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-decoration-line: none;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  animation: genColorL 0.25s linear forwards;
 }
 
 /* dark mode toggle */
-.header-switch{
-    cursor: pointer;
-    /* animation: switch-to-light 0.5s 0s 1 normal forwards; */
-    align-self: center;
-    animation: genColorL 0.25s linear forwards;
-    
+.header-switch {
+  cursor: pointer;
+  /* animation: switch-to-light 0.5s 0s 1 normal forwards; */
+  align-self: center;
+  animation: genColorL 0.25s linear forwards;
+
 }
+
 rect#container {
-    animation: switchColorL 0.25s linear forwards;
+  animation: switchColorL 0.25s linear forwards;
 }
+
 circle#circ {
-    fill: #F6C34A;
-    animation: fade-in 0.25s linear forwards;
-}
-circle#dCirc{
-    animation: fade-out 0.25s linear forwards;
-    fill: #4C6FB6;
-}
-path#sun{
-    animation: sunMoonColorFadeIn 0.25s linear forwards;
-}
-path#moon{
-    animation: sunMoonColorFadeOut 0.25s linear forwards;
+  fill: #F6C34A;
+  animation: fade-in 0.25s linear forwards;
 }
 
+circle#dCirc {
+  animation: fade-out 0.25s linear forwards;
+  fill: #4C6FB6;
+}
+
+path#sun {
+  animation: sunMoonColorFadeIn 0.25s linear forwards;
+}
+
+path#moon {
+  animation: sunMoonColorFadeOut 0.25s linear forwards;
+}
 
 
 
 
-.dark-mode .header{
-    animation: genColorD 0.25s linear forwards, pageLoad 0.5s 0.5s linear forwards;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.12); */
+
+.dark-mode .header {
+  animation: genColorD 0.25s linear forwards, pageLoad 0.5s 0.5s linear forwards;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.12); */
 }
 
 /* Hector Mavrakis Logo */
-.dark-mode .hec-mav-logo{
-    animation: genColorD 0.25s linear forwards;
-}
-.dark-mode .logo-svg{
-    animation: genColorD 0.25s linear forwards;
+.dark-mode .hec-mav-logo {
+  animation: genColorD 0.25s linear forwards;
 }
 
-.dark-mode .links{
-    animation: genColorD 0.25s linear forwards;
+.dark-mode .logo-svg {
+  animation: genColorD 0.25s linear forwards;
 }
-.dark-mode .nav-container{
-    animation: genColorD 0.25s linear forwards;
+
+.dark-mode .links {
+  animation: genColorD 0.25s linear forwards;
 }
-.dark-mode .header-nav-box{
-    animation: genColorD 0.25s linear forwards;
+
+.dark-mode .nav-container {
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .header-nav-box {
+  animation: genColorD 0.25s linear forwards;
 }
 
 /* d mode switch */
-.dark-mode .header-switch{
-    animation: genColorD 0.25s linear forwards;
+.dark-mode .header-switch {
+  animation: genColorD 0.25s linear forwards;
 }
-.dark-mode rect#container{
-    animation: switchColorD 0.25s linear forwards;
+
+.dark-mode rect#container {
+  animation: switchColorD 0.25s linear forwards;
 }
-.dark-mode circle#circ{
-    animation: fade-out 0.25s linear forwards;
+
+.dark-mode circle#circ {
+  animation: fade-out 0.25s linear forwards;
 }
-.dark-mode circle#dCirc{
-    animation: fade-in 0.25s linear forwards;
+
+.dark-mode circle#dCirc {
+  animation: fade-in 0.25s linear forwards;
 }
-.dark-mode path#sun{
-    animation: sunMoonColorFadeOut 0.25s linear forwards;
+
+.dark-mode path#sun {
+  animation: sunMoonColorFadeOut 0.25s linear forwards;
 }
-.dark-mode path#moon{
-    animation: sunMoonColorFadeIn 0.25s linear forwards;
+
+.dark-mode path#moon {
+  animation: sunMoonColorFadeIn 0.25s linear forwards;
 }
