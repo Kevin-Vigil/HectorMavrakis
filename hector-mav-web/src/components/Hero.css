@@ -1,25 +1,28 @@
 /* animations */
 @keyframes heroLoad {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
 
-.hero-container{
-    z-index: 5;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-top: 100px;
-    
+.hero-container {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 100px;
+
 }
-.light-mode .hero-container{
-    animation: genColorL 0.25s linear forwards;
+
+.light-mode .hero-container {
+  animation: genColorL 0.25s linear forwards;
 }
+
 /* .loadin .hero-container{
     opacity: 0%;
     animation: heroLoad 0.5s 0.25s linear forwards;
@@ -28,270 +31,293 @@
 
 /* special animations for scroll box */
 @keyframes lineColorL {
-    0%{
-        color: white;
-        fill: white;
-    }
-    100%{
-        color: #D9D9D9;
-        fill: #D9D9D9;
-    }
-    
+  0% {
+    color: white;
+    fill: white;
+  }
+
+  100% {
+    color: #D9D9D9;
+    fill: #D9D9D9;
+  }
+
 }
+
 @keyframes lineColorD {
-    0%{
-        color: #D9D9D9;
-        fill: #D9D9D9;
-    }
-    100%{
-        fill: white;
-        color: white;
-    }
-    
+  0% {
+    color: #D9D9D9;
+    fill: #D9D9D9;
+  }
+
+  100% {
+    fill: white;
+    color: white;
+  }
+
 }
 
 /* scroll container */
-.scroll-down{
-    display: flex;
-    flex-direction: row;
-    rotate: 90deg;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    
-    background: none;
-    bottom: 340px;
-    left: 0px;
-    margin-left: -170px;
-    gap: 20px;
-    z-index: 99;
+.scroll-down {
+  display: flex;
+  flex-direction: row;
+  rotate: 90deg;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  bottom: 340px;
+  left: 0px;
+  margin-left: -170px;
+  gap: 20px;
+  z-index: 99;
 }
-.light-mode .scroll-down{
-    animation: lineColorL 0.25s linear forwards;
+
+.light-mode .scroll-down {
+  animation: lineColorL 0.25s linear forwards;
 }
-.loadin .scroll-down{
-    opacity: 0%;
-    transform: translateY(20px);
-    animation: load-in 0.5s 1.25s linear forwards; 
+
+.loadin .scroll-down {
+  opacity: 0%;
+  transform: translateY(20px);
+  animation: load-in 0.5s 1.25s linear forwards;
 }
 
 
-.line1{
-    background: none;
-    border-bottom: 3px solid #D9D9D9;
-    width: 128px;
-    height: 3px;
-    animation: lineColorL 0.25s linear forwards;
+.line1 {
+  background: none;
+  border-bottom: 3px solid #D9D9D9;
+  width: 128px;
+  height: 3px;
+  animation: lineColorL 0.25s linear forwards;
 }
 
-.scroll-text{
-    background: none;
-    transform: rotate(180deg);
-    animation: genColorL 0.25s linear forwards;
+.scroll-text {
+  background: none;
+  transform: rotate(180deg);
+  animation: genColorL 0.25s linear forwards;
 }
-.line2{
-    z-index: 2;
-    background: none;
-    border-bottom: 3px solid #D9D9D9;
-    width: 128px;
-    height: 3px;
-    animation: lineColorL 0.25s linear forwards;
+
+.line2 {
+  z-index: 2;
+  background: none;
+  border-bottom: 3px solid #D9D9D9;
+  width: 128px;
+  height: 3px;
+  animation: lineColorL 0.25s linear forwards;
 
 }
-.arrowhead{
-    background: none;
-    border: solid #D9D9D9;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 7px;
-    rotate: -45deg;
-    margin-left: -17px;
-    margin-top: 2px;
-    animation: lineColorL 0.25s linear forwards;
+
+.arrowhead {
+  background: none;
+  border: solid #D9D9D9;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+  rotate: -45deg;
+  margin-left: -17px;
+  margin-top: 2px;
+  animation: lineColorL 0.25s linear forwards;
 }
 
 
 
 /* hero content */
 
-.hero-content{
-    align-self: stretch;
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0%;
-    flex-direction: column;
-    max-width: 100%;
-    z-index: 1;
-    /*  */
-    
+.hero-content {
+  align-self: stretch;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0%;
+  flex-direction: column;
+  max-width: 100%;
+  z-index: 1;
+  /*  */
+
 }
-.light-mode .hero-container{
-    z-index: 1;
-    animation: genColorL 0.25s linear forwards
+
+.light-mode .hero-container {
+  z-index: 1;
+  animation: genColorL 0.25s linear forwards
 }
-.loadin .hero-container{
-    z-index: 1;
-    opacity: 0;
-    animation: load-in 0.5s 0.25s linear forwards;
+
+.loadin .hero-container {
+  z-index: 1;
+  opacity: 0;
+  animation: load-in 0.5s 0.25s linear forwards;
 }
-.statement{
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    align-self: center;
-    max-width: 596px;
-    font: 700 1.25vmax/68px Mona Sans, -apple-system, Roboto, Helvetica,
+
+.statement {
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: center;
+  max-width: 596px;
+  font: 700 1.25vmax/68px Mona Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
 
-    
+
 
 }
-.light-mode .statement{
-    animation: genColorL 0.25s linear forwards;
-}
-.loadin .statement{
-    opacity: 0%;
-    transform: translateY(20px);
-    animation: load-in 0.5s 0.25s linear forwards;
+
+.light-mode .statement {
+  animation: genColorL 0.25s linear forwards;
 }
 
-.envision{
-    text-align: center;
-    text-transform: uppercase;
-    font: 800 171px/102px Mona Sans, -apple-system, Roboto, Helvetica,
+.loadin .statement {
+  opacity: 0%;
+  transform: translateY(20px);
+  animation: load-in 0.5s 0.25s linear forwards;
+}
+
+.envision {
+  text-align: center;
+  text-transform: uppercase;
+  font: 800 171px/102px Mona Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
-    max-width: 100%;
-    font-size: 8vmax;
-    line-height: 26px;
-    margin-top: 3.5vmax;
+  max-width: 100%;
+  font-size: 8vmax;
+  line-height: 26px;
+  margin-top: 3.5vmax;
 
 
 }
-.light-mode .envision{
-    animation: genColorL 0.25s linear forwards;
+
+.light-mode .envision {
+  animation: genColorL 0.25s linear forwards;
 }
-.loadin .envision{
-    opacity: 0%;
-    transform: translateY(20px);
-    animation: load-in 0.5s 0.25s linear forwards;
+
+.loadin .envision {
+  opacity: 0%;
+  transform: translateY(20px);
+  animation: load-in 0.5s 0.25s linear forwards;
 }
 
 
-.hero-purpose{
-    
-    
-    text-align: center;
-    align-self: center;
-    max-width: 515px;
-    font: 500 1vmax/28px Mona Sans, -apple-system, Roboto, Helvetica,
+.hero-purpose {
+
+
+  text-align: center;
+  align-self: center;
+  max-width: 515px;
+  font: 500 1vmax/28px Mona Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
-    max-width: 100%;
-    margin-top: 3vmax;
+  max-width: 100%;
+  margin-top: 3vmax;
 
-     
-}
-.light-mode .hero-purpose{
-    animation: genColorL 0.25s linear forwards;
-}
-.loadin .hero-purpose{
-    opacity: 0%;
-    transform: translateY(20px);
-    animation: load-in 0.5s 1.25s linear forwards;
+
 }
 
-.hero-phone-img-container{
-    align-self: center;
-    margin-top: -60px;
-    
+.light-mode .hero-purpose {
+  animation: genColorL 0.25s linear forwards;
 }
-.light-mode .hero-phone-img-container{
-    animation: genColorL 0.25s linear forwards;
+
+.loadin .hero-purpose {
+  opacity: 0%;
+  transform: translateY(20px);
+  animation: load-in 0.5s 1.25s linear forwards;
 }
-.loadin .hero-phone-img-container{
-    opacity: 0%;
-    transform: translateY(20px);
-    animation: load-in 0.25s 1.1s linear forwards; 
+
+.hero-phone-img-container {
+  align-self: center;
+  margin-top: -60px;
+
+}
+
+.light-mode .hero-phone-img-container {
+  animation: genColorL 0.25s linear forwards;
+}
+
+.loadin .hero-phone-img-container {
+  opacity: 0%;
+  transform: translateY(20px);
+  animation: load-in 0.25s 1.1s linear forwards;
 }
 
 /*Project button*/
 /* animations for arrow svg */
 @keyframes arrowColorL {
-    0%{
-        background-color: white;
-        fill: #151515;
-        color: #151515;
-    }
-    100%{
-        background-color: #151515;
-        fill: white;
-        color: white;
-    }
-    
-}
-@keyframes arrowColorD {
-    0%{
-        background-color: #151515;
-        fill: white;
-        color: white;
-    }
-    100%{
-        background-color: white;
-        fill:#151515;
-        color: #151515;
-    }
-    
-}
+  0% {
+    background-color: white;
+    fill: #151515;
+    color: #151515;
+  }
 
-.view-projects-container{
+  100% {
     background-color: #151515;
-    z-index: 2;
-    text-decoration-line: none;
-    border-radius: 6px;
-    align-self: center;
-    display: flex;
-    width: 185px;
-    max-width: 100%;
-    align-items: start;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 30px;
+    fill: white;
+    color: white;
+  }
+
 }
 
-.light-mode .view-projects-container{
-    animation: arrowColorL 0.25s linear forwards;
-}
-.loadin .view-projects-container{
-    opacity: 0;
-    animation: load-in 0.5s 1.1s linear forwards;
+@keyframes arrowColorD {
+  0% {
+    background-color: #151515;
+    fill: white;
+    color: white;
+  }
+
+  100% {
+    background-color: white;
+    fill: #151515;
+    color: #151515;
+  }
+
 }
 
-.view-projects-text{
-    animation: arrowColorL 0.25s linear forwards;
-    font: 500 16px/28px Mona Sans, -apple-system, Roboto, Helvetica,
+.view-projects-container {
+  background-color: #151515;
+  z-index: 2;
+  text-decoration-line: none;
+  border-radius: 6px;
+  align-self: center;
+  display: flex;
+  width: 185px;
+  max-width: 100%;
+  align-items: start;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+
+.light-mode .view-projects-container {
+  animation: arrowColorL 0.25s linear forwards;
+}
+
+.loadin .view-projects-container {
+  opacity: 0;
+  animation: load-in 0.5s 1.1s linear forwards;
+}
+
+.view-projects-text {
+  animation: arrowColorL 0.25s linear forwards;
+  font: 500 16px/28px Mona Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
-    margin: auto;
+  margin: auto;
 
 }
 
-.view-projects-arrow-svg{
-    margin: auto;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    animation: arrowColorL 0.25s linear forwards;
-    
+.view-projects-arrow-svg {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  animation: arrowColorL 0.25s linear forwards;
+
 }
 
-.arrow{
-    margin: auto;
-    background: none;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    
+.arrow {
+  margin: auto;
+  background: none;
+  display: flex;
+  align-items: center;
+  align-self: center;
+
 }
-.light-mode .arrow{
-    animation: genColorL 0.25s linear forwards;
+
+.light-mode .arrow {
+  animation: genColorL 0.25s linear forwards;
 }
 
 
@@ -299,130 +325,146 @@
 
 
 @keyframes contentL {
-    0%{
-        opacity: 100%;
-        content: url("../assets/darkPhoneDemo.png");
-    }
-    50%{
-        opacity: 0%;
-    }
-    51%{
-    }
-    100%{
-        opacity: 100%;
-        content: url("../assets/lightPhoneDemo.png");
-    }
-    
+  0% {
+    opacity: 100%;
+    content: url("../assets/darkPhoneDemo.png");
+  }
+
+  50% {
+    opacity: 0%;
+  }
+
+  51% {}
+
+  100% {
+    opacity: 100%;
+    content: url("../assets/lightPhoneDemo.png");
+  }
+
 }
+
 @keyframes contentD {
-    0%{
-        opacity: 100%;
-        content: url("../assets/lightPhoneDemo.png");
-    }
-    50%{
-        opacity: 0%;
-    }
-    51%{
-    }
-    100%{
-        opacity: 100%;
-        content: url("../assets/darkPhoneDemo.png");
-    }
-    
-    
+  0% {
+    opacity: 100%;
+    content: url("../assets/lightPhoneDemo.png");
+  }
+
+  50% {
+    opacity: 0%;
+  }
+
+  51% {}
+
+  100% {
+    opacity: 100%;
+    content: url("../assets/darkPhoneDemo.png");
+  }
+
+
 }
 
-.hero-phone-img-container{
-    background: none;
-}
-.phone-demo-img{
-    background: none;
-    animation: contentL 0.25s linear forwards;
+.hero-phone-img-container {
+  background: none;
 }
 
+.phone-demo-img {
+  background: none;
+  animation: contentL 0.25s linear forwards;
+}
 
 
 
-    
-    .dark-mode .hero-container{
-        z-index: 5;
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        margin-top: 100px;
-        animation: genColorD 0.25s linear forwards;  
-    }   
-
-    .dark-mode .scroll-down{
-        display: flex;
-        flex-direction: row;
-        rotate: 90deg;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        
-        background: none;
-        bottom: 340px;
-        left: 0px;
-        margin-left: -170px;
-        gap: 20px;
-        z-index: 99;
-        animation: genColorD 0.25s linear forwards;
-    }
-    .dark-mode .scroll-text{
-        animation: genColorD 0.25s linear forwards;
-    }
-    .dark-mode .line1{
-        background: none;
-        border-bottom: 3px solid white;
-        width: 128px;
-        height: 3px;
-        animation: lineColorD 0.25s linear forwards;
-    }
-    .dark-mode .line2{
-        animation: lineColorD 0.25s linear forwards;
-    }
-    .dark-mode .arrowhead{
-        animation: lineColorD 0.25s linear forwards;
-    }
-    .dark-mode .arrow{
-        animation: genColorD 0.25s linear forwards;
-    }
-    
-    .dark-mode .hero-content{
-        z-index: 1;
-        align-self: stretch;
-        display: flex;
-        flex-grow: 1;
-        flex-basis: 0%;
-        flex-direction: column;
-        max-width: 100%;
-        animation: genColorD 0.25s linear forwards;
-    }
-    .dark-mode .statement{
-        animation: genColorD 0.25s linear forwards;
-    }
-    .dark-mode .envision{
-        animation: genColorD 0.25s linear forwards;
-    }
-    .dark-mode .hero-purpose{
-        animation: genColorD 0.25s linear forwards;
-    }
 
 
-    .dark-mode .view-projects-container{
-        animation: arrowColorD 0.25s linear forwards;
-    }
-    .dark-mode .view-projects-text{
-        animation: arrowColorD 0.25s linear forwards;
-    }
-    .dark-mode .view-projects-arrow-svg{
-        animation: arrowColorD 0.25s linear forwards;
-    }
-    
-    .dark-mode .phone-demo-img{
-        background: none;
-        animation: contentD 0.25s linear forwards;
-        
-    }
+.dark-mode .hero-container {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 100px;
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .scroll-down {
+  display: flex;
+  flex-direction: row;
+  rotate: 90deg;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  bottom: 340px;
+  left: 0px;
+  margin-left: -170px;
+  gap: 20px;
+  z-index: 99;
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .scroll-text {
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .line1 {
+  background: none;
+  border-bottom: 3px solid white;
+  width: 128px;
+  height: 3px;
+  animation: lineColorD 0.25s linear forwards;
+}
+
+.dark-mode .line2 {
+  animation: lineColorD 0.25s linear forwards;
+}
+
+.dark-mode .arrowhead {
+  animation: lineColorD 0.25s linear forwards;
+}
+
+.dark-mode .arrow {
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .hero-content {
+  z-index: 1;
+  align-self: stretch;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0%;
+  flex-direction: column;
+  max-width: 100%;
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .statement {
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .envision {
+  animation: genColorD 0.25s linear forwards;
+}
+
+.dark-mode .hero-purpose {
+  animation: genColorD 0.25s linear forwards;
+}
+
+
+.dark-mode .view-projects-container {
+  animation: arrowColorD 0.25s linear forwards;
+}
+
+.dark-mode .view-projects-text {
+  animation: arrowColorD 0.25s linear forwards;
+}
+
+.dark-mode .view-projects-arrow-svg {
+  animation: arrowColorD 0.25s linear forwards;
+}
+
+.dark-mode .phone-demo-img {
+  background: none;
+  animation: contentD 0.25s linear forwards;
+
+}
