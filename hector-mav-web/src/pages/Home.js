@@ -5,22 +5,22 @@ import '../components/Animations.css'
 import Projects from "../components/Projects"
 import '../fonts/Fonts.css'
 
-export default function Home(){
+export default function Home() {
 
-    const divStyle_placeholder = {
-        height: '85px',
-    }
+  const divStyle_placeholder = {
+    height: '85px',
+  }
 
-    return(
+  return (
     <div id="homepage">
-    
-        <Hero/>
 
-        <Carousel/>
+      <Hero />
 
-        <Projects/>
+      <Carousel />
+
+      <Projects />
 
     </div>
-    )
+  )
 
 }
