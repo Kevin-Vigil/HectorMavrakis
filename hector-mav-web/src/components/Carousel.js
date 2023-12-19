@@ -11,65 +11,83 @@ import { ReactComponent as KeurigD } from '../assets/keurigD.svg';
 import { ReactComponent as DisneyD } from '../assets/disneyD.svg';
 import './Animations.css'
 
-export default function Carousel(props){
-    return(
-        <div className='caro-container'>
-            <div className='caro-text'>
-                <div className='text'>EXPERIENCE</div>
-                <div className='subtitle'>Some of the brands that I've worked with.</div>
-            </div>
-            <div className='carousel'>
-                <div className='card-box'>
-                    <Ups className="ups-svg"/>
-                    <UpsD className="ups-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Disney className="disney-svg"/>
-                    <DisneyD className="disney-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Keurig className="keurig-svg"/>
-                    <KeurigD className="keurig-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Discover className="discover-svg"/>
-                    <DiscoverD className="discover-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Ups className="ups-svg"/>
-                    <UpsD className="ups-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Disney className="disney-svg"/>
-                    <DisneyD className="disney-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Keurig className="keurig-svg"/>
-                    <KeurigD className="keurig-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Discover className="discover-svg"/>
-                    <DiscoverD className="discover-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Ups className="ups-svg"/>
-                    <UpsD className="ups-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Disney className="disney-svg"/>
-                    <DisneyD className="disney-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Keurig className="keurig-svg"/>
-                    <KeurigD className="keurig-d-svg"/>
-                </div>
-                <div className='card-box'>
-                    <Discover className="discover-svg"/>
-                    <DiscoverD className="discover-d-svg"/>
-                </div>
-                
+export default function Carousel(props) {
+  return (
+    <div className='caro-container'>
+      <div className='caro-text'>
+        <div className='text'>EXPERIENCE</div>
+        <div className='subtitle'>Some of the brands that I've worked with.</div>
+      </div>
+      <div className='carousel-box'>
+        <div className='carousel'>
+          <div className='card-box'>
+            <Ups className="ups-svg" />
+            <UpsD className="ups-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Keurig className="keurig-svg" />
+            <KeurigD className="keurig-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Discover className="discover-svg" />
+            <DiscoverD className="discover-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Ups className="ups-svg" />
+            <UpsD className="ups-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Keurig className="keurig-svg" />
+            <KeurigD className="keurig-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Discover className="discover-svg" />
+            <DiscoverD className="discover-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Ups className="ups-svg" />
+            <UpsD className="ups-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Keurig className="keurig-svg" />
+            <KeurigD className="keurig-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Discover className="discover-svg" />
+            <DiscoverD className="discover-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Ups className="ups-svg" />
+            <UpsD className="ups-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Keurig className="keurig-svg" />
+            <KeurigD className="keurig-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Discover className="discover-svg" />
+            <DiscoverD className="discover-d-svg" />
+          </div>
 
-            </div>
+
         </div>
-    )
+      </div>
+    </div>
+  )
 }

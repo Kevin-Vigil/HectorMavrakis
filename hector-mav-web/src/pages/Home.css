@@ -1,33 +1,37 @@
 @keyframes dMode {
-    0%{
-        background-color: white;
-    }
-    100%{
-        background-color: #1e1d1d;
-    }
-    
+  0% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: #151515;
+  }
+
 }
 
 @keyframes lMode {
-    0%{
-        background-color: #1e1d1d;
-    }
-    100%{
-        background-color: white;
-    }
+  0% {
+    background-color: #151515;
+  }
+
+  100% {
+    background-color: white;
+  }
 }
 
-#homepage{
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
+#homepage {
+  z-index: 0;
+  display: flex;
+  gap: 85px;
+  flex-direction: column;
 }
 
-.light-mode #homepage{
-    z-index: 0;
-    animation: lMode 0.25s linear forwards;
+.light-mode #homepage {
+  z-index: 0;
+  animation: lMode 0.25s linear forwards;
 }
-.dark-mode #homepage{
-    z-index: 0;
-    animation: dMode 0.25s linear forwards;
+
+.dark-mode #homepage {
+  z-index: 0;
+  animation: dMode 0.25s linear forwards;
 }

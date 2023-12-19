@@ -1,195 +1,224 @@
 /* animations */
 
 @keyframes fade-in {
-    0%{
-        opacity: 0%;
-        fill-opacity: 0%;
-    }
-    50%{
-        opacity: 50%;
-        fill-opacity: 50%;
-    }
-    100%{
-        opacity: 100%;
-        fill-opacity: 100%;
-    }
-    
+  0% {
+    opacity: 0%;
+    fill-opacity: 0%;
+  }
+
+  50% {
+    opacity: 50%;
+    fill-opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+    fill-opacity: 100%;
+  }
+
 }
-@keyframes fade-in-svg-change{
-    0%{
-        opacity: 0%;
-        fill-opacity: 0%;
-        display: none;
-    }
-    1%{
-        display: inherit;
-    }
-    50%{
-        opacity: 50%;
-        fill-opacity: 50%;
-    }
-    100%{
-        opacity: 100%;
-        fill-opacity: 100%;
-    }
-    
+
+@keyframes fade-in-svg-change {
+  0% {
+    opacity: 0%;
+    fill-opacity: 0%;
+    display: none;
+  }
+
+  1% {
+    display: inherit;
+  }
+
+  50% {
+    opacity: 50%;
+    fill-opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+    fill-opacity: 100%;
+  }
+
 }
+
 @keyframes fade-out {
-    0%{
-        opacity: 100%;
-        fill-opacity: 100%;
-    }
-    50%{
-        opacity: 50%;
-        fill-opacity: 50%;
-    }
-    100%{
-        opacity: 0%;
-        fill-opacity: 0%;
-    }
-    
+  0% {
+    opacity: 100%;
+    fill-opacity: 100%;
+  }
+
+  50% {
+    opacity: 50%;
+    fill-opacity: 50%;
+  }
+
+  100% {
+    opacity: 0%;
+    fill-opacity: 0%;
+  }
+
 }
+
 @keyframes fade-out-svg-change {
-    0%{
-        opacity: 100%;
-        fill-opacity: 100%;
-    }
-    50%{
-        opacity: 50%;
-        fill-opacity: 50%;
-    }
-    100%{
-        display: none;
-        opacity: 0%;
-        fill-opacity: 0%;
-    }
-    
+  0% {
+    opacity: 100%;
+    fill-opacity: 100%;
+  }
+
+  50% {
+    opacity: 50%;
+    fill-opacity: 50%;
+  }
+
+  100% {
+    display: none;
+    opacity: 0%;
+    fill-opacity: 0%;
+  }
+
 }
 
 @keyframes sunMoonColorFadeIn {
-    0%{
-        fill: #989898;
-    }
-    100%{
-        fill: #FFFFFF;
-    }
-    
+  0% {
+    fill: #989898;
+  }
+
+  100% {
+    fill: #FFFFFF;
+  }
+
 }
+
 @keyframes sunMoonColorFadeOut {
-    0%{
-        fill: #FFFFFF;
-    }
-    100%{
-        fill: #989898;
-    }
-    
+  0% {
+    fill: #FFFFFF;
+  }
+
+  100% {
+    fill: #989898;
+  }
+
 }
 
 @keyframes switchColorL {
-    0%{
-        fill: #292929;
-    }
-    100%{
-        fill: #F9F9F9;
-    }
+  0% {
+    fill: #292929;
+  }
+
+  100% {
+    fill: #F9F9F9;
+  }
 }
+
 @keyframes switchColorD {
-    0%{
-        fill: #F9F9F9;
-    }
-    100%{
-        fill: #292929;
-        
-    }
+  0% {
+    fill: #F9F9F9;
+  }
+
+  100% {
+    fill: #292929;
+
+  }
 }
 
 @keyframes r-slide {
-    0%{
-        left: 14;
-    }
-    100%{
-        left: 37;
-    }
-    
+  0% {
+    left: 14;
+  }
+
+  100% {
+    left: 37;
+  }
+
 }
+
 @keyframes l-slide {
-    0%{
-        left: 37;
-    }
-    100%{
-        left: 14;
-    }
-    
+  0% {
+    left: 37;
+  }
+
+  100% {
+    left: 14;
+  }
+
 }
 
 @keyframes cardColorL {
-    0%{
-        background-color: #292929;
-        color: white;
-        fill: white;
-    }
-    100%{
-        background-color: #F8F8F8;
-        color: #1e1d1d;
-        fill: black;
-    }
+  0% {
+    background-color: #292929;
+    color: white;
+    fill: white;
+  }
+
+  100% {
+    background-color: #F8F8F8;
+    color: #151515;
+    fill: black;
+  }
 }
+
 @keyframes cardColorD {
-    0%{
-        background-color: #F8F8F8;
-        color: white;
-        fill: white;
-    }
-    100%{
-        background-color: #292929;
-        color: #1e1d1d;
-        fill: black;
-    }
+  0% {
+    background-color: #F8F8F8;
+    color: white;
+    fill: white;
+  }
+
+  100% {
+    background-color: #292929;
+    color: #151515;
+    fill: black;
+  }
 }
 
 @keyframes genColorD {
-    0%{
-        background-color: white;
-        color: #1e1d1d;
-        fill: black;
-    }
-    100%{
-        background-color: #1e1d1d;
-        color: white;
-        fill: white;
-    }
+  0% {
+    background-color: white;
+    color: #151515;
+    fill: black;
+  }
+
+  100% {
+    background-color: #151515;
+    color: white;
+    fill: white;
+  }
 }
+
 @keyframes genColorL {
-    0%{
-        background-color: #1e1d1d;
-        color: white;
-        fill: white;
-    }
-    100%{
-        background-color: white;
-        color: #1e1d1d;
-        fill: black;
-    }
+  0% {
+    background-color: #151515;
+    color: white;
+    fill: white;
+  }
+
+  100% {
+    background-color: white;
+    color: #151515;
+    fill: black;
+  }
 }
 
 @keyframes pageLoad {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 98%;
-    }
-    
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 98%;
+  }
+
 }
 
 @keyframes load-in {
-    0%{
-        opacity: 0%;
-        transform: translateY(20px);
-        
-    }
-    100%{
-        opacity: 100%;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0%;
+    transform: translateY(20px);
+
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }

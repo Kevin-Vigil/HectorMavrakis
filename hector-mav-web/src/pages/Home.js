@@ -2,72 +2,27 @@ import Carousel from "../components/Carousel"
 import Hero from "../components/Hero"
 import './Home.css'
 import '../components/Animations.css'
+import Projects from "../components/Projects"
+import '../fonts/Fonts.css'
 
-export default function Home(){
+export default function Home() {
 
-    const divStyle_placeholder = {
-        height: '85px',
-    }
+  const divStyle_placeholder = {
+    height: '85px',
+  }
 
-    return(
+  return (
     <div id="homepage">
-    
-        <Hero/>
 
-        <Carousel/>
+      <Hero />
 
-        <div className="placeholder" style={divStyle_placeholder}>
+      <Carousel />
 
-        </div>
-        <h1>
-            HOME
-        </h1>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
-        <p>
-            mobile test
-        </p>
+      <Projects />
+
+      
+      
     </div>
-    )
+  )
 
 }
