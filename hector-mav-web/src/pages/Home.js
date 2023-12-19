@@ -4,6 +4,7 @@ import './Home.css'
 import '../components/Animations.css'
 import Projects from "../components/Projects"
 import '../fonts/Fonts.css'
+import About from "../components/AboutMe"
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ export default function Home() {
 
       <Projects />
 
-      
+      <About/>
       
     </div>
   )
