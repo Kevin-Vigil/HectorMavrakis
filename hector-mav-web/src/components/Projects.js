@@ -2,8 +2,12 @@ import React from "react";
 import './Projects.css';
 import { ReactComponent as Subtract } from "../assets/Subtract.svg"
 import { ReactComponent as WalmartPhone } from '../assets/walmart-phone-demo.svg'
-import { ReactComponent as FundPhone } from '../assets/fundPhoneDemo.svg'
+// import { ReactComponent as FundPhone} from "../assets/fundPhoneDemo.svg"
 
+import QuantifyPhone from '../assets/quantifyPhoneDemo.png'
+import BigOPhone from '../assets/bigOTiresDemo.png'
+import DiscoverPhone from '../assets/discoverPhoneDemo.png'
+import FundPhone from "../assets/fundPhoneDemo.png"
 
 export default function Projects() {
   return (
@@ -37,8 +41,8 @@ export default function Projects() {
                 An all-in-one solution to banking on the go
               </div>
             </div>
-            <div id='quantify-img' className="project-img">
-              <img src="../assets/quantifyPhoneDemo.png" />
+            <div className="img-container">
+              <img src={QuantifyPhone} id='quantify-img' className="project-img"/>
             </div>
             <Subtract className="project-arrow-icon" />
           </div>
@@ -51,8 +55,8 @@ export default function Projects() {
                 Placeholder description of project with detail
               </div>
             </div>
-            <div id='big-o-tires-img' className="project-img">
-              <img src="../assets/bigOTiresDemo.png" />
+            <div id="big-o-img-container" className="img-container">
+              <img src={BigOPhone} id='big-o-tires-img' className="project-img"/>
             </div>
             <Subtract className="project-arrow-icon" />
           </div>
@@ -67,6 +71,9 @@ export default function Projects() {
                 A reimagined end-to-end omni-channel Soft Pull flow
               </div>
             </div>
+            <div className="img-container">
+              <img src={DiscoverPhone} id='discover-img' className="project-img"/>
+            </div>
             <Subtract className="project-arrow-icon" />
           </div>
           <div id="fund-container" className="project-box">
@@ -77,6 +84,9 @@ export default function Projects() {
               <div id="fund-subtitle" className="project-subtitle">
                 Budgeting made simple
               </div>
+            </div>
+            <div className="img-container">
+              <img src={FundPhone} id='fund-img' className="project-img"/>
             </div>
             <Subtract className="project-arrow-icon" />
           </div>
