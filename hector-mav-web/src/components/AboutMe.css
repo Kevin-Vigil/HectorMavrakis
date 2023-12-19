@@ -1,0 +1,136 @@
+#about-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 112px;
+}
+.light-mode #about-container{
+
+}
+.dark-mode #about-container{
+
+}
+
+/* TEXT BOX */
+#about-textbox{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  gap: 16px;
+}
+
+#about-title{
+  background: none;
+  margin: auto;
+  font: 600 14px/24px mona sans;
+  opacity: 72%;
+}
+.light-mode #about-title{
+  animation: genColorL 0.25s linear forwards;
+}
+.dark-mode #about-title{
+  animation: genColorD 0.25s linear forwards;
+}
+
+#about-statement{
+  background: none;
+  margin: auto;
+  font: 700 36px/42px mona sans;
+}
+.light-mode #about-statement{
+  animation: genColorL 0.25s linear forwards;
+}
+.dark-mode #about-statement{
+  animation: genColorD 0.25s linear forwards;
+}
+
+/* points container */
+#about-point-container{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 43px;
+}
+
+/* Points */
+.point-box{
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  width: 341px;
+  margin: auto;
+}
+
+@keyframes svgColorL {
+  0%{
+    fill: #292929;
+  }
+  100%{
+    fill: #F8F8F8;
+  }
+}
+@keyframes svgColorD {
+  0%{
+    fill: #F8F8F8;
+  }
+  100%{
+    fill: #292929;
+  }
+}
+
+#design-icon{
+  margin: auto;
+}
+.light-mode #pCirc{
+  animation: svgColorL 0.25s linear forwards;
+}
+.dark-mode #pCirc{
+  animation: svgColorD 0.25s linear forwards;
+}
+.light-mode .drawing{
+  animation: genColorL 0.25s linear forwards;
+}
+.dark-mode .drawing{
+  animation: genColorD 0.25s linear forwards;
+}
+
+#platform-icon{
+  margin: auto;
+}
+#dev-icon{
+  margin: auto;
+}
+
+/* Points textbox */
+.points-textbox{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.points-title{
+  margin-left: auto;
+  margin-right: auto;
+  font: 700 36px/42px mona sans;
+}
+.light-mode .points-title{
+  animation: genColorL 0.25s linear forwards;
+}
+.dark-mode .points-title{
+  animation: genColorD 0.25s linear forwards;
+}
+
+.points-statement{
+  margin: auto;
+  text-align: center;
+  font: 500 18px/28px mona sans;
+}
+.light-mode .points-statement{
+  animation: genColorL 0.25s linear forwards;
+}
+.dark-mode .points-statement{
+  animation: genColorD 0.25s linear forwards;
+}
