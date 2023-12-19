@@ -176,14 +176,12 @@
     background-color: white;
     color: #151515;
     fill: black;
-    stroke: white;
   }
 
   100% {
     background-color: #151515;
     color: white;
     fill: white;
-    stroke: #292929;
   }
 }
 
@@ -192,14 +190,12 @@
     background-color: #151515;
     color: white;
     fill: white;
-    stroke: #292929;
   }
 
   100% {
     background-color: white;
     color: #151515;
     fill: black;
-    stroke: white;
   }
 }
 

@@ -1,17 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './Footer.css'
+import './Animations.css'
+import '../fonts/Fonts.css'
 
 function Footer() {
   return (
-    <>
-      <nav className='footer'>
-        <div className='footer-container'>
-          <Link to='/' className='footer-logo'>
-            HectorMavrakis <i className='fab fa-typo3' />
-          </Link>
-        </div>
-      </nav>
-    </>
+    <div id='footer-container'>
+      <div id='copyright'>©2023 by Hector Mavrakis</div>
+      <div id='footer-bottom'/>
+    </div>
   )
 }
 
