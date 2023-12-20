@@ -1,7 +1,12 @@
-.caro-container {
+
+.loadin #brands{
+  opacity: 0%;
+  animation: load-in 0.75s 0.25s forwards;
+}
+#brands {
+  padding-top: 85px;
   display: flex;
   flex-direction: column;
-  margin-top: 65px;
   justify-content: center;
   align-self: center;
   width: 100%;
@@ -21,13 +26,13 @@
   opacity: 72%;
   text-transform: uppercase;
   white-space: nowrap;
-  font: 600 24px/24px 'Mona Sans', sans-serif;
+  font: 600 14px/24px mona sans, sans-serif;
 }
 
 .subtitle {
   align-self: center;
   color: #151515;
-  font: 700 42px/43px 'Mona Sans', sans-serif;
+  font: 700 36px/42px mona sans, sans-serif;
 }
 
 

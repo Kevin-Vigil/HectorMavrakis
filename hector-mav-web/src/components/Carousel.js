@@ -13,7 +13,7 @@ import './Animations.css'
 
 export default function Carousel(props) {
   return (
-    <div className='caro-container'>
+    <div id="brands" className='caro-container'>
       <div className='caro-text'>
         <div className='text'>EXPERIENCE</div>
         <div className='subtitle'>Some of the brands that I've worked with.</div>
