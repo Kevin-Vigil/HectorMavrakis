@@ -1,0 +1,33 @@
+#footer-container{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 19px;
+  margin-right: 58px;
+  margin-left: 58px;
+  margin: auto;
+  width: 95%;
+}
+.light-mode #footer-container{
+  animation: genColorL 0.25s linear forwards;
+}
+.dark-mode #footer-container{
+  animation: genColorD 0.25s linear forwards;
+}
+
+#copyright{
+  font: 500 15px mona sans;
+  text-align: right;
+}
+.light-mode #copyright{
+  animation: genColorL 0.25s linear forwards;
+}
+.dark-mode #copyright{
+  animation: genColorD 0.25s linear forwards;
+}
+
+#footer-bottom{
+  margin: auto;
+  border-bottom: solid 1px #D9D9D9;
+  width: 100%;
+}

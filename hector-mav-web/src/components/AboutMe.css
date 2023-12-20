@@ -34,6 +34,7 @@
 }
 
 #about-statement{
+
   background: none;
   margin: auto;
   font: 700 36px/42px mona sans;
@@ -79,8 +80,56 @@
   }
 }
 
+@keyframes drawColorL {
+  0% {
+    background-color: #151515;
+    color: white;
+    fill: white;
+    stroke: #292929;
+  }
+
+  100% {
+    background-color: white;
+    color: #151515;
+    fill: black;
+    stroke: white;
+  }
+}
+@keyframes drawColorD {
+  0% {
+    background-color: white;
+    color: #151515;
+    fill: black;
+    stroke: white;
+  }
+
+  100% {
+    background-color: #151515;
+    color: white;
+    fill: white;
+    stroke: #292929;
+  }
+}
+
 #design-icon{
   margin: auto;
+  display: inherit;
+}
+.loadin #pCirc{
+  animation: svgColorL 0.25s linear forwards;
+}
+.loadin .dark-mode #pCirc{
+  animation: svgColorD 0.25s linear forwards;
+}
+.loadin .drawing{
+  animation: drawColorL 0.25s linear forwards;
+}
+.loadin .dark-mode .drawing{
+  animation: drawColorD 0.25s linear forwards;
+}
+
+#pCirc{
+  animation: svgColorL 0.25s linear forwards;
 }
 .light-mode #pCirc{
   animation: svgColorL 0.25s linear forwards;
@@ -88,11 +137,15 @@
 .dark-mode #pCirc{
   animation: svgColorD 0.25s linear forwards;
 }
+
+.drawing{
+  animation: drawColorL 0.25s linear forwards;
+}
 .light-mode .drawing{
-  animation: genColorL 0.25s linear forwards;
+  animation: drawColorL 0.25s linear forwards;
 }
 .dark-mode .drawing{
-  animation: genColorD 0.25s linear forwards;
+  animation: drawColorD 0.25s linear forwards;
 }
 
 #platform-icon{

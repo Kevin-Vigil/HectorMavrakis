@@ -5,6 +5,7 @@ import '../components/Animations.css'
 import Projects from "../components/Projects"
 import '../fonts/Fonts.css'
 import About from "../components/AboutMe"
+import Footer from "../components/Footer"
 
 export default function Home() {
 
@@ -22,6 +23,8 @@ export default function Home() {
       <Projects />
 
       <About/>
+
+      <Footer/>
       
     </div>
   )
