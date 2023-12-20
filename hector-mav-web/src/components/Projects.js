@@ -11,7 +11,7 @@ import FundPhone from "../assets/fundPhoneDemo.png"
 
 export default function Projects() {
   return (
-    <div id="projects-container">
+    <div id="projects">
       <div id="projects-list-textbox">
         <div id="projects-list-header">PROJECTS</div>
         <div id="projects-list-statement">Take a look at what I've designed.</div>

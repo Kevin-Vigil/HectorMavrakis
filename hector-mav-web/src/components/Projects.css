@@ -1,4 +1,9 @@
-#projects-container {
+.loadin #projects{
+  opacity: 0%;
+  animation: load-in 0.75s 0.25s forwards;
+}
+#projects {
+  padding-top: 85px;
   gap: 85px;
   display: flex;
   flex-direction: column;
@@ -22,7 +27,7 @@
 #projects-list-header {
   opacity: 72%;
   align-self: center;
-  font: bold 24px Mona Sans, sans-serif;
+  font: 600 14px/24px mona sans, sans-serif;
 }
 
 .light-mode #projects-list-header {
@@ -37,7 +42,7 @@
   opacity: 100%;
   align-self: center;
   text-wrap: nowrap;
-  font: bold 42px Mona Sans, sans-serif;
+  font: 700 36px/42px mona sans, sans-serif;
 }
 
 .light-mode #projects-list-statement {
