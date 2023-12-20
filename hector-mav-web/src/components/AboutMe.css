@@ -1,13 +1,17 @@
-#about-container{
+.loadin #about{
+  opacity: 0%;
+  animation: load-in 0.75s 0.25s forwards;
+}
+#about{
   display: flex;
   flex-direction: column;
   margin: auto;
   gap: 112px;
 }
-.light-mode #about-container{
+.light-mode #about{
 
 }
-.dark-mode #about-container{
+.dark-mode #about{
 
 }
 

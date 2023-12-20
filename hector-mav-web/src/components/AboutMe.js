@@ -8,7 +8,7 @@ import { ReactComponent as PenIcon } from '../assets/pen.svg'
 
 export default function About(){
   return(
-    <div id='about-container'>
+    <div id='about'>
       <div id='about-textbox'>
         <div id='about-title'>ABOUT ME</div>
         <div id='about-statement'>An ambitious, data-driven designer.</div>
