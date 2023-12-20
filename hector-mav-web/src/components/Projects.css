@@ -28,6 +28,7 @@
   opacity: 72%;
   align-self: center;
   font: 600 14px/24px mona sans, sans-serif;
+  letter-spacing: .56px;
 }
 
 .light-mode #projects-list-header {
