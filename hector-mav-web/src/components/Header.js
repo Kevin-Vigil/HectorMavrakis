@@ -46,10 +46,10 @@ function Header() {
   return (
     <>
       <nav className='header-mobile'>
-        <Link to='/' className='hec-mav-logo'>
+        <a to='/' className='hec-mav-logo'>
           {/* <img src={logo} className='hec-logo'/> */}
           <Logo />
-        </Link>
+        </a>
 
         <div className='navbar-mobile'>
           <ColorSwitch className='header-switch' />
@@ -61,13 +61,13 @@ function Header() {
 
       <div className='header'>
         <div className='nav-container'>
-          <Link to='/' className='hec-mav-logo'>
+          <a href='/' className='hec-mav-logo'>
             <Logo className='logo-svg' />
-          </Link>
+          </a>
           <div className='header-nav-box'>
-            <Link to='/brands' className='links'>BRANDS</Link>
-            <Link to='#projects' className='links'>PROJECTS</Link>
-            <Link to='/about' className='links'>ABOUT</Link>
+            <a href='#brands' className='links'>BRANDS</a>
+            <a href='#projects' className='links'>PROJECTS</a>
+            <a href='#about' className='links'>ABOUT</a>
             <ColorSwitch id='cSwitch' className='header-switch' />
 
           </div>
