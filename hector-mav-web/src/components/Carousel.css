@@ -27,6 +27,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   font: 600 14px/24px mona sans, sans-serif;
+  letter-spacing: .56px;
 }
 
 .subtitle {
