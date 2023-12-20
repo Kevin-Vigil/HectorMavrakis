@@ -153,8 +153,7 @@
   text-transform: uppercase;
   align-self: center;
   max-width: 596px;
-  font: 700 1.25vmax/68px Mona Sans, -apple-system, Roboto, Helvetica,
-    sans-serif;
+  font: 700 24px/64px mona sans;
 
 
 
@@ -173,8 +172,7 @@
 .envision {
   text-align: center;
   text-transform: uppercase;
-  font: 800 171px/102px Mona Sans, -apple-system, Roboto, Helvetica,
-    sans-serif;
+  font: 800 171px/102px mona sans;
   max-width: 100%;
   font-size: 8vmax;
   line-height: 26px;
@@ -200,8 +198,7 @@
   text-align: center;
   align-self: center;
   max-width: 515px;
-  font: 500 1vmax/28px Mona Sans, -apple-system, Roboto, Helvetica,
-    sans-serif;
+  font: 500 18px/28px mona sans;
   max-width: 100%;
   margin-top: 3vmax;
 
