@@ -96,7 +96,7 @@
     background-color: white;
     color: #151515;
     fill: black;
-    stroke: white;
+    stroke: #F8F8F8;
   }
 }
 @keyframes drawColorD {
@@ -104,7 +104,7 @@
     background-color: white;
     color: #151515;
     fill: black;
-    stroke: white;
+    stroke: #F8F8F8;
   }
 
   100% {
