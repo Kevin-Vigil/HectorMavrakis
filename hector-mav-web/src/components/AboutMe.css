@@ -166,6 +166,7 @@
   margin-left: auto;
   margin-right: auto;
   font: 700 36px/42px mona sans;
+  letter-spacing: .56px;
 }
 .light-mode .points-title{
   animation: genColorL 0.25s linear forwards;
