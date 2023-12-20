@@ -16,7 +16,6 @@
   align-items: flex-end;
   justify-content: space-between;
   margin-top: 100px;
-
 }
 
 .light-mode .hero-container {
@@ -66,7 +65,7 @@
   align-items: center;
 
   background: none;
-  bottom: 340px;
+  top: 50vh;
   left: 0px;
   margin-left: -170px;
   gap: 20px;
@@ -136,6 +135,12 @@
 
 }
 
+#hero-textbox{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .light-mode .hero-container {
   z-index: 1;
   animation: genColorL 0.25s linear forwards
@@ -152,11 +157,7 @@
   text-align: center;
   text-transform: uppercase;
   align-self: center;
-  max-width: 596px;
   font: 700 24px/64px mona sans;
-
-
-
 }
 
 .light-mode .statement {
@@ -173,12 +174,6 @@
   text-align: center;
   text-transform: uppercase;
   font: 800 171px/102px mona sans;
-  max-width: 100%;
-  font-size: 8vmax;
-  line-height: 26px;
-  margin-top: 3.5vmax;
-
-
 }
 
 .light-mode .envision {
@@ -187,7 +182,6 @@
 
 .loadin .envision {
   opacity: 0%;
-  transform: translateY(20px);
   animation: load-in 0.75s 0.25s forwards;
 }
 
@@ -195,10 +189,7 @@
 .hero-purpose {
   text-align: center;
   align-self: center;
-  max-width: 515px;
   font: 500 18px/28px mona sans;
-  max-width: 100%;
-  margin-top: 3vmax;
 }
 
 .light-mode .hero-purpose {
@@ -207,14 +198,16 @@
 
 .loadin .hero-purpose {
   opacity: 0%;
-  transform: translateY(20px);
   animation: load-in 0.75s 1.25s forwards;
 }
 
 .hero-phone-img-container {
   align-self: center;
-  margin-top: -60px;
-
+  width: 1300px;
+  height: 850px;
+  margin: auto;
+  margin-top: -130px;
+  overflow: hidden;
 }
 
 .light-mode .hero-phone-img-container {
@@ -223,7 +216,6 @@
 
 .loadin .hero-phone-img-container {
   opacity: 0%;
-  transform: translateY(20px);
   animation: load-in 0.5s 1.1s forwards;
 }
 
@@ -268,10 +260,10 @@
   display: flex;
   width: 185px;
   max-width: 100%;
+  margin-top: 65px;
   align-items: start;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 30px;
 }
 
 .light-mode .view-projects-container {
@@ -356,12 +348,11 @@
 
 }
 
-.hero-phone-img-container {
-  background: none;
-}
-
 .phone-demo-img {
   background: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   animation: contentL 0.25s linear forwards;
 }
 
