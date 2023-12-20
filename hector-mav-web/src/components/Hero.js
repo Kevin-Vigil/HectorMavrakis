@@ -38,9 +38,11 @@ export default function Hero(props) {
           </div>
         </div>
         <div className="hero-content">
-          <div className="statement">I DESIGN WHAT PEOPLE</div>
-          <div className="envision">ENVISION</div>
-          <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
+          <div id="hero-textbox">
+            <div className="statement">I DESIGN WHAT PEOPLE</div>
+            <div className="envision">ENVISION</div>
+            <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
+          </div>
           <a href='#projects' className="view-projects-container">
             <div className="view-projects-text">View projects</div>
             <Arrow className='view-projects-arrow-svg' />
