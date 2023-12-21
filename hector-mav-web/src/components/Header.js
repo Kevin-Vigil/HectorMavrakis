@@ -24,7 +24,7 @@ function Header() {
       localStorage.setItem("dark-mode", state);
     }
 
-    // toggleDarkMode(localStorage.getItem("dark-mode") == "true")
+    toggleDarkMode(localStorage.getItem("dark-mode") == "true")
 
     button.addEventListener("click", () => {
       document.documentElement.classList.toggle("light-mode", darkModeState)
@@ -65,9 +65,9 @@ function Header() {
             <Logo className='logo-svg' />
           </a>
           <div className='header-nav-box'>
-            <a href='#brands' className='links'>BRANDS</a>
-            <a href='#projects' className='links'>PROJECTS</a>
-            <a href='#about' className='links'>ABOUT</a>
+            <Link to='#brands' className='links'>BRANDS</Link>
+            <Link to='#projects' className='links'>PROJECTS</Link>
+            <Link to='#about' className='links'>ABOUT</Link>
             <ColorSwitch id='cSwitch' className='header-switch' />
 
           </div>
