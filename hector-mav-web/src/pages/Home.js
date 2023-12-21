@@ -9,10 +9,6 @@ import Footer from "../components/Footer"
 
 export default function Home() {
 
-  const divStyle_placeholder = {
-    height: '85px',
-  }
-
   return (
     <div id="homepage">
 
