@@ -9,7 +9,7 @@
   }
 }
 
-.hero-container {
+#hero-container {
   z-index: 5;
   position: relative;
   display: flex;
@@ -18,11 +18,11 @@
   margin-top: 140px;
 }
 
-.light-mode .hero-container {
+.light-mode #hero-container {
   animation: genColorL 0.25s linear forwards;
 }
 
-/* .loadin .hero-container{
+/* .loadin #hero-container{
     opacity: 0%;
     animation: heroLoad 0.5s 0.25s linear forwards;
 } */
@@ -56,7 +56,7 @@
 }
 
 /* scroll container */
-.scroll-down {
+#scroll-down {
   display: flex;
   flex-direction: row;
   rotate: 90deg;
@@ -72,42 +72,47 @@
   z-index: 99;
 }
 
-.light-mode .scroll-down {
+.light-mode #scroll-down {
   animation: lineColorL 0.25s linear forwards;
 }
 
-.loadin .scroll-down {
+.loadin #scroll-down {
   opacity: 0%;
   transform: translateY(20px);
   animation: load-in 0.75s 1.25s forwards;
 }
 
 
-.line1 {
+#line1 {
   background: none;
   border-bottom: 3px solid #D9D9D9;
   width: 128px;
   height: 3px;
+}
+.light-mode #line1{
   animation: lineColorL 0.25s linear forwards;
 }
 
-.scroll-text {
+#scroll-text {
   background: none;
   transform: rotate(180deg);
+}
+.light-mode #scroll-text{
   animation: genColorL 0.25s linear forwards;
 }
 
-.line2 {
+#line2 {
   z-index: 2;
   background: none;
   border-bottom: 3px solid #D9D9D9;
   width: 128px;
   height: 3px;
+}
+.light-mode #line2{
   animation: lineColorL 0.25s linear forwards;
-
 }
 
-.arrowhead {
+#arrowhead {
   background: none;
   border: solid #D9D9D9;
   border-width: 0 3px 3px 0;
@@ -123,7 +128,7 @@
 
 /* hero content */
 
-.hero-content {
+#hero-content {
   align-self: stretch;
   display: flex;
   flex-grow: 1;
@@ -134,19 +139,16 @@
   /*  */
 
 }
-
+.loadin #hero-content{
+  animation: load-in 0.75s 0.25s forwards;
+}
 #hero-textbox{
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.light-mode .hero-container {
-  z-index: 1;
-  animation: genColorL 0.25s linear forwards
-}
-
-.loadin .hero-container {
+.loadin #hero-container {
   z-index: 1;
   opacity: 0;
   animation: load-in 0.75s 0.25s forwards;
@@ -333,7 +335,7 @@
   animation: arrowColorL 0.25s linear forwards;
 }
 
-.arrow {
+#arrow {
   margin: auto;
   background: none;
   display: flex;
@@ -342,7 +344,7 @@
 
 }
 
-.light-mode .arrow {
+.light-mode #arrow {
   animation: genColorL 0.25s linear forwards;
 }
 
@@ -405,7 +407,7 @@
   animation: genColorD 0.25s linear forwards;
 }
 
-.dark-mode .scroll-down {
+.dark-mode #scroll-down {
   display: flex;
   flex-direction: row;
   rotate: 90deg;
@@ -422,11 +424,11 @@
   animation: genColorD 0.25s linear forwards;
 }
 
-.dark-mode .scroll-text {
+.dark-mode #scroll-text {
   animation: genColorD 0.25s linear forwards;
 }
 
-.dark-mode .line1 {
+.dark-mode #line1 {
   background: none;
   border-bottom: 3px solid white;
   width: 128px;
@@ -434,19 +436,19 @@
   animation: lineColorD 0.25s linear forwards;
 }
 
-.dark-mode .line2 {
+.dark-mode #line2 {
   animation: lineColorD 0.25s linear forwards;
 }
 
-.dark-mode .arrowhead {
+.dark-mode #arrowhead {
   animation: lineColorD 0.25s linear forwards;
 }
 
-.dark-mode .arrow {
+.dark-mode #arrow {
   animation: genColorD 0.25s linear forwards;
 }
 
-.dark-mode .hero-content {
+.dark-mode #hero-content {
   z-index: 1;
   align-self: stretch;
   display: flex;

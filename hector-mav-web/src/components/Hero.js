@@ -11,7 +11,7 @@ export default function Hero(props) {
   function load() {
     document.documentElement.classList.toggle("loadin", true)
 
-    const aniEnd = document.querySelector(".scroll-down")
+    const aniEnd = document.querySelector("#scroll-down")
     aniEnd.addEventListener("animationend", (event) => {
       if (event.animationName === 'load-in')
         document.documentElement.classList.toggle("loadin", false)
@@ -27,19 +27,20 @@ export default function Hero(props) {
     cta.addEventListener("mouseout", () => {
       cta.classList.remove("hover")
     });
-  })
+    load();
+  });
   return (
     <>
-      <div className="hero-container">
-        <div className="scroll-down">
-          <div className="line1" />
-          <div className="scroll-text">SCROLL DOWN</div>
-          <div className="arrow">
-            <div className="line2" />
-            <div className="arrowhead" />
+      <div id="hero-container">
+        <div id="scroll-down">
+          <div id="line1" />
+          <div id="scroll-text">SCROLL DOWN</div>
+          <div id="arrow">
+            <div id="line2" />
+            <div id="arrowhead" />
           </div>
         </div>
-        <div className="hero-content">
+        <div id="hero-content">
           <div id="hero-textbox">
             <div className="statement">I DESIGN WHAT PEOPLE</div>
             <div className="envision">ENVISION</div>
