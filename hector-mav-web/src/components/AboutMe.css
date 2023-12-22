@@ -8,11 +8,11 @@
   margin: auto;
   gap: 112px;
   background-color: white;
-  transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in, opacity 0s;
 }
 .dark-mode #about{
   background-color: #151515;
-  transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in, opacity 0s;
 }
 
 /* TEXT BOX */
@@ -66,69 +66,9 @@
   margin: auto;
 }
 
-@keyframes svgColorL {
-  0%{
-    fill: #292929;
-  }
-  100%{
-    fill: #F8F8F8;
-  }
-}
-@keyframes svgColorD {
-  0%{
-    fill: #F8F8F8;
-  }
-  100%{
-    fill: #292929;
-  }
-}
-
-@keyframes drawColorL {
-  0% {
-    background-color: #151515;
-    color: white;
-    fill: white;
-    stroke: #292929;
-  }
-
-  100% {
-    background-color: white;
-    color: #151515;
-    fill: black;
-    stroke: #F8F8F8;
-  }
-}
-@keyframes drawColorD {
-  0% {
-    background-color: white;
-    color: #151515;
-    fill: black;
-    stroke: #F8F8F8;
-  }
-
-  100% {
-    background-color: #151515;
-    color: white;
-    fill: white;
-    stroke: #292929;
-  }
-}
-
 #design-icon{
   margin: auto;
   display: inherit;
-}
-.loadin #pCirc{
-  animation: svgColorL 0.25s linear forwards;
-}
-.loadin .dark-mode #pCirc{
-  animation: svgColorD 0.25s linear forwards;
-}
-.loadin .drawing{
-  animation: drawColorL 0.25s linear forwards;
-}
-.loadin .dark-mode .drawing{
-  animation: drawColorD 0.25s linear forwards;
 }
 
 #pCirc{
