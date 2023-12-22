@@ -18,6 +18,7 @@ function Header() {
 
     function toggleDarkMode(state) {
       document.documentElement.classList.toggle("dark-mode", state)
+      document.documentElement.classList.toggle("light-mode", !state)
     }
 
     function setDarkModeLocalStorage(state) {
@@ -27,7 +28,7 @@ function Header() {
     toggleDarkMode(localStorage.getItem("dark-mode") == "true")
 
     button.addEventListener("click", () => {
-      document.documentElement.classList.toggle("light-mode", darkModeState)
+      // document.documentElement.classList.toggle("light-mode", darkModeState)
       darkModeState = !darkModeState
       toggleDarkMode(darkModeState)
       setDarkModeLocalStorage(darkModeState);
