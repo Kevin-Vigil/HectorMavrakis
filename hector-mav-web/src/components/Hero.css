@@ -15,7 +15,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 .light-mode .hero-container {
@@ -173,7 +173,7 @@
 .envision {
   text-align: center;
   text-transform: uppercase;
-  font: 800 171px/102px mona sans;
+  font: 800 171px/60px mona sans;
 }
 
 .light-mode .envision {
@@ -187,9 +187,10 @@
 
 
 .hero-purpose {
+  z-index: 2;
   text-align: center;
   align-self: center;
-  font: 500 18px/28px mona sans;
+  font: 500 18px/80px mona sans;
 }
 
 .light-mode .hero-purpose {
@@ -260,7 +261,7 @@
   display: flex;
   width: 185px;
   max-width: 100%;
-  margin-top: 65px;
+  margin-top: 30px;
   align-items: start;
   padding-top: 15px;
   padding-bottom: 15px;
