@@ -72,12 +72,23 @@
   height: 550px;
 }
 
+#quanify-container:hover{
+  transform: scale(1);
+  text-decoration: none;
+}
+#quantify-container:visited{
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 1301px) {
   #quantify-container {
     width: 42.5%;
     height: 100%;
     background: linear-gradient(132deg, #06684F 18.18%, #0BBA8C 86.24%), #F7F7F7;
+    cursor: pointer;
+    text-decoration: none;
   }
+  
   .img-container{
     bottom: 0;
     width: 100%;
@@ -150,6 +161,7 @@
     width: 42.5%;
     height: 100%;
     background: linear-gradient(132deg, #06684F 18.18%, #0BBA8C 86.24%), #F7F7F7;
+    text-decoration: none;
   }
 
   #big-o-tires-container {

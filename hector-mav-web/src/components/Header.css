@@ -78,8 +78,13 @@
   align-self: center;
   margin-top: auto;
   margin-bottom: auto;
-
+}
+.light-mode .links{
   animation: genColorL 0.25s linear forwards;
+}
+
+.links:hover{
+  animation: hoverUnderline 0.25s forwards;
 }
 
 /* dark mode toggle */

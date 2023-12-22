@@ -222,3 +222,39 @@
     transform: translateY(0);
   }
 }
+
+@keyframes hoverUnderline {
+  0%{
+    text-decoration: none;
+  }
+  100%{
+    text-decoration: underline;
+  }
+  
+}
+@keyframes ctaHoverL {
+  0%{
+    background-color: #151515;
+    color: white;
+  }
+  100%{
+    background-color: white;
+    color: #151515;
+  }
+  
+}
+@keyframes ctaHoverD {
+  0%{
+    background-color: white;
+    color: #151515;
+  }
+  100%{
+    background-color: #151515;
+    color: white;
+  }
+  
+}
+
+/* NOTES BECAUSE I LOWKEY FORGOT MOST OF THE MEETING STUFF
+-Create hover stuff on project text
+- */
