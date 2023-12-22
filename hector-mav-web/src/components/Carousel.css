@@ -1,7 +1,7 @@
 
 .loadin #brands{
   opacity: 0%;
-  animation: load-in 0.75s 0.25s forwards;
+  animation: load-in 0.75s 0.25s ease-in-out forwards;
 }
 #brands {
   padding-top: 85px;
@@ -12,6 +12,12 @@
   width: 100%;
   overflow-x: hidden;
   gap: 85px;
+  background-color: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #brands{
+  background-color: #151515;
+  transition: all 0.25s ease-in;
 }
 
 .caro-text {
@@ -28,22 +34,25 @@
   white-space: nowrap;
   font: 600 14px/24px mona sans, sans-serif;
   letter-spacing: .56px;
+  transition: all 0.25s ease-in;
 }
 
 .subtitle {
   align-self: center;
   color: #151515;
   font: 700 36px/42px mona sans, sans-serif;
+  transition: all 0.25s ease-in;
 }
 
 
 .dark-mode .text {
-  animation: genColorD 0.25s linear forwards;
-  opacity: 72%;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 .dark-mode .subtitle {
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 @keyframes carousel-move {
@@ -58,22 +67,28 @@
 }
 
 .carousel-box {
-  position: relative;
+  display: flex;
   overflow: hidden;
   margin: auto;
   align-self: center;
   width: calc(325px*12);
+  height: 200px;
+  margin-top: -40px;
 }
-
 .carousel {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 200px;
   width: calc(325px*16);
-  overflow-x: hidden;
   display: flex;
   gap: 20px;
   animation: carousel-move 30s linear infinite;
+  transition: all 0.25s ease-in;
 }
 
 .card-box {
+  margin-top: auto;
+  margin-bottom: auto;
   border-radius: 10px;
   background-color: #f8f8f8;
   min-width: 305px;
@@ -83,16 +98,25 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  transition: all 0.25s ease-in;
+
+}
+.card-box:hover {
+  transform: scale(1.1);
+  transition: all 0.25s ease-in;
 }
 
-.card-box:hover {}
 
-.light-mode .card-box {
-  animation: cardColorL 0.25s linear forwards;
+.card-box:hover .carousel{
+  animation-name: carousel-move;
+  animation-duration: 60s;
+  transition: all 0.25s ease-in;
 }
 
 .dark-mode .card-box {
-  animation: cardColorD 0.25s linear forwards;
+  background-color: #292929;
+  transition: all 0.25s ease-in;
 }
 
 
@@ -103,28 +127,24 @@
   margin: auto;
   align-self: center;
   height: 100%;
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
-
-.light-mode .ups-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
-}
-
 .dark-mode .ups-svg {
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
 }
 
-/* .loadin .ups-d-svg{
-    animation: fade-out-svg-change 0.25s linear forwards;
-} */
 .ups-d-svg {
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
   margin: auto;
   height: 100%;
   transform: scale(1.07) translateY(-130px) translateX(124px);
 }
-
 .dark-mode .ups-d-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
 
 /* Disney SVGS */
@@ -132,25 +152,24 @@
   height: 100%;
   transform: translateX(-170px);
   margin: auto;
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
-
-.light-mode .disney-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
-}
-
 .dark-mode .disney-svg {
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
 }
 
 .disney-d-svg {
   margin: auto;
   height: 100%;
   transform: scale(0.75) translateY(-185px) translateX(97px);
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
 }
-
 .dark-mode .disney-d-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
 
 /* Keurig SVGs */
@@ -159,25 +178,24 @@
   height: 100%;
   align-self: center;
   margin: auto;
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
-
-.light-mode .keurig-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
-}
-
 .dark-mode .keurig-svg {
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
 }
 
 .keurig-d-svg {
   margin: auto;
   height: 100%;
   transform: scale(0.95) translateY(-146px) translateX(95px);
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
 }
-
 .dark-mode .keurig-d-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
 
 /* Discover SVGs */
@@ -186,23 +204,22 @@
   margin: auto;
   height: 100%;
   transform: scale(1.3) translateX(80px);
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
-
-.light-mode .discover-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
-}
-
 .dark-mode .discover-svg {
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
 }
 
 .discover-d-svg {
   margin: auto;
   height: 100%;
   transform: scale(.71) translateX(-50px) translateY(1px);
-  animation: fade-out-svg-change 0.25s linear forwards;
+  opacity: 0;
+  transition: all 0.25s ease-in;
 }
-
 .dark-mode .discover-d-svg {
-  animation: fade-in-svg-change 0.25s linear forwards;
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
