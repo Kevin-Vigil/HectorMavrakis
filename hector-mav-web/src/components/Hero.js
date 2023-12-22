@@ -24,8 +24,6 @@ export default function Hero(props) {
   }
 
   document.addEventListener("DOMContentLoaded", load)
-
-
   return (
     <>
       <div className="hero-container">
@@ -44,8 +42,10 @@ export default function Hero(props) {
             <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
           </div>
           <a href='#projects' className="view-projects-container">
-            <div className="view-projects-text">View projects</div>
-            <Arrow className='view-projects-arrow-svg' />
+            <div id="hero-cta-textbox">
+              <div className="view-projects-text">View projects</div>
+              <Arrow className='view-projects-arrow-svg' />
+            </div>
           </a>
           <div className="hero-phone-img-container">
             <img loading='lazy' className='phone-demo-img' src={phoneLight} />
