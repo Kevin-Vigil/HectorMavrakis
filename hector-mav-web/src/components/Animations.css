@@ -232,3 +232,14 @@
   }
   
 }
+@keyframes ctaHoverL {
+  0%{
+    fill: #151515;
+    color: white;
+  }
+  100%{
+    fill: white;
+    color: #151515;
+  }
+  
+}
