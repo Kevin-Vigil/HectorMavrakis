@@ -13,12 +13,10 @@ function App() {
     <>
     <script>0</script>
     <Header />
-    <div id='container'>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path='/quantify' element={<Quantify/>}/>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path='/quantify' element={<Quantify/>}/>
+    </Routes>
     </>
   );
 }
