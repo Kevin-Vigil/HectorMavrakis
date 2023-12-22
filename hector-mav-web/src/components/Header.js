@@ -65,9 +65,10 @@ function Header() {
             <Logo className='logo-svg' />
           </a>
           <div className='header-nav-box'>
-            <Link to='#brands' className='links'>BRANDS</Link>
-            <Link to='#projects' className='links'>PROJECTS</Link>
-            <Link to='#about' className='links'>ABOUT</Link>
+            {/* <a href='#brands' className='links'>BRANDS</a> */}
+            <Link to='/#brands' className='links'>BRANDS</Link>
+            <Link to='/#projects' className='links'>PROJECTS</Link>
+            <Link to='/#about' className='links'>ABOUT</Link>
             <ColorSwitch id='cSwitch' className='header-switch' />
 
           </div>
