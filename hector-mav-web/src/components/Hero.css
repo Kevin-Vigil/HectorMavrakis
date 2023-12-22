@@ -254,8 +254,9 @@
 
 .view-projects-container {
   background-color: #151515;
+  border: solid 1px #151515;
   z-index: 2;
-  text-decoration-line: none;
+  text-decoration: none;
   border-radius: 6px;
   margin: auto;
   display: flex;
@@ -265,8 +266,11 @@
   margin-top: 30px;
 }
 
+.hover .view-projects-container{
+  animation: ctaHoverL 0.25s linear forwards;
+}
 .light-mode .view-projects-container {
-  animation: arrowColorL 0.25s linear forwards;
+  animation: genColorD 0.25s linear forwards;
 }
 
 .loadin .view-projects-container {
@@ -275,6 +279,7 @@
 }
 
 #hero-cta-textbox{
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -285,7 +290,10 @@
   font: 500 16px/28px mona sans;
   margin-top: auto;
   margin-bottom: auto;
+  text-decoration: none;
+  color: white;
 }
+
 .light-mode .view-projects-text{
   animation: arrowColorL 0.25s linear forwards;
 }

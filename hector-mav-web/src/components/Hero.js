@@ -16,14 +16,18 @@ export default function Hero(props) {
       if (event.animationName === 'load-in')
         document.documentElement.classList.toggle("loadin", false)
     })
-
-
-
-
-
   }
 
-  document.addEventListener("DOMContentLoaded", load)
+  document.addEventListener("DOMContentLoaded", () =>{
+    
+    const cta = document.querySelector("#cta");
+    cta.addEventListener("mouseover", () => {
+      cta.classList.add("hover")
+    });
+    cta.addEventListener("mouseout", () => {
+      cta.classList.remove("hover")
+    });
+  })
   return (
     <>
       <div className="hero-container">
@@ -41,7 +45,7 @@ export default function Hero(props) {
             <div className="envision">ENVISION</div>
             <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
           </div>
-          <a href='#projects' className="view-projects-container">
+          <a href='#projects' id="cta" className="view-projects-container">
             <div id="hero-cta-textbox">
               <div className="view-projects-text">View projects</div>
               <Arrow className='view-projects-arrow-svg' />
