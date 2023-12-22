@@ -227,12 +227,14 @@
     background-color: white;
     fill: #151515;
     color: #151515;
+    border-color: white;
   }
 
   100% {
     background-color: #151515;
     fill: white;
     color: white;
+    border-color: #151515;
   }
 
 }
@@ -242,19 +244,21 @@
     background-color: #151515;
     fill: white;
     color: white;
+    border-color: #151515;
   }
 
   100% {
     background-color: white;
     fill: #151515;
     color: #151515;
+    border-color: white;
   }
 
 }
 
 .view-projects-container {
   background-color: #151515;
-  border: solid 1px #151515;
+  border: solid 1px;
   z-index: 2;
   text-decoration: none;
   border-radius: 6px;
@@ -266,9 +270,29 @@
   margin-top: 30px;
 }
 
-.hover .view-projects-container{
+#cta:hover{
+  border: solid 1px #151515;
   animation: ctaHoverL 0.25s linear forwards;
 }
+#cta:hover .view-projects-text{
+  animation: arrowColorD 0.25s linear forwards;
+}
+#cta:hover .view-projects-arrow-svg{
+  animation: arrowColorD 0.25s linear forwards;
+}
+
+.dark-mode #cta:hover{
+  border: solid 1px white;
+  animation: ctaHoverD 0.25s linear forwards;
+}
+.dark-mode #cta:hover .view-projects-text{
+  animation: arrowColorL 0.25s linear forwards;
+}
+.dark-mode #cta:hover .view-projects-arrow-svg{
+  animation: arrowColorL 0.25s linear forwards;
+}
+
+
 .light-mode .view-projects-container {
   animation: genColorD 0.25s linear forwards;
 }
@@ -302,6 +326,10 @@
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
+  fill: white;
+  
+}
+.light-mode .view-projects-arrow-svg{
   animation: arrowColorL 0.25s linear forwards;
 }
 
@@ -374,12 +402,6 @@
 
 
 .dark-mode .hero-container {
-  z-index: 5;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-top: 100px;
   animation: genColorD 0.25s linear forwards;
 }
 
