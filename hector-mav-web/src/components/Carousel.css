@@ -13,11 +13,11 @@
   overflow-x: hidden;
   gap: 85px;
   background-color: white;
-  transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in, opacity 0s;
 }
 .dark-mode #brands{
   background-color: #151515;
-  transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in, opacity 0s;
 }
 
 .caro-text {
