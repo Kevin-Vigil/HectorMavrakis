@@ -234,12 +234,27 @@
 }
 @keyframes ctaHoverL {
   0%{
-    fill: #151515;
+    background-color: #151515;
     color: white;
   }
   100%{
-    fill: white;
+    background-color: white;
     color: #151515;
   }
   
 }
+@keyframes ctaHoverD {
+  0%{
+    background-color: white;
+    color: #151515;
+  }
+  100%{
+    background-color: #151515;
+    color: white;
+  }
+  
+}
+
+/* NOTES BECAUSE I LOWKEY FORGOT MOST OF THE MEETING STUFF
+-Create hover stuff on project text
+- */
