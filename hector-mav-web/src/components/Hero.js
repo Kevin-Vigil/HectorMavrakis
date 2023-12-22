@@ -19,7 +19,7 @@ export default function Hero(props) {
   }
 
   document.addEventListener("DOMContentLoaded", () =>{
-    
+    // document.documentElement.classList.toggle("loadin", false)
     const cta = document.querySelector("#cta");
     cta.addEventListener("mouseover", () => {
       cta.classList.add("hover")
@@ -42,17 +42,17 @@ export default function Hero(props) {
         </div>
         <div id="hero-content">
           <div id="hero-textbox">
-            <div className="statement">I DESIGN WHAT PEOPLE</div>
-            <div className="envision">ENVISION</div>
-            <div className="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
+            <div id="statement" >I DESIGN WHAT PEOPLE</div>
+            <div id="envision"  >ENVISION</div>
+            <div id="hero-purpose" >Alleviating end-users' frustrations through unique solutions.</div>
           </div>
-          <a href='#projects' id="cta" className="view-projects-container">
+          <a href='#projects' id="cta" >
             <div id="hero-cta-textbox">
               <div className="view-projects-text">View projects</div>
               <Arrow className='view-projects-arrow-svg' />
             </div>
           </a>
-          <div className="hero-phone-img-container">
+          <div id="hero-phone-img-container" >
             <img loading='lazy' className='phone-demo-img' src={phoneLight} />
           </div>
         </div>
