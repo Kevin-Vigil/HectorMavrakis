@@ -8,8 +8,20 @@
     opacity: 100%;
   }
 }
-
 /* OVERHAUL OF HERO COMPONENT */
+/* 
+#hero-container{
+
+}
+
+
+#hero-content{
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 60;
+
+} */
 
 
 #hero-container {
