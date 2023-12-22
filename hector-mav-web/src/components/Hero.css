@@ -198,7 +198,7 @@
 
 .loadin .hero-purpose {
   opacity: 0%;
-  animation: load-in 0.75s 1.25s forwards;
+  animation: load-in 0.75s 0.5s forwards;
 }
 
 .hero-phone-img-container {
