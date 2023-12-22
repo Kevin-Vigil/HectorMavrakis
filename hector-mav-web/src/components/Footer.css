@@ -7,23 +7,24 @@
   margin-left: 58px;
   margin: auto;
   width: 95%;
-}
-.light-mode #footer-container{
-  animation: genColorL 0.25s linear forwards;
+  background-color: white;
+  transition: all 0.25s ease-in;
 }
 .dark-mode #footer-container{
-  animation: genColorD 0.25s linear forwards;
+  background-color: #151515;
+  transition: all 0.25s ease-in;
 }
 
 #copyright{
   font: 500 15px mona sans;
   text-align: right;
-}
-.light-mode #copyright{
-  animation: genColorL 0.25s linear forwards;
+
+  color: #151515;
+  transition: all 0.25s ease-in;
 }
 .dark-mode #copyright{
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 #footer-bottom{
