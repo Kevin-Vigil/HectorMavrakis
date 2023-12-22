@@ -1,5 +1,6 @@
 import React from "react";
 import './Hero.css'
+import '../fonts/Fonts.css'
 import './Animations.css'
 import { Link } from "react-router-dom";
 import phoneLight from '../assets/lightPhoneDemo.png'
@@ -11,7 +12,7 @@ export default function Hero(props) {
   function load() {
     document.documentElement.classList.toggle("loadin", true)
 
-    const aniEnd = document.querySelector("#scroll-down")
+    const aniEnd = document.querySelector("#scroll-container")
     aniEnd.addEventListener("animationend", (event) => {
       if (event.animationName === 'load-in')
         document.documentElement.classList.toggle("loadin", false)
@@ -20,40 +21,38 @@ export default function Hero(props) {
 
   document.addEventListener("DOMContentLoaded", () =>{
     // document.documentElement.classList.toggle("loadin", false)
-    const cta = document.querySelector("#cta");
-    cta.addEventListener("mouseover", () => {
-      cta.classList.add("hover")
-    });
-    cta.addEventListener("mouseout", () => {
-      cta.classList.remove("hover")
-    });
+    // const cta = document.querySelector("#cta");
+    // cta.addEventListener("mouseover", () => {
+    //   cta.classList.add("hover")
+    // });
+    // cta.addEventListener("mouseout", () => {
+    //   cta.classList.remove("hover")
+    // });
     load();
   });
   return (
   <div id="hero-container">
-    <div id="scroll-down">
-      <div id="line1" />
+    <div id="scroll-container">
+      <div id="scroll-arrow">
+        <div id="scroll-arrowhead" />
+        <div id="scroll-line2" />
+      </div>
       <div id="scroll-text">SCROLL DOWN</div>
-      <div id="arrow">
-        <div id="line2" />
-        <div id="arrowhead" />
-      </div>
+      <div id="scroll-endLine" />
     </div>
-    <div id="hero-content">
-      <div id="hero-textbox">
-        <div id="statement" >I DESIGN WHAT PEOPLE</div>
-        <div id="envision"  >ENVISION</div>
-        <div id="hero-purpose" >Alleviating end-users' frustrations through unique solutions.</div>
+    <div id="hero-textbox">
+      <div id="hero-statement">I DESIGN WHAT PEOPLE</div>
+      <div id="hero-envision">ENVISION</div>
+      <div id="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
+    </div>
+    <a href='#projects' id="cta" >
+      <div id="hero-cta-textbox">
+        <div id="cta-text">View projects</div>
+        <Arrow id='cta-arrow' />
       </div>
-      <a href='#projects' id="cta" >
-        <div id="hero-cta-textbox">
-          <div className="view-projects-text">View projects</div>
-          <Arrow className='view-projects-arrow-svg' />
-        </div>
-      </a>
-      <div id="hero-phone-img-container" >
-        <img loading='lazy' className='phone-demo-img' src={phoneLight} />
-      </div>
+    </a>
+    <div id="hero-mockup-container" >
+      <img loading='lazy' id='hero-mockup-img' src={phoneLight} />
     </div>
   </div>
   );
