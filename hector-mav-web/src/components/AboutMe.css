@@ -7,6 +7,12 @@
   flex-direction: column;
   margin: auto;
   gap: 112px;
+  background-color: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #about{
+  background-color: #151515;
+  transition: all 0.25s ease-in;
 }
 
 /* TEXT BOX */
@@ -14,7 +20,6 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  background: none;
   gap: 16px;
 }
 
@@ -23,12 +28,12 @@
   margin: auto;
   font: 600 14px/24px mona sans;
   opacity: 72%;
-}
-.light-mode #about-title{
-  animation: genColorL 0.25s linear forwards;
+  color: #151515;
+  transition: all 0.25s ease-in;
 }
 .dark-mode #about-title{
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 #about-statement{
@@ -36,12 +41,12 @@
   background: none;
   margin: auto;
   font: 700 36px/42px mona sans;
-}
-.light-mode #about-statement{
-  animation: genColorL 0.25s linear forwards;
+  color: #151515;
+  transition: all 0.25s ease-in;
 }
 .dark-mode #about-statement{
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 /* points container */
@@ -127,23 +132,23 @@
 }
 
 #pCirc{
-  animation: svgColorL 0.25s linear forwards;
-}
-.light-mode #pCirc{
-  animation: svgColorL 0.25s linear forwards;
+  fill: #F8F8F8;
+  transition: all 0.25s ease-in;
 }
 .dark-mode #pCirc{
-  animation: svgColorD 0.25s linear forwards;
+  fill: #292929;
+  transition: all 0.25s ease-in;
 }
 
 .drawing{
-  animation: drawColorL 0.25s linear forwards;
-}
-.light-mode .drawing{
-  animation: drawColorL 0.25s linear forwards;
+  fill: black;
+  stroke: #F8F8F8;
+  transition: all 0.25s ease-in;
 }
 .dark-mode .drawing{
-  animation: drawColorD 0.25s linear forwards;
+  fill: white;
+  stroke: #292929;
+  transition: all 0.25s ease-in;
 }
 
 #platform-icon{
@@ -167,22 +172,22 @@
   margin-right: auto;
   font: 700 36px/42px mona sans;
   letter-spacing: .56px;
-}
-.light-mode .points-title{
-  animation: genColorL 0.25s linear forwards;
+  color: #151515;
+  transition: all 0.25s ease-in;
 }
 .dark-mode .points-title{
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 .points-statement{
   margin: auto;
   text-align: center;
   font: 500 18px/28px mona sans;
-}
-.light-mode .points-statement{
-  animation: genColorL 0.25s linear forwards;
+  color: #151515;
+  transition: all 0.25s ease-in;
 }
 .dark-mode .points-statement{
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
