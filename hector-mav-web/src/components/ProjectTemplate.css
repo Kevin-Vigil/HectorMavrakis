@@ -1,0 +1,79 @@
+/* Global vars */
+:root{
+  --walmartGrad: linear-gradient(88deg, #083460 -4.32%, #034484 6.01%, #1C7FF2 96.87%);
+  --quantifyGrad: linear-gradient(132deg, #06684F 18.18%, #0BBA8C 86.24%), #F7F7F7;
+  --bigtiresGrad: linear-gradient(110deg, #CE0F0F 11.13%, #F85555 88.45%), #F7F7F7;
+  --discoverGrad: linear-gradient(95deg, #AE4A15 -5.63%, #EA6B26 15.85%, #F6991C 96.12%), #F7F7F7;
+  --fundGrad: linear-gradient(110deg, #375D78 11.13%, #89BEF0 88.45%), #F7F7F7;
+}
+
+/* Scroll area for setting active component */
+#intersection-listener{
+  background-color: green;
+  position: fixed;
+  top: 25%;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+}
+
+/* Table of  */
+#toc{
+  position: fixed;
+  right: 78px;
+  top: 48vh;
+  width: 190px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.toc-card{
+  display: flex;
+  flex-direction: row;
+}
+
+.toc-text{
+  color: #D9D9D9;
+  font: 500 14px/28px mona sans;
+  transition: all 0.25s ease-in;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  margin-right: 12px;
+}
+.active .toc-text{
+  color: #1E1D1D;
+  transition: all 0.25s ease-in;
+}
+.dot{
+  width: 7px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 2px;
+  border-color: #D9D9D9;
+  background-color: transparent;
+  margin: auto;
+  transition: all 0.25s ease-in;
+}
+.active .dot{
+  background-color: #1E1D1D;
+  border-color: #1E1D1D;
+  transition: all 0.25s ease-in;
+}
+
+#page-box{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 550px;
+  border-radius: 10px;
+  background-color: var(--bigtiresGrad);
+}
+
+#p-section{
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
