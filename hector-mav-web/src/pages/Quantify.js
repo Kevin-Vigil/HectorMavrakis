@@ -10,8 +10,6 @@ export default function Quantify(){
   <div id="quantify">
     <ProjectTemplate props={false}/>
 
-    <Hero/>
-
     <Footer/>
   </div>
   )
