@@ -22,16 +22,11 @@
 #homepage {
   z-index: 0;
   display: flex;
-  gap: 85px;
   flex-direction: column;
+  background-color: white;
+  transition: all 0.25s ease-in;
 }
-
-.light-mode #homepage {
-  z-index: 0;
-  animation: lMode 0.25s linear forwards;
-}
-
 .dark-mode #homepage {
-  z-index: 0;
-  animation: dMode 0.25s linear forwards;
+  background-color: #151515;
+  transition: all 0.25s ease-in;
 }

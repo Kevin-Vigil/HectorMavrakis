@@ -8,6 +8,12 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 120px;
+  background-color: white;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.dark-mode #projects{
+  background-color: #151515;
+  transition: all 0.25s ease-in, opacity 0s;
 }
 
 /* projects textbox */
@@ -29,14 +35,13 @@
   align-self: center;
   font: 600 14px/24px mona sans, sans-serif;
   letter-spacing: .56px;
-}
 
-.light-mode #projects-list-header {
-  animation: genColorL 0.25s linear forwards;
+  color: #151515;
+  transition: all 0.25s ease-in;
 }
-
 .dark-mode #projects-list-header {
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 #projects-list-statement {
@@ -44,14 +49,12 @@
   align-self: center;
   text-wrap: nowrap;
   font: 700 36px/42px mona sans, sans-serif;
+  color: #151515;
+  transition: all 0.25s ease-in;
 }
-
-.light-mode #projects-list-statement {
-  animation: genColorL 0.25s linear forwards;
-}
-
 .dark-mode #projects-list-statement {
-  animation: genColorD 0.25s linear forwards;
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
 #projects-list-container {
@@ -65,16 +68,12 @@
   margin: auto;
   display: flex;
   flex-direction: row;
+  text-decoration: none;
   gap: 32px;
   max-width: 1278px;
   max-height: 550px;
   width: 1278px;
   height: 550px;
-}
-
-#quanify-container:hover{
-  transform: scale(1);
-  text-decoration: none;
 }
 #quantify-container:visited{
   text-decoration: none;
@@ -275,6 +274,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: all 0.25s ease-in-out;
+}
+.project-box:hover{
+  transform: scale(1.02);
+  transition: all 0.25s ease-in-out;
 }
 
 .project-arrow-icon {
@@ -342,16 +346,3 @@
 #walmart-phone {
   margin: auto;
 }
-
-
-/* Big O Tires */
-
-
-/* Discover */
-
-
-/* Fund */
-/* #fund-container {
-  display: flex;
-  flex-direction: column;
-} */

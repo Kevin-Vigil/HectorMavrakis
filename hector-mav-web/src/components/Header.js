@@ -18,14 +18,14 @@ function Header() {
 
     function toggleDarkMode(state) {
       document.documentElement.classList.toggle("dark-mode", state)
-      document.documentElement.classList.toggle("light-mode", !state)
     }
 
     function setDarkModeLocalStorage(state) {
       localStorage.setItem("dark-mode", state);
     }
 
-    toggleDarkMode(localStorage.getItem("dark-mode") == "true")
+    darkModeState=(localStorage.getItem("dark-mode") == "true")
+    toggleDarkMode(darkModeState)
 
     button.addEventListener("click", () => {
       // document.documentElement.classList.toggle("light-mode", darkModeState)
@@ -67,9 +67,9 @@ function Header() {
           </a>
           <div className='header-nav-box'>
             {/* <a href='#brands' className='links'>BRANDS</a> */}
-            <Link to='/#brands' className='links'>BRANDS</Link>
-            <Link to='/#projects' className='links'>PROJECTS</Link>
-            <Link to='/#about' className='links'>ABOUT</Link>
+            <a href='/#brands' className='links'>BRANDS</a>
+            <a href='/#projects' className='links'>PROJECTS</a>
+            <a href='/#about' className='links'>ABOUT</a>
             <ColorSwitch id='cSwitch' className='header-switch' />
 
           </div>

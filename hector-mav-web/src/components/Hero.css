@@ -1,357 +1,152 @@
-/* animations */
-@keyframes heroLoad {
-  0% {
-    opacity: 0%;
-  }
 
-  100% {
-    opacity: 100%;
-  }
-}
+/* OVERHAUL OF HERO COMPONENT */
 
-#hero-container {
-  z-index: 5;
-  position: relative;
+#hero-container{
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-top: 140px;
-}
-
-.light-mode #hero-container {
-  animation: genColorL 0.25s linear forwards;
-}
-
-/* .loadin #hero-container{
-    opacity: 0%;
-    animation: heroLoad 0.5s 0.25s linear forwards;
-} */
-
-
-/* special animations for scroll box */
-@keyframes lineColorL {
-  0% {
-    color: white;
-    fill: white;
-  }
-
-  100% {
-    color: #D9D9D9;
-    fill: #D9D9D9;
-  }
-
-}
-
-@keyframes lineColorD {
-  0% {
-    color: #D9D9D9;
-    fill: #D9D9D9;
-  }
-
-  100% {
-    fill: white;
-    color: white;
-  }
-
-}
-
-/* scroll container */
-#scroll-down {
-  display: flex;
-  flex-direction: row;
-  rotate: 90deg;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-
-  background: none;
-  top: 50vh;
-  left: 0px;
-  margin-left: -170px;
-  gap: 20px;
-  z-index: 99;
-}
-
-.light-mode #scroll-down {
-  animation: lineColorL 0.25s linear forwards;
-}
-
-.loadin #scroll-down {
-  opacity: 0%;
-  transform: translateY(20px);
-  animation: load-in 0.75s 1.25s forwards;
-}
-
-
-#line1 {
-  background: none;
-  border-bottom: 3px solid #D9D9D9;
-  width: 128px;
-  height: 3px;
-}
-.light-mode #line1{
-  animation: lineColorL 0.25s linear forwards;
-}
-
-#scroll-text {
-  background: none;
-  transform: rotate(180deg);
-}
-.light-mode #scroll-text{
-  animation: genColorL 0.25s linear forwards;
-}
-
-#line2 {
-  z-index: 2;
-  background: none;
-  border-bottom: 3px solid #D9D9D9;
-  width: 128px;
-  height: 3px;
-}
-.light-mode #line2{
-  animation: lineColorL 0.25s linear forwards;
-}
-
-#arrowhead {
-  background: none;
-  border: solid #D9D9D9;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 7px;
-  rotate: -45deg;
-  margin-left: -17px;
-  margin-top: 2px;
-  animation: lineColorL 0.25s linear forwards;
-}
-
-
-
-/* hero content */
-
-#hero-content {
-  align-self: stretch;
-  display: flex;
-  flex-grow: 1;
-  flex-basis: 0%;
   flex-direction: column;
-  max-width: 100%;
-  z-index: 1;
-  /*  */
+  z-index: 2;
+  gap: 40px;
+  padding-top: 140px;
+  position: relative;
+  background-color: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #hero-container{
+  background-color: #151515;
+  transition: all 0.25s ease-in;
+}
 
-}
-.loadin #hero-content{
-  animation: load-in 0.75s 0.25s forwards;
-}
+/* Hero Textbox */
 #hero-textbox{
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-
-.loadin #hero-container {
-  z-index: 1;
-  opacity: 0;
-  animation: load-in 0.75s 0.25s forwards;
-}
-
-.statement {
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  align-self: center;
+#hero-statement{
   font: 700 24px/64px mona sans;
+  color: #1E1D1D;
+  margin: auto;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.dark-mode #hero-statement{
+  color: white;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.loadin #hero-statement{
+  opacity: 0;
+  animation: load-in 0.5s 0.25s ease-in-out forwards;
 }
 
-.light-mode .statement {
-  animation: genColorL 0.25s linear forwards;
-}
-
-.loadin .statement {
-  opacity: 0%;
-  transform: translateY(20px);
-  animation: load-in 0.75s 0.25s forwards;
-}
-
-.envision {
-  text-align: center;
-  text-transform: uppercase;
+#hero-envision{
   font: 800 171px/60px mona sans;
+  color: #1E1D1D;
+  margin: auto;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.dark-mode #hero-envision{
+  color: white;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.loadin #hero-envision{
+  opacity: 0;
+  animation: load-in 0.5s 0.25s ease-in-out forwards;
 }
 
-.light-mode .envision {
-  animation: genColorL 0.25s linear forwards;
-}
-
-.loadin .envision {
-  opacity: 0%;
-  animation: load-in 0.75s 0.25s forwards;
-}
-
-
-.hero-purpose {
-  z-index: 2;
-  text-align: center;
-  align-self: center;
+#hero-purpose{
   font: 500 18px/80px mona sans;
-}
-
-.light-mode .hero-purpose {
-  animation: genColorL 0.25s linear forwards;
-}
-
-.loadin .hero-purpose {
-  opacity: 0%;
-  animation: load-in 0.75s 0.5s forwards;
-}
-
-.hero-phone-img-container {
-  align-self: center;
-  width: 1300px;
-  height: 850px;
+  color: #1E1D1D;
   margin: auto;
-  margin-top: -130px;
-  overflow: hidden;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.dark-mode #hero-purpose{
+  color: white;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.loadin #hero-purpose{
+  opacity: 0;
+  animation: load-in 0.5s .75s ease-in-out forwards;
 }
 
-.light-mode .hero-phone-img-container {
-  animation: genColorL 0.25s linear forwards;
-}
-
-.loadin .hero-phone-img-container {
-  opacity: 0%;
-  animation: load-in 0.5s 1.1s forwards;
-}
-
-/*Project button*/
-/* animations for arrow svg */
-@keyframes arrowColorL {
-  0% {
-    background-color: white;
-    fill: #151515;
-    color: #151515;
-    border-color: white;
-  }
-
-  100% {
-    background-color: #151515;
-    fill: white;
-    color: white;
-    border-color: #151515;
-  }
-
-}
-
-@keyframes arrowColorD {
-  0% {
-    background-color: #151515;
-    fill: white;
-    color: white;
-    border-color: #151515;
-  }
-
-  100% {
-    background-color: white;
-    fill: #151515;
-    color: #151515;
-    border-color: white;
-  }
-
-}
-
-.view-projects-container {
-  background-color: #151515;
-  border: solid 1px;
-  z-index: 2;
+/* Hero CTA */
+#cta{
   text-decoration: none;
-  border-radius: 6px;
-  margin: auto;
   display: flex;
-  flex-direction: row;
   width: 200px;
   height: 64px;
-  margin-top: 30px;
+  border: solid 1px #1E1D1D;
+  background-color: #1E1D1D;
+  z-index: 3;
+  margin: auto;
+  border-radius: 6px;
+  transition: all 0.25s ease-in, opacity 0s;
 }
-
-#cta:hover{
-  border: solid 1px #151515;
-  animation: ctaHoverL 0.25s linear forwards;
-}
-#cta:hover .view-projects-text{
-  animation: arrowColorD 0.25s linear forwards;
-}
-#cta:hover .view-projects-arrow-svg{
-  animation: arrowColorD 0.25s linear forwards;
-}
-
-.dark-mode #cta:hover{
-  border: solid 1px white;
-  animation: ctaHoverD 0.25s linear forwards;
-}
-.dark-mode #cta:hover .view-projects-text{
-  animation: arrowColorL 0.25s linear forwards;
-}
-.dark-mode #cta:hover .view-projects-arrow-svg{
-  animation: arrowColorL 0.25s linear forwards;
-}
-
-
-.light-mode .view-projects-container {
-  animation: genColorD 0.25s linear forwards;
-}
-
-.loadin .view-projects-container {
+.loadin #cta{
   opacity: 0;
-  animation: load-in 0.75s 1.1s forwards;
+  animation: load-in 0.5s .75s ease-in-out forwards;
 }
-
 #hero-cta-textbox{
-  text-decoration: none;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  margin: auto;
   gap: 16px;
 }
-
-.view-projects-text {
+#cta-text{ 
   font: 500 16px/28px mona sans;
-  margin-top: auto;
-  margin-bottom: auto;
-  text-decoration: none;
   color: white;
-}
-
-.light-mode .view-projects-text{
-  animation: arrowColorL 0.25s linear forwards;
-}
-
-.view-projects-arrow-svg {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: flex;
-  fill: white;
-  
-}
-.light-mode .view-projects-arrow-svg{
-  animation: arrowColorL 0.25s linear forwards;
-}
-
-#arrow {
   margin: auto;
-  background: none;
-  display: flex;
-  align-items: center;
-  align-self: center;
-
+  transition: all 0.25s ease-in;
+}
+#cta-arrow{
+  fill: white;
+  margin: auto;
+  transition: all 0.25s ease-in;
+}
+/* Hover CTA */
+#cta:hover{
+  background-color: white;
+  transition: all 0.25s ease-in;
+}
+#cta:hover #cta-text{
+  color: #151515;
+  transition: all 0.25s ease-in;
+}
+#cta:hover #cta-arrow{
+  fill: #151515;
+  transition: all 0.25s ease-in;
 }
 
-.light-mode #arrow {
-  animation: genColorL 0.25s linear forwards;
+/* Dark mode CTA */
+.dark-mode #cta{
+  border: solid 1px white;
+  background-color: white;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.dark-mode #cta-text{
+  color: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #cta-arrow{
+  fill: #151515;
+  transition: all 0.25s ease-in;
+}
+/* Dark mode hover CTA */
+.dark-mode #cta:hover{
+  background-color: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #cta:hover #cta-text{
+  color: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #cta:hover #cta-arrow{
+  fill: white;
+  transition: all 0.25s ease-in;
 }
 
+/* Mockup image */
 
-
-
-
+/* Animation */
 @keyframes contentL {
   0% {
     opacity: 100%;
@@ -391,101 +186,83 @@
 
 }
 
-.phone-demo-img {
-  background: none;
-  margin-left: auto;
-  margin-right: auto;
+/* Mockup CSS */
+#hero-mockup-container{
+  display: flex;
+  margin: auto;
+  width: 70%;
+}
+.loadin #hero-mockup-container{
+  opacity: 0;
+  animation: load-in .75s 1s ease-in-out forwards;
+}
+#hero-mockup-img{
+  
+  margin: auto;
   width: 100%;
-  animation: contentL 0.25s linear forwards;
+  margin-top: -170px;
+  animation: contentL 0.25s ease-in forwards;
+}
+.dark-mode #hero-mockup-img{
+  animation: contentD 0.25s ease-in forwards;
 }
 
-
-
-
-
-.dark-mode .hero-container {
-  animation: genColorD 0.25s linear forwards;
-}
-
-.dark-mode #scroll-down {
+/* scroll-container */
+#scroll-container{
   display: flex;
   flex-direction: row;
-  rotate: 90deg;
   position: absolute;
-  justify-content: center;
-  align-items: center;
-
-  background: none;
-  bottom: 340px;
-  left: 0px;
-  margin-left: -170px;
-  gap: 20px;
-  z-index: 99;
-  animation: genColorD 0.25s linear forwards;
+  rotate: -90deg;
+  left: -140px;
+  top: 60vh;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+.loadin #scroll-container{
+  opacity: 0;
+  animation: load-in 0.75s 1.5s ease-in-out forwards;
 }
 
-.dark-mode #scroll-text {
-  animation: genColorD 0.25s linear forwards;
-}
-
-.dark-mode #line1 {
-  background: none;
-  border-bottom: 3px solid white;
-  width: 128px;
-  height: 3px;
-  animation: lineColorD 0.25s linear forwards;
-}
-
-.dark-mode #line2 {
-  animation: lineColorD 0.25s linear forwards;
-}
-
-.dark-mode #arrowhead {
-  animation: lineColorD 0.25s linear forwards;
-}
-
-.dark-mode #arrow {
-  animation: genColorD 0.25s linear forwards;
-}
-
-.dark-mode #hero-content {
-  z-index: 1;
-  align-self: stretch;
+#scroll-arrow{
   display: flex;
-  flex-grow: 1;
-  flex-basis: 0%;
-  flex-direction: column;
-  max-width: 100%;
-  animation: genColorD 0.25s linear forwards;
+  flex-direction: row;
+}
+#scroll-arrowhead{
+  width: 19px;
+  height: 19px;
+  border-radius: 3px;
+  border: solid;
+  border-width: 3px 0 0 3px;
+  border-color: #D9D9D9;
+  rotate: -45deg;
+  margin-right: -22.5px;
+  margin-left: 20px;
+}
+#scroll-line2{
+  background-color: #D9D9D9;
+  height: 3px;
+  width: 123px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+  border-radius: 3px;
 }
 
-.dark-mode .statement {
-  animation: genColorD 0.25s linear forwards;
+#scroll-text{
+  color: #1E1D1D;
+  font: 500 18px mona sans;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #scroll-text{
+  color: white;
+  transition: all 0.25s ease-in;
 }
 
-.dark-mode .envision {
-  animation: genColorD 0.25s linear forwards;
-}
-
-.dark-mode .hero-purpose {
-  animation: genColorD 0.25s linear forwards;
-}
-
-
-.dark-mode .view-projects-container {
-  animation: arrowColorD 0.25s linear forwards;
-}
-
-.dark-mode .view-projects-text {
-  animation: arrowColorD 0.25s linear forwards;
-}
-
-.dark-mode .view-projects-arrow-svg {
-  animation: arrowColorD 0.25s linear forwards;
-}
-
-.dark-mode .phone-demo-img {
-  background: none;
-  animation: contentD 0.25s linear forwards;
-
+#scroll-endLine{
+  height: 3px;
+  width: 128px;
+  background-color: #D9D9D9;
+  border-radius: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
 }
