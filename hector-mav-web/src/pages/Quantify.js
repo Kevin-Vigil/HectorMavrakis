@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectTemplate from "../components/ProjectTemplate";
 import Footer from "../components/Footer";
-import Hero from "../components/Hero";
 
 import './Quantify.css'
 
