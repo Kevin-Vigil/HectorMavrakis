@@ -7,7 +7,7 @@
   --fundGrad: linear-gradient(110deg, #375D78 11.13%, #89BEF0 88.45%), #F7F7F7;
 }
 
-/* Table of  */
+/* Table of contents */
 #toc{
   z-index: 999;
   position: fixed;
@@ -35,10 +35,11 @@
   width: 100%;
   margin-right: 12px;
 }
-.active .toc-text{
-  color: #1E1D1D;
+.active-comp .toc-text{
+  color: #151515;
   transition: all 0.25s ease-in;
 }
+
 .dot{
   width: 7px;
   height: 6px;
@@ -49,9 +50,9 @@
   margin: auto;
   transition: all 0.25s ease-in;
 }
-.active .dot{
-  background-color: #1E1D1D;
-  border-color: #1E1D1D;
+#objective-dot .active-comp{
+  border-color: #151515;
+  background-color: #151515;
   transition: all 0.25s ease-in;
 }
 
@@ -67,24 +68,16 @@
 }
 
 .p-section{
-  position: relative;
   display: flex;
   flex-direction: column;
   /* padding-top: 105px;
   padding-bottom: 105px; */
   width: 100%;
   height: 500px;
+  background-color: #034484;
   transition: all 0.25s ease-in;
 }
 .active-comp #objective{
   background-color: #20d4a7;
   transition: all 0.25s ease-in;
-}
-.start{
-  position: absolute;
-  top: 0;
-}
-.end{
-  position: absolute;
-  bottom: 0;
 }
