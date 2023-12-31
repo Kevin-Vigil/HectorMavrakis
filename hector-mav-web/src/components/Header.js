@@ -6,9 +6,11 @@ import { } from '@mui/material'
 
 import { ReactComponent as Logo } from '../assets/hmLogo.svg'
 import { ReactComponent as ColorSwitch } from '../assets/Switch.svg'
+import Exit from './Hamburger';
+import Hamburger from './Hamburger';
 
 function Header() {
-
+  const [showMenu, setShowMenu] = useState(false)
   function load() {
     let darkModeState = false;
 
@@ -37,42 +39,39 @@ function Header() {
   }
   window.addEventListener("DOMContentLoaded", () => {
     load();
+    
   });
 
-
+  function menuToggle(){
+    setShowMenu(showMenu => !showMenu)
+    console.log(showMenu)
+  }
 
 
 
 
   return (
     <>
-      <nav className='header-mobile'>
-        <a to='/' className='hec-mav-logo'>
-          {/* <img src={logo} className='hec-logo'/> */}
-          <Logo />
-        </a>
-
-        <div className='navbar-mobile'>
-          <ColorSwitch className='header-switch' />
-        </div>
-      </nav>
-
-
-
-
       <div className='header'>
         <div className='nav-container'>
           <a href='/' className='hec-mav-logo'>
             <Logo className='logo-svg' />
           </a>
+          
           <div className='header-nav-box'>
+            <button id='menu-hamburger' onClick={menuToggle}>
+              <Hamburger isOpen={showMenu}/>
+            </button>
             {/* <a href='#brands' className='links'>BRANDS</a> */}
-            <a href='/#brands' className='links'>BRANDS</a>
-            <a href='/#projects' className='links'>PROJECTS</a>
-            <a href='/#about' className='links'>ABOUT</a>
-            <ColorSwitch id='cSwitch' className='header-switch' />
-
+            <div id='link-box'>
+              {/* {showMenu? <Exit onClick={menuToggle}/>: null} */}
+              {/* <Exit/> */}
+              <a href='/#brands' className='links'>BRANDS</a>
+              <a href='/#projects' className='links'>PROJECTS</a>
+              <a href='/#about' className='links'>ABOUT</a>
+            </div>
           </div>
+          <ColorSwitch id='cSwitch' className='header-switch' />
         </div>
       </div>
     </>
@@ -99,10 +98,10 @@ window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementsByClassName("header")[0].style.height = "75px";
-    document.getElementsByClassName("header-mobile")[0].style.height = "75px";
+    // document.getElementsByClassName("header-mobile")[0].style.height = "75px";
   } else {
     document.getElementsByClassName("header")[0].style.height = "100px";
-    document.getElementsByClassName("header-mobile")[0].style.height = "100px";
+    // document.getElementsByClassName("header-mobile")[0].style.height = "100px";
   }
 }
 
