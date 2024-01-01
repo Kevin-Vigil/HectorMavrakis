@@ -6,43 +6,54 @@ import { } from '@mui/material'
 
 import { ReactComponent as Logo } from '../assets/hmLogo.svg'
 import { ReactComponent as ColorSwitch } from '../assets/Switch.svg'
-import Exit from './Hamburger';
 import Hamburger from './Hamburger';
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false)
+  const [darkModeState, setDarkMode] = useState(false)
+
+  function toggleDarkMode(state) {
+    document.documentElement.classList.toggle("dark-mode", state)
+  }
   function load() {
-    let darkModeState = false;
 
     const button = document.querySelector("#cSwitch")
 
     const useDark = window.matchMedia("(prefers-color-scheme: dark)")
 
-    function toggleDarkMode(state) {
-      document.documentElement.classList.toggle("dark-mode", state)
-    }
+    
 
-    function setDarkModeLocalStorage(state) {
-      localStorage.setItem("dark-mode", state);
-    }
+    
 
-    darkModeState=(localStorage.getItem("dark-mode") == "true")
+    setDarkMode(localStorage.getItem("dark-mode") == "true")
     toggleDarkMode(darkModeState)
 
-    button.addEventListener("click", () => {
-      // document.documentElement.classList.toggle("light-mode", darkModeState)
-      darkModeState = !darkModeState
-      toggleDarkMode(darkModeState)
-      setDarkModeLocalStorage(darkModeState);
-    });
+    // button.addEventListener("click", () => {
+    //   // document.documentElement.classList.toggle("light-mode", darkModeState)
+    //   darkModeState = !darkModeState
+    //   toggleDarkMode(darkModeState)
+    //   setDarkModeLocalStorage(darkModeState);
+    // });
+
+
 
   }
   window.addEventListener("DOMContentLoaded", () => {
     load();
-    
-  });
 
-  function menuToggle(){
+  });
+  function setDarkModeLocalStorage(state) {
+    localStorage.setItem("dark-mode", state);
+  }
+
+  function toggleDark(){
+    setDarkMode(!darkModeState)
+    toggleDarkMode(!darkModeState)
+    setDarkModeLocalStorage(!darkModeState)
+  }
+
+  function menuToggle() {
+    console.log(showMenu)
     setShowMenu(showMenu => !showMenu)
     console.log(showMenu)
   }
@@ -58,20 +69,26 @@ function Header() {
             <Logo className='logo-svg' />
           </a>
           
+          <div id='menu-hamburger' onClick={menuToggle} >
+            <Hamburger isOpen={showMenu} />
+          </div>
+          {showMenu ? (<div id='mobile-link-box'>
+              <a href='/#brands' onClick={menuToggle} className='links'>BRANDS</a>
+              <a href='/#projects' onClick={menuToggle} className='links'>PROJECTS</a>
+              <a href='/#about' onClick={menuToggle} className='links'>ABOUT</a>
+            </div>) : null}
+          {/* <div id='test-text'>{showMenu}</div> */}
           <div className='header-nav-box'>
-            <button id='menu-hamburger' onClick={menuToggle}>
-              <Hamburger isOpen={showMenu}/>
-            </button>
             {/* <a href='#brands' className='links'>BRANDS</a> */}
+
             <div id='link-box'>
-              {/* {showMenu? <Exit onClick={menuToggle}/>: null} */}
-              {/* <Exit/> */}
+
               <a href='/#brands' className='links'>BRANDS</a>
               <a href='/#projects' className='links'>PROJECTS</a>
               <a href='/#about' className='links'>ABOUT</a>
             </div>
           </div>
-          <ColorSwitch id='cSwitch' className='header-switch' />
+          <ColorSwitch onClick={toggleDark} id='cSwitch' className='header-switch' />
         </div>
       </div>
     </>
