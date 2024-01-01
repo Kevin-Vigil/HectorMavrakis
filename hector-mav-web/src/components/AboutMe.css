@@ -1,15 +1,25 @@
-.loadin #about{
-  opacity: 0%;
-  animation: load-in 0.75s 0.25s forwards;
+@media only screen and (max-width: 720px) {
+  #about{
+    display: none;
+  }
+  
 }
-#about{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  gap: 112px;
-  background-color: white;
-  transition: all 0.25s ease-in, opacity 0s;
+@media only screen and (min-width: 721px) {
+  .loadin #about{
+    opacity: 0%;
+    animation: load-in 0.75s 0.25s forwards;
+  }
+  #about{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 112px;
+    background-color: white;
+    transition: all 0.25s ease-in, opacity 0s;
+  }
 }
+
+
 .dark-mode #about{
   background-color: #151515;
   transition: all 0.25s ease-in, opacity 0s;
