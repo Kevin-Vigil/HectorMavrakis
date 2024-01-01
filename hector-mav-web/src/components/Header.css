@@ -1,7 +1,8 @@
 @media only screen and (max-width: 720px) {
-  .header{
+  /* .header{
+    margin: auto;
     width: 100%;
-  }
+  } */
   .header-nav-box{
     display: none;
   }
