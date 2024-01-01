@@ -31,6 +31,7 @@ export default function Hero(props) {
     load();
   });
   return (
+    <>
   <div id="hero-container">
     <div id="scroll-container">
       <div id="scroll-arrow">
@@ -55,5 +56,6 @@ export default function Hero(props) {
       <img loading='lazy' id='hero-mockup-img' src={phoneLight} />
     </div>
   </div>
+  </>
   );
 } 
