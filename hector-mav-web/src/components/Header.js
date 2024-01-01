@@ -10,22 +10,13 @@ import Hamburger from './Hamburger';
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false)
-  const [darkModeState, setDarkMode] = useState(false)
+  let darkModeState = false;
 
   function toggleDarkMode(state) {
     document.documentElement.classList.toggle("dark-mode", state)
   }
   function load() {
-
-    const button = document.querySelector("#cSwitch")
-
-    const useDark = window.matchMedia("(prefers-color-scheme: dark)")
-
-    
-
-    
-
-    setDarkMode(localStorage.getItem("dark-mode") == "true")
+    darkModeState = (localStorage.getItem("dark-mode") == "true")
     toggleDarkMode(darkModeState)
 
     // button.addEventListener("click", () => {
@@ -35,7 +26,7 @@ function Header() {
     //   setDarkModeLocalStorage(darkModeState);
     // });
 
-
+    console.log(darkModeState)
 
   }
   window.addEventListener("DOMContentLoaded", () => {
@@ -47,15 +38,13 @@ function Header() {
   }
 
   function toggleDark(){
-    setDarkMode(!darkModeState)
-    toggleDarkMode(!darkModeState)
-    setDarkModeLocalStorage(!darkModeState)
+    darkModeState = !darkModeState
+    toggleDarkMode(darkModeState)
+    setDarkModeLocalStorage(darkModeState)
   }
 
   function menuToggle() {
-    console.log(showMenu)
     setShowMenu(showMenu => !showMenu)
-    console.log(showMenu)
   }
 
 
