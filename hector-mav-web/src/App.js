@@ -10,14 +10,14 @@ import Quantify from './pages/Quantify';
 
 function App() {
   return (
-    <>
-    <script>0</script>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path='/quantify' element={<Quantify/>}/>
-    </Routes>
-    </>
+    <div id='app'>
+      <script>0</script>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path='/quantify' element={<Quantify/>}/>
+      </Routes>
+    </div>
   );
 }
 
