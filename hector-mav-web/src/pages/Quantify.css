@@ -3,4 +3,10 @@
   display: flex;
   gap: 85px;
   flex-direction: column;
+  background-color: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #quantify{
+  background-color: #151515;
+  transition: all 0.25s ease-in;
 }
