@@ -28,7 +28,7 @@ function addObserver(el, options) {
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log("Test: " + entry.target.classList + " \tFor: " + entry.target.id)
+        // console.log("Test: " + entry.target.classList + " \tFor: " + entry.target.id)
         entry.target.classList.add('active-comp')
         entry.target.classList.remove('active-listener')
         observer.unobserve(entry.target)
