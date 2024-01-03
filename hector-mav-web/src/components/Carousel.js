@@ -8,10 +8,10 @@ export default function Carousel(props) {
     <div id="brands">
       <div className='caro-text'>
         <div className='text'>EXPERIENCE</div>
-        <div className='subtitle'>Some of the brands that I've worked with.</div>
+        <div className='subtitle'>Brands that I've worked with as clients.</div>
       </div>
-      <CarouselDesktop id="caro-desktop" />
-      <CarouselMobile id="caro-mobile" />
+        <CarouselDesktop id="caro-desktop" />
+        <CarouselMobile id="caro-mobile" />
     </div>
   )
 }
