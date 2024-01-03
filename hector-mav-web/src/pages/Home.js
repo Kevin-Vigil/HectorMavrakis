@@ -6,8 +6,21 @@ import Projects from "../components/Projects"
 import '../fonts/Fonts.css'
 import About from "../components/AboutMe"
 import Footer from "../components/Footer"
+import scrollTrigger from "../components/scrollTrigger"
 
 export default function Home() {
+
+  function load(){
+    const options={
+      rootMargin: "-70% 0% -30% 0%",
+      threshold: 0 
+    }
+    scrollTrigger(".active-listener", options, false);
+    
+  }
+  window.addEventListener("DOMContentLoaded", ()=>{
+    load()
+  });
   
   return (
     <div id="homepage">
