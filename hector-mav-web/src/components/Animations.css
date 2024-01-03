@@ -13,6 +13,15 @@
   }
 }
 
-/* NOTES BECAUSE I LOWKEY FORGOT MOST OF THE MEETING STUFF
--Create hover stuff on project text
-- */
+@keyframes scroll-load-in {
+  0% {
+    opacity: 0%;
+    transform: translateY(40px);
+
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
