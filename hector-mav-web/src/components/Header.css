@@ -179,6 +179,11 @@
   transition: all 0.25s ease-in;
   /* animation: hoverUnderline 0.25s forwards; */
 }
+.dark-mode .links:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
+  transition: all 0.25s ease-in;
+}
 
 /* dark mode toggle */
 
