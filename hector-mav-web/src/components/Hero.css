@@ -116,7 +116,7 @@
     transition: all 0.25s ease-in;
   }
   
-/* Hero Textbox */
+  /* Hero Textbox */
   #hero-textbox {
     margin: auto;
     display: flex;
@@ -135,6 +135,7 @@
 
   #hero-envision {
     font: 800 171px/60px mona sans;
+    text-align: center;
     color: #1E1D1D;
     margin: auto;
     transition: all 0.25s ease-in, opacity 0s;
@@ -251,6 +252,30 @@
     margin-bottom: auto;
     margin-left: 20px;
   }
+}
+
+
+@media only screen and (min-width: 1921px) {
+
+  #hero-envision{
+    font: 800 100%/50% mona sans;
+    text-align: center;
+    margin: auto;
+    /* overflow: hidden; */
+    transition: all 0.25s ease-in;
+  }
+  #envision-scaler{
+    display: flex;
+    width: 55vw;
+    height: 10vw;
+    font-size: 10vw;
+    margin: auto;
+    transition: all 0.25s ease-in;
+  }
+  #hero-textbox{
+    gap: 0;
+  }
+  
 }
 
 
