@@ -42,7 +42,7 @@ export default function ProjectTemplate(props){
       mutObserver.observe(element, {attributes: true,CharacterData: true});
     })
 
-    scrollTrigger(".p-section", options);
+    scrollTrigger(".p-section", options, true);
     
   })
 
