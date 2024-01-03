@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className="active-listener">
       <div id="projects-list-textbox">
         <div id="projects-list-header">PROJECTS</div>
         <div id="projects-list-statement">Take a look at what I've designed.</div>
@@ -33,7 +33,8 @@ export default function Projects() {
           </div>
         </div>
         <div id="row-2" className="projects-box-container two-contain">
-          <Link to="/quantify" id="quantify-container" className="project-box">
+          {/* <Link to="/quantify" id="quantify-container" className="project-box"> */}
+          <div id="quantify-container" className="project-box" >
             <div id="quantify-textbox" className="project-textbox">
               <div id="quantify-title" className="project-title">
                 Quantify
@@ -46,7 +47,8 @@ export default function Projects() {
               <img src={QuantifyPhone} id='quantify-img' className="project-img"/>
             </div>
             <Subtract className="project-arrow-icon" />
-          </Link>
+          {/* </Link> */}
+          </div>
           <div id="big-o-tires-container" className="project-box">
             <div id="big-o-tires-textbox" className="project-textbox">
               <div id="big-o-tires-title" className="project-title">

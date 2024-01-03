@@ -26,7 +26,7 @@ function Header() {
     //   setDarkModeLocalStorage(darkModeState);
     // });
 
-    console.log(darkModeState)
+    // console.log(darkModeState)
 
   }
   window.addEventListener("DOMContentLoaded", () => {

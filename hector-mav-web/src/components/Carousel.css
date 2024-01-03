@@ -34,9 +34,14 @@
 }
 
 #brands{
-  margin-top: 30px;
+  padding-top: 95px;
+  padding-bottom: 10px;
 }
-.active #brands{
+.active-listener{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.active-comp{
   opacity: 0%;
-  animation: load-in 0.75s 0.25s ease-in-out forwards;
+  animation: scroll-load-in 0.5s ease-in-out forwards;
 }
