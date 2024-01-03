@@ -53,7 +53,7 @@ export default function Projects() {
                 Big O Tires
               </div>
               <div id="big-o-tires-subtitle" className="project-subtitle">
-                Placeholder description of project with detail
+                Optimizing customer awareness of product availability
               </div>
             </div>
             <div id="big-o-img-container" className="img-container">
