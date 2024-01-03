@@ -1,3 +1,6 @@
 Hector Mavrakis Website
 ### Known bugs:
-- Dark mode load-in does not work when defaulted on dark mode. Dark mode local storage is currently disabled.
+- Scroll trigger does not activate certain elements in Project Template component.
+- Arrow SVG in Projects List component will clip/cut off when hovered.
+- Carousel scrolling speed cannot be changed on card hover.
+
