@@ -18,10 +18,7 @@
   }
 }
 
-.loadin #brands-desktop{
-  opacity: 0%;
-  animation: load-in 0.75s 0.25s ease-in-out forwards;
-}
+
 
 .dark-mode #brands-desktop{
   background-color: #151515;

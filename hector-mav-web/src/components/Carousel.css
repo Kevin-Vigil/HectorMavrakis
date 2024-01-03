@@ -36,3 +36,7 @@
 #brands{
   margin-top: 30px;
 }
+.active #brands{
+  opacity: 0%;
+  animation: load-in 0.75s 0.25s ease-in-out forwards;
+}
