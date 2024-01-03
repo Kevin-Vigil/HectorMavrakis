@@ -35,6 +35,7 @@
 
 #brands{
   padding-top: 95px;
+  padding-bottom: 10px;
 }
 .active-listener{
   opacity: 0;
