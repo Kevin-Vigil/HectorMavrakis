@@ -12,7 +12,7 @@ export default function Home() {
 
   function load(){
     const options={
-      rootMargin: "-70% 0% -30% 0%",
+      rootMargin: "-30% 0% -30% 0%",
       threshold: 0 
     }
     scrollTrigger(".active-listener", options, false);
