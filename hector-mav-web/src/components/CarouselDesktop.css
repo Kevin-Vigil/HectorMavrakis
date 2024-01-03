@@ -72,7 +72,7 @@
 
 .carousel-box {
   display: flex;
-  overflow: hidden;
+  overflow: visible;
   margin: auto;
   align-self: center;
   width: calc(325px*12);
@@ -86,7 +86,7 @@
   width: calc(325px*18);
   display: flex;
   gap: 20px;
-  animation: carousel-move 45s linear infinite;
+  /* animation: carousel-move 45s linear infinite; */
   transition: all 0.25s ease-in;
 }
 
@@ -101,7 +101,7 @@
   height: 135px;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   transition: all 0.25s ease-in;
 
@@ -127,7 +127,7 @@
 
 /* UPS SVGs */
 .ups-svg {
-  transform: scale(.5) translateX(-20px);
+  /* transform: scale(.5) translateX(-20px); */
   margin: auto;
   align-self: center;
   height: 100%;
@@ -144,7 +144,7 @@
   transition: all 0.25s ease-in;
   margin: auto;
   height: 100%;
-  transform: scale(1.07) translateY(-130px) translateX(124px);
+  transform: scale(1.07) translateY(130px) translateX(-124px);
 }
 .dark-mode .ups-d-svg {
   opacity: 1;
