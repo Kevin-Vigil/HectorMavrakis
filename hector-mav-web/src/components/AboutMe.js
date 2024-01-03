@@ -31,11 +31,10 @@ export default function About(){
         <div id='about-visual-container' className='point-box'>
           <PenIcon id="design-icon"/>
           <div id='design-textbox' className='points-textbox'>
-            <div id='design-title' className='points-title'>Visual Design</div>
+            <div id='design-title' className='points-title'>Hybrid skill set</div>
             <div id='design-statement' className='points-statement'>Proficient in both UX and UI form start to launch of products/services</div>
           </div>
         </div>
-
       </div>
     </div>
   )

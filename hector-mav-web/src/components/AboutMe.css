@@ -1,15 +1,27 @@
-.loadin #about{
-  opacity: 0%;
-  animation: load-in 0.75s 0.25s forwards;
+@media only screen and (max-width: 720px) {
+  #about{
+    display: none;
+  }
+  
 }
-#about{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  gap: 112px;
-  background-color: white;
-  transition: all 0.25s ease-in, opacity 0s;
+@media only screen and (min-width: 721px) {
+  .loadin #about{
+    opacity: 0%;
+    animation: load-in 0.75s 0.25s forwards;
+  }
+  #about{
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+    background-color: white;
+    transition: all 0.25s ease-in, opacity 0s;
+  }
 }
+
+
 .dark-mode #about{
   background-color: #151515;
   transition: all 0.25s ease-in, opacity 0s;
@@ -54,7 +66,7 @@
   margin: auto;
   display: flex;
   flex-direction: row;
-  gap: 43px;
+  gap: 120px;
 }
 
 /* Points */
@@ -91,6 +103,23 @@
   transition: all 0.25s ease-in;
 }
 
+#pen1s{
+  stroke: #151515;
+  transition: all 0.25s ease-in;
+}
+#pen2s{
+  stroke: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #pen1s{
+  stroke: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #pen2s{
+  stroke: white;
+  transition: all 0.25s ease-in;
+}
+
 #platform-icon{
   margin: auto;
 }
@@ -105,7 +134,7 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 .points-title{
   margin-left: auto;
@@ -123,6 +152,7 @@
 .points-statement{
   margin: auto;
   text-align: center;
+  opacity: 72%;
   font: 500 18px/28px mona sans;
   color: #151515;
   transition: all 0.25s ease-in;

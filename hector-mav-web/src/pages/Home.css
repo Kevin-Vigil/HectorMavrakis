@@ -1,25 +1,5 @@
-@keyframes dMode {
-  0% {
-    background-color: white;
-  }
-
-  100% {
-    background-color: #151515;
-  }
-
-}
-
-@keyframes lMode {
-  0% {
-    background-color: #151515;
-  }
-
-  100% {
-    background-color: white;
-  }
-}
-
 #homepage {
+  margin: auto;
   z-index: 0;
   display: flex;
   flex-direction: column;

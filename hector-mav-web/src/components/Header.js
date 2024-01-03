@@ -6,73 +6,78 @@ import { } from '@mui/material'
 
 import { ReactComponent as Logo } from '../assets/hmLogo.svg'
 import { ReactComponent as ColorSwitch } from '../assets/Switch.svg'
+import Hamburger from './Hamburger';
 
 function Header() {
+  const [showMenu, setShowMenu] = useState(false)
+  let darkModeState = false;
 
+  function toggleDarkMode(state) {
+    document.documentElement.classList.toggle("dark-mode", state)
+  }
   function load() {
-    let darkModeState = false;
-
-    const button = document.querySelector("#cSwitch")
-
-    const useDark = window.matchMedia("(prefers-color-scheme: dark)")
-
-    function toggleDarkMode(state) {
-      document.documentElement.classList.toggle("dark-mode", state)
-    }
-
-    function setDarkModeLocalStorage(state) {
-      localStorage.setItem("dark-mode", state);
-    }
-
-    darkModeState=(localStorage.getItem("dark-mode") == "true")
+    darkModeState = (localStorage.getItem("dark-mode") == "true")
     toggleDarkMode(darkModeState)
 
-    button.addEventListener("click", () => {
-      // document.documentElement.classList.toggle("light-mode", darkModeState)
-      darkModeState = !darkModeState
-      toggleDarkMode(darkModeState)
-      setDarkModeLocalStorage(darkModeState);
-    });
+    // button.addEventListener("click", () => {
+    //   // document.documentElement.classList.toggle("light-mode", darkModeState)
+    //   darkModeState = !darkModeState
+    //   toggleDarkMode(darkModeState)
+    //   setDarkModeLocalStorage(darkModeState);
+    // });
+
+    console.log(darkModeState)
 
   }
   window.addEventListener("DOMContentLoaded", () => {
     load();
+
   });
+  function setDarkModeLocalStorage(state) {
+    localStorage.setItem("dark-mode", state);
+  }
 
+  function toggleDark(){
+    darkModeState = !darkModeState
+    toggleDarkMode(darkModeState)
+    setDarkModeLocalStorage(darkModeState)
+  }
 
+  function menuToggle() {
+    setShowMenu(showMenu => !showMenu)
+  }
 
 
 
 
   return (
     <>
-      <nav className='header-mobile'>
-        <a to='/' className='hec-mav-logo'>
-          {/* <img src={logo} className='hec-logo'/> */}
-          <Logo />
-        </a>
-
-        <div className='navbar-mobile'>
-          <ColorSwitch className='header-switch' />
-        </div>
-      </nav>
-
-
-
-
       <div className='header'>
         <div className='nav-container'>
           <a href='/' className='hec-mav-logo'>
             <Logo className='logo-svg' />
           </a>
+          
+          <div id='menu-hamburger' onClick={menuToggle} >
+            <Hamburger isOpen={showMenu} />
+          </div>
+          {showMenu ? (<div id='mobile-link-box'>
+              <a href='/#brands' onClick={menuToggle} className='links'>BRANDS</a>
+              <a href='/#projects' onClick={menuToggle} className='links'>PROJECTS</a>
+              <a href='/#about' onClick={menuToggle} className='links'>ABOUT</a>
+            </div>) : null}
+          {/* <div id='test-text'>{showMenu}</div> */}
           <div className='header-nav-box'>
             {/* <a href='#brands' className='links'>BRANDS</a> */}
-            <a href='/#brands' className='links'>BRANDS</a>
-            <a href='/#projects' className='links'>PROJECTS</a>
-            <a href='/#about' className='links'>ABOUT</a>
-            <ColorSwitch id='cSwitch' className='header-switch' />
 
+            <div id='link-box'>
+
+              <a href='/#brands' className='links'>BRANDS</a>
+              <a href='/#projects' className='links'>PROJECTS</a>
+              <a href='/#about' className='links'>ABOUT</a>
+            </div>
           </div>
+          <ColorSwitch onClick={toggleDark} id='cSwitch' className='header-switch' />
         </div>
       </div>
     </>
@@ -99,10 +104,10 @@ window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementsByClassName("header")[0].style.height = "75px";
-    document.getElementsByClassName("header-mobile")[0].style.height = "75px";
+    // document.getElementsByClassName("header-mobile")[0].style.height = "75px";
   } else {
     document.getElementsByClassName("header")[0].style.height = "100px";
-    document.getElementsByClassName("header-mobile")[0].style.height = "100px";
+    // document.getElementsByClassName("header-mobile")[0].style.height = "100px";
   }
 }
 

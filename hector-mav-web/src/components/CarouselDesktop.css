@@ -1,0 +1,260 @@
+@media only screen and (max-width: 720px) {
+  #brands-desktop{
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) {
+  #brands-desktop {
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 85px;
+    background-color: white;
+    transition: all 0.25s ease-in, opacity 0s;
+  }
+}
+
+
+
+.dark-mode #brands-desktop{
+  background-color: #151515;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+
+.caro-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  align-self: center;
+  color: #151515;
+  opacity: 72%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: .56px;
+  transition: all 0.25s ease-in;
+}
+
+.subtitle {
+  align-self: center;
+  color: #151515;
+  text-align: center;
+  width: 80%;
+  transition: all 0.25s ease-in;
+}
+
+
+.dark-mode .text {
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+.dark-mode .subtitle {
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+@keyframes carousel-move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-325px * 6));
+  }
+
+}
+
+.carousel-box {
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  align-self: center;
+  width: calc(325px*12);
+  height: 200px;
+  margin-top: -40px;
+}
+.carousel {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 200px;
+  width: calc(325px*18);
+  display: flex;
+  gap: 20px;
+  animation: carousel-move 45s linear infinite;
+  transition: all 0.25s ease-in;
+}
+
+.card-box {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  min-width: 305px;
+  min-height: 135px;
+  width: 305px;
+  height: 135px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  transition: all 0.25s ease-in;
+
+}
+.card-box:hover {
+  transform: scale(1.1);
+  transition: all 0.25s ease-in;
+}
+
+
+.card-box:hover .carousel{
+  animation-name: carousel-move;
+  animation-duration: 60s;
+  transition: all 0.25s ease-in;
+}
+
+.dark-mode .card-box {
+  background-color: #292929;
+  transition: all 0.25s ease-in;
+}
+
+
+
+/* UPS SVGs */
+.ups-svg {
+  transform: scale(.5) translateX(-20px);
+  margin: auto;
+  align-self: center;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .ups-svg {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.ups-d-svg {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+  margin: auto;
+  height: 100%;
+  transform: scale(1.07) translateY(-130px) translateX(124px);
+}
+.dark-mode .ups-d-svg {
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+
+/* Disney SVGS */
+.disney-svg {
+  height: 100%;
+  transform: translateX(-170px);
+  margin: auto;
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .disney-svg {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.disney-d-svg {
+  margin: auto;
+  height: 100%;
+  transform: scale(0.75) translateY(-185px) translateX(97px);
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .disney-d-svg {
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+
+/* Keurig SVGs */
+.keurig-svg {
+  transform: scale(0.3) translateX(-175px) translateY(25px);
+  height: 100%;
+  align-self: center;
+  margin: auto;
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .keurig-svg {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.keurig-d-svg {
+  margin: auto;
+  height: 100%;
+  transform: scale(0.95) translateY(-146px) translateX(95px);
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .keurig-d-svg {
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+
+/* Discover SVGs */
+.discover-svg {
+  align-self: center;
+  margin: auto;
+  height: 100%;
+  transform: scale(1.3) translateX(80px);
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .discover-svg {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.discover-d-svg {
+  margin: auto;
+  height: 100%;
+  transform: scale(.71) translateX(-50px) translateY(1px);
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .discover-d-svg {
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+
+/* Walgreens png */
+.walgreens-png{
+  margin:auto;
+  transform: translateX(130px) translateY(40px);
+}
+
+/* Lowes svg */
+.lowes-svg {
+  align-self: center;
+  margin: auto;
+  height: 100%;
+  transform: scale(1) translateX(109px);
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .lowes-svg {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.lowes-d-svg {
+  margin: auto;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .lowes-d-svg {
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
