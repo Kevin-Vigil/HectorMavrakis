@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className="active-listener">
       <div id="projects-list-textbox">
         <div id="projects-list-header">PROJECTS</div>
         <div id="projects-list-statement">Take a look at what I've designed.</div>
