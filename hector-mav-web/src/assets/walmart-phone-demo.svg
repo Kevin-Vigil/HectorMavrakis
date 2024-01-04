@@ -1,6 +1,6 @@
 <svg width="922" height="454" viewBox="0 0 922 454" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g style="mix-blend-mode:multiply" opacity="0.6">
-<rect x="14.543" width="592.486" height="437.189" fill="url(#pattern0)"/>
+<rect x="14.543" width="592.486" height="437.189" fill="url(#walmartpatter)"/>
 </g>
 <rect x="74.8516" y="24.3984" width="505.171" height="385.169" fill="url(#pattern1)"/>
 <g style="mix-blend-mode:screen">
@@ -33,7 +33,7 @@
 <rect x="287.055" y="73.668" width="569.659" height="325.491" fill="url(#pattern7)"/>
 </g>
 <defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<pattern id="walmartpatter" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1291_974" transform="scale(0.00103627 0.00140449)"/>
 </pattern>
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
