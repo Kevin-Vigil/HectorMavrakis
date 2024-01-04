@@ -1,0 +1,55 @@
+@media only screen and (max-width: 720px) {
+  /* #caro-desktop{
+    display: none;
+  }
+  #caro-mobile{
+    display: inherit;
+  } */
+  /* Placeholder code until mobile feature is worked */
+  #caro-mobile{
+    display: none;
+  }
+  #caro-desktop{
+    display: inherit;
+  }
+  /* placeholder */
+  .caro-text{
+    gap: 11px;
+  }
+  .text{
+    font: 600 12px/24px mona sans, sans-serif;
+  }
+  .subtitle{
+    font: 700 20px/24px mona sans, sans-serif;
+  }
+}  
+@media only screen and (min-width: 721px) {
+  #caro-mobile{
+    display: none;
+  }
+  #caro-desktop{
+    display: inherit;
+  }
+  .caro-text{
+    gap: 16px;
+  }
+  .text{
+    font: 600 14px/24px mona sans, sans-serif;
+  }
+  .subtitle{
+    font: 700 36px/42px mona sans, sans-serif;
+  }
+}
+
+#brands{
+  padding-top: 95px;
+  padding-bottom: 10px;
+}
+.active-listener{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.active-comp{
+  opacity: 0%;
+  animation: scroll-load-in 0.5s ease-in-out forwards;
+}

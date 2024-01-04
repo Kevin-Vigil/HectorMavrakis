@@ -1,0 +1,324 @@
+@media only screen and (max-width: 720px) {
+  /* .header{
+    margin: auto;
+    width: 100%;
+  } */
+  .header-nav-box{
+    display: none;
+  }
+  #mobile-link-box{
+    z-index: 800;
+    position: absolute;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    gap: 50px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
+    opacity: 1;
+    transition: all 0.25s ease-in;
+  }
+  .dark-mode #mobile-link-box{
+    background-color: #151515;
+    transition: all 0.25s ease-in;
+  }
+  .links{
+    color: #151515;
+    font: 600 16px mona sans;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: auto;
+    background-color: white;
+    transition: all 0.25s ease-in;
+  }
+  #menu-hamburger{
+    z-index: 900;
+    cursor: pointer;
+    flex-direction: column;
+    background: none;
+    border: none;
+    gap: 8px;
+    margin: auto;
+    margin-right: 20px;
+    justify-content: center;
+  }
+  .header-switch {
+    z-index: 900;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 20px;
+    /* animation: switch-to-light 0.5s 0s 1 normal forwards; */
+    background-color: white;
+    color: #151515;
+    fill: black;
+    transition: all 0.25s ease-in;
+  
+  }
+  
+  .hec-mav-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    background-color: white;
+    /* color: #151515; */
+    fill: black;
+    transition: all 0.25s ease-in;
+    /* animation: genColorL 0.25s linear forwards; */
+  }
+  
+}
+
+
+@media only screen and (min-width: 721px) {
+  #menu-hamburger{
+    display: none;
+  }
+  #mobile-link-box{
+    display: none;
+  }
+
+  .header-nav-box {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 41px;
+    background-color: white;
+    color: #151515;
+    fill: black;
+    transition: all 0.25s ease-in;
+    gap: 41px;
+  
+  }
+  #link-box{
+    display: flex;
+    gap: 41px;
+  }
+  .links {
+    color: #151515;
+    font: 600 16px/28px mona sans;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    color: #151515;
+    fill: black;
+  
+    transition: all 0.25s ease-in;
+  }
+  .header-switch {
+    cursor: pointer;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 80px;
+    /* animation: switch-to-light 0.5s 0s 1 normal forwards; */
+    background-color: white;
+    color: #151515;
+    fill: black;
+    transition: all 0.25s ease-in;
+  
+  }
+  .hec-mav-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 80px;
+    background-color: white;
+    /* color: #151515; */
+    fill: black;
+    transition: all 0.25s ease-in;
+    /* animation: genColorL 0.25s linear forwards; */
+  }
+}
+.header {
+  z-index: 999;
+  margin: auto;
+  display: flex;
+  backdrop-filter: blur(50%);
+  position: fixed;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  opacity: 100%;
+  transition: all 0.25s 0.25s ease-in;
+  opacity: 98%;
+  /* justify-content: space-between; */
+  /* border-bottom: 1px solid rgba(30,29,29,.12); */
+}
+
+
+/* header content */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.25s ease-in;
+  /* animation: genColorL 0.25s linear forwards; */
+}
+
+
+
+
+
+
+
+.links:hover{
+  /* text-decoration: underline; */
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 1);
+  transition: all 0.25s ease-in;
+  /* animation: hoverUnderline 0.25s forwards; */
+}
+.dark-mode .links:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
+  transition: all 0.25s ease-in;
+}
+
+/* dark mode toggle */
+
+
+rect#container {
+  fill: #F9F9F9;
+  transition: all 0.25s ease-in;
+  /* animation: switchColorL 0.25s linear forwards; */
+}
+
+circle#circ {
+  fill: #F6C34A;
+  opacity: 100%;
+  fill-opacity: 100%;
+  transition: all 0.25s ease-in;
+  /* animation: fade-in 0.25s linear forwards; */
+}
+
+circle#dCirc {
+  opacity: 0;
+  fill-opacity: 0;
+  transition: all 0.25s ease-in;
+  /* animation: fade-out 0.25s linear forwards; */
+  fill: #4C6FB6;
+}
+
+path#sun {
+  fill: #FFFFFF;
+  transition: all 0.25s ease-in;
+  /* animation: sunMoonColorFadeIn 0.25s linear forwards; */
+}
+
+path#moon {
+  fill: #989898;
+  transition: all 0.25s ease-in;
+  /* animation: sunMoonColorFadeOut 0.25s linear forwards; */
+}
+
+
+
+
+
+.dark-mode .header {
+  background-color: white;
+  color: #151515;
+  fill: black;
+  transition: all 0.25s ease-in;
+  /* animation: genColorD 0.25s linear forwards, pageLoad 0.5s 0.5s linear forwards; */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.12); */
+}
+
+/* Hector Mavrakis Logo */
+.dark-mode .hec-mav-logo {
+  background-color: #151515;
+  color: white;
+  fill: white;
+  transition: all 0.25s ease-in;
+  /* animation: genColorD 0.25s linear forwards; */
+}
+
+.logo-svg{
+  background-color: white;
+  color: #151515;
+  fill: black;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .logo-svg {
+  background-color: #151515;
+  color: white;
+  fill: white;
+  transition: all 0.25s ease-in;
+  /* animation: genColorD 0.25s linear forwards; */
+}
+
+.dark-mode .links {
+  background-color: #151515;
+  color: white;
+  fill: white;
+  transition: all 0.25s ease-in;
+  /* animation: genColorD 0.25s linear forwards; */
+}
+
+.dark-mode .nav-container {
+  background-color: #151515;
+  color: white;
+  fill: white;
+  transition: all 0.25s ease-in;
+  /* animation: genColorD 0.25s linear forwards; */
+}
+
+.dark-mode .header-nav-box {
+  background-color: #151515;
+  color: white;
+  fill: white;
+  transition: all 0.25s ease-in;
+  /* animation: genColorD 0.25s linear forwards; */
+}
+
+/* d mode switch */
+.dark-mode .header-switch {
+  background-color: #151515;
+  color: white;
+  fill: white;
+  transition: all 0.25s ease-in;
+  /* animation: genColorD 0.25s linear forwards; */
+}
+
+.dark-mode rect#container {
+  fill: #292929;
+  transition: all 0.25s ease-in;
+  /* animation: switchColorD 0.25s linear forwards; */
+}
+
+.dark-mode circle#circ {
+  opacity: 0%;
+  fill-opacity: 0%;
+  transition: all 0.25s ease-in;
+  /* animation: fade-out 0.25s linear forwards; */
+}
+
+.dark-mode circle#dCirc {
+  opacity: 1;
+  fill-opacity: 1;
+  transition: all 0.25s ease-in;
+  /* animation: fade-in 0.25s linear forwards; */
+}
+
+.dark-mode path#sun {
+  fill: #989898;
+  transition: all 0.25s ease-in;
+  /* animation: sunMoonColorFadeOut 0.25s linear forwards; */
+}
+
+.dark-mode path#moon {
+  fill: #FFFFFF;
+  transition: all 0.25s ease-in;
+  /* animation: sunMoonColorFadeIn 0.25s linear forwards; */
+}

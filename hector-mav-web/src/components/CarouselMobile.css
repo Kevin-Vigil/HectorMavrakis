@@ -1,0 +1,19 @@
+@media only screen and (max-width: 720px) {
+  #brands-mobile {
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    gap: 12px;
+    overflow-x: hidden;
+    background-color: white;
+    transition: all 0.25s ease-in, opacity 0s;
+  }
+}
+@media only screen and (min-width: 721px) {
+  #brands-mobile{
+    display: none;
+  }
+}

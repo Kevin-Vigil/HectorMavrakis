@@ -1,0 +1,12 @@
+#homepage {
+  margin: auto;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #homepage {
+  background-color: #151515;
+  transition: all 0.25s ease-in;
+}

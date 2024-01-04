@@ -1,0 +1,163 @@
+@media only screen and (max-width: 720px) {
+  #about{
+    display: none;
+  }
+  
+}
+@media only screen and (min-width: 721px) {
+  /* .loadin #about{
+    opacity: 0%;
+    animation: load-in 0.75s 0.25s forwards;
+  } */
+  #about{
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+    background-color: white;
+    transition: all 0.25s ease-in, opacity 0s;
+  }
+}
+
+
+.dark-mode #about{
+  background-color: #151515;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+
+/* TEXT BOX */
+#about-textbox{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#about-title{
+  background: none;
+  margin: auto;
+  font: 600 14px/24px mona sans;
+  opacity: 72%;
+  color: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #about-title{
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+#about-statement{
+
+  background: none;
+  margin: auto;
+  font: 700 36px/42px mona sans;
+  color: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #about-statement{
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+/* points container */
+#about-point-container{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+}
+
+/* Points */
+.point-box{
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  width: 341px;
+  margin: auto;
+}
+
+#design-icon{
+  margin: auto;
+  display: inherit;
+}
+
+#pCirc{
+  fill: #F8F8F8;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #pCirc{
+  fill: #292929;
+  transition: all 0.25s ease-in;
+}
+
+.drawing{
+  fill: black;
+  stroke: #F8F8F8;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .drawing{
+  fill: white;
+  stroke: #292929;
+  transition: all 0.25s ease-in;
+}
+
+#pen1s{
+  stroke: #151515;
+  transition: all 0.25s ease-in;
+}
+#pen2s{
+  stroke: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #pen1s{
+  stroke: white;
+  transition: all 0.25s ease-in;
+}
+.dark-mode #pen2s{
+  stroke: white;
+  transition: all 0.25s ease-in;
+}
+
+#platform-icon{
+  margin: auto;
+}
+#dev-icon{
+  margin: auto;
+}
+
+/* Points textbox */
+.points-textbox{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.points-title{
+  margin-left: auto;
+  margin-right: auto;
+  font: 700 36px/42px mona sans;
+  letter-spacing: .56px;
+  color: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .points-title{
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+.points-statement{
+  margin: auto;
+  text-align: center;
+  opacity: 72%;
+  font: 500 18px/28px mona sans;
+  color: #151515;
+  transition: all 0.25s ease-in;
+}
+.dark-mode .points-statement{
+  color: white;
+  transition: all 0.25s ease-in;
+}
