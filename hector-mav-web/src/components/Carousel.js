@@ -11,7 +11,7 @@ export default function Carousel(props) {
         <div className='subtitle'>Brands that I've worked with as clients.</div>
       </div>
         <CarouselDesktop id="caro-desktop" />
-        <CarouselMobile id="caro-mobile" />
+        {/* <CarouselMobile id="caro-mobile" /> */}
     </div>
   )
 }
