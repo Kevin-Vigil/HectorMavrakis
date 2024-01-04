@@ -1,4 +1,16 @@
-@media only screen and (max-width: 720px) {
+@keyframes carousel-move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-325px * 9));
+  }
+
+}
+
+/* COMMENTED CODE UNTIL MOBILE FIX */
+/* @media only screen and (max-width: 720px) {
   #brands-desktop{
     display: none;
   }
@@ -16,8 +28,23 @@
     background-color: white;
     transition: all 0.25s ease-in, opacity 0s;
   }
-}
+} */
+/* COMMENTED CODE UNTIL MOBILE FIX */
 
+/* PLACEHOLDER CODE UNTIL MOBILE FIX */
+#brands-desktop {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  overflow-x: hidden;
+  gap: 85px;
+  background-color: white;
+  transition: all 0.25s ease-in, opacity 0s;
+}
+/* PLACHOLDER CODE UNTIL MOBILE FIX */
 
 
 .dark-mode #brands-desktop{
@@ -29,7 +56,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .text {
   align-self: center;
   color: #151515;
@@ -39,7 +65,6 @@
   letter-spacing: .56px;
   transition: all 0.25s ease-in;
 }
-
 .subtitle {
   align-self: center;
   color: #151515;
@@ -47,27 +72,13 @@
   width: 80%;
   transition: all 0.25s ease-in;
 }
-
-
 .dark-mode .text {
   color: white;
   transition: all 0.25s ease-in;
 }
-
 .dark-mode .subtitle {
   color: white;
   transition: all 0.25s ease-in;
-}
-
-@keyframes carousel-move {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-325px * 6));
-  }
-
 }
 
 .carousel-box {
@@ -75,7 +86,7 @@
   overflow: visible;
   margin: auto;
   align-self: center;
-  width: calc(325px*12);
+  width: calc(325px*27);
   height: 200px;
   margin-top: -40px;
 }
@@ -83,13 +94,14 @@
   margin-top: auto;
   margin-bottom: auto;
   height: 200px;
-  width: calc(325px*18);
+  width: calc(325px*36);
   display: flex;
   gap: 20px;
-  /* animation: carousel-move 45s linear infinite; */
+  animation: carousel-move 90s linear infinite;
   transition: all 0.25s ease-in;
 }
 
+/* Card-box */
 .card-box {
   margin-top: auto;
   margin-bottom: auto;
@@ -101,7 +113,7 @@
   height: 135px;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
+  overflow: hidden;
 
   transition: all 0.25s ease-in;
 
@@ -110,151 +122,194 @@
   transform: scale(1.1);
   transition: all 0.25s ease-in;
 }
-
-
 .card-box:hover .carousel{
-  animation-name: carousel-move;
-  animation-duration: 60s;
+  /* animation-name: carousel-move; */
+  /* animation-duration: 60s; */
   transition: all 0.25s ease-in;
 }
-
 .dark-mode .card-box {
   background-color: #292929;
   transition: all 0.25s ease-in;
 }
 
-
+/* SVG CSS */
 
 /* UPS SVGs */
-.ups-svg {
-  /* transform: scale(.5) translateX(-20px); */
-  margin: auto;
-  align-self: center;
-  height: 100%;
+.ups-svg{
   opacity: 1;
+  transform: scale(.5) translateY(-35px) translateX(175px);
   transition: all 0.25s ease-in;
 }
-.dark-mode .ups-svg {
+.dark-mode .ups-svg{
   opacity: 0;
   transition: all 0.25s ease-in;
 }
-
-.ups-d-svg {
+.ups-d-svg{
   opacity: 0;
+  transform: scale(.5) translateY(-35px) translateX(-110px);
   transition: all 0.25s ease-in;
-  margin: auto;
-  height: 100%;
-  transform: scale(1.07) translateY(130px) translateX(-124px);
 }
-.dark-mode .ups-d-svg {
+.dark-mode .ups-d-svg{
   opacity: 1;
   transition: all 0.25s ease-in;
 }
 
-/* Disney SVGS */
-.disney-svg {
-  height: 100%;
-  transform: translateX(-170px);
-  margin: auto;
+/* Disney SVGs */
+.disney-svg{
   opacity: 1;
+  transform: scale(.45) translateY(10px) translateX(-95px);
   transition: all 0.25s ease-in;
 }
-.dark-mode .disney-svg {
+.dark-mode .disney-svg{
   opacity: 0;
   transition: all 0.25s ease-in;
 }
-
-.disney-d-svg {
-  margin: auto;
-  height: 100%;
-  transform: scale(0.75) translateY(-185px) translateX(97px);
+.disney-d-svg{
   opacity: 0;
+  transform: scale(.45) translateY(-265px) translateX(-105px);
   transition: all 0.25s ease-in;
 }
-.dark-mode .disney-d-svg {
+.dark-mode .disney-d-svg{
   opacity: 1;
   transition: all 0.25s ease-in;
 }
 
 /* Keurig SVGs */
-.keurig-svg {
-  transform: scale(0.3) translateX(-175px) translateY(25px);
-  height: 100%;
-  align-self: center;
-  margin: auto;
+.keurig-svg{
   opacity: 1;
+  transform: scale(.45) translateY(75px) translateX(-65px);
   transition: all 0.25s ease-in;
 }
-.dark-mode .keurig-svg {
+.dark-mode .keurig-svg{
   opacity: 0;
   transition: all 0.25s ease-in;
 }
-
-.keurig-d-svg {
-  margin: auto;
-  height: 100%;
-  transform: scale(0.95) translateY(-146px) translateX(95px);
+.keurig-d-svg{
   opacity: 0;
+  transform: scale(.45) translateY(-77px) translateX(-61px);
   transition: all 0.25s ease-in;
 }
-.dark-mode .keurig-d-svg {
+.dark-mode .keurig-d-svg{
   opacity: 1;
   transition: all 0.25s ease-in;
 }
 
 /* Discover SVGs */
-.discover-svg {
-  align-self: center;
-  margin: auto;
-  height: 100%;
-  transform: scale(1.3) translateX(80px);
+.discover-svg{
   opacity: 1;
+  transform: scale(.3) translateY(75px) translateX(-420px);
   transition: all 0.25s ease-in;
 }
-.dark-mode .discover-svg {
+.dark-mode .discover-svg{
   opacity: 0;
   transition: all 0.25s ease-in;
 }
-
-.discover-d-svg {
-  margin: auto;
-  height: 100%;
-  transform: scale(.71) translateX(-50px) translateY(1px);
+.discover-d-svg{
   opacity: 0;
+  transform: scale(.3) translateY(-240px) translateX(-420px);
   transition: all 0.25s ease-in;
 }
-.dark-mode .discover-d-svg {
+.dark-mode .discover-d-svg{
   opacity: 1;
   transition: all 0.25s ease-in;
 }
 
-/* Walgreens png */
-.walgreens-png{
-  margin:auto;
-  transform: translateX(130px) translateY(40px);
+/* Walgreens SVGs */
+.walgreens-svg{
+  opacity: 1;
+  transform: scale(.35) translateY(50px) translateX(-260px);
+  transition: all 0.25s ease-in;
 }
-
-/* Lowes svg */
-.lowes-svg {
-  align-self: center;
-  margin: auto;
-  height: 100%;
-  transform: scale(1) translateX(109px);
+.dark-mode .walgreens-svg{
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.walgreens-d-svg{
+  opacity: 0;
+  transform: scale(.35) translateY(-276px) translateX(-261px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .walgreens-d-svg{
   opacity: 1;
   transition: all 0.25s ease-in;
 }
-.dark-mode .lowes-svg {
+
+/* Lowes SVGs */
+.lowes-svg{
+  opacity: 1;
+  transform: scale(.5) translateX(25px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .lowes-svg{
   opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.lowes-d-svg{
+  opacity: 0;
+  transform: scale(.5) translateY(-269px) translateX(25px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .lowes-d-svg{
+  opacity: 1;
   transition: all 0.25s ease-in;
 }
 
-.lowes-d-svg {
-  margin: auto;
-  height: 100%;
+/* Big-O-Tires SVGs */
+.big-svg{
+  opacity: 1;
+  transform: scale(.4) translateY(110px) translateX(-240px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .big-svg{
   opacity: 0;
   transition: all 0.25s ease-in;
 }
-.dark-mode .lowes-d-svg {
+.big-d-svg{
+  opacity: 0;
+  transform: scale(.4) translateY(-40px) translateX(-240px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .big-d-svg{
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+
+/* Mcdonald's SVGs */
+.mcdonalds-svg{
+  opacity: 1;
+  transform: scale(.5) translateY(-10px) translateX(140px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .mcdonalds-svg{
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.mcdonalds-d-svg{
+  opacity: 0;
+  transform: scale(.5) translateY(-317px) translateX(140px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .mcdonalds-d-svg{
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+
+/* Verizon SVGs */
+.verizon-svg{
+  opacity: 1;
+  transform: scale(.35) translateY(25px) translateX(-265px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .verizon-svg{
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.verizon-d-svg{
+  opacity: 0;
+  transform: scale(.35) translateY(-303px) translateX(-266px);
+  transition: all 0.25s ease-in;
+}
+.dark-mode .verizon-d-svg{
   opacity: 1;
   transition: all 0.25s ease-in;
 }
