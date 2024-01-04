@@ -39,6 +39,7 @@
   #hero-envision{
     color: #1E1D1D;
     font: 800 64px/42px mona sans;
+    text-align: center;
     margin: auto;
     transition: all 0.25s ease-in, opacity 0s;
   }
