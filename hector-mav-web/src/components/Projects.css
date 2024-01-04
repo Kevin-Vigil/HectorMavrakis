@@ -44,6 +44,7 @@
 #projects-list-statement {
   opacity: 100%;
   align-self: center;
+  text-align: center;
   text-wrap: nowrap;
   font: 700 36px/42px mona sans, sans-serif;
   color: #151515;
@@ -93,7 +94,12 @@
     overflow: hidden;
   }
   
-  
+  #walmart-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(88deg, #083460 -4.32%, #034484 6.01%, #1C7FF2 96.87%);
+    flex-direction: row;
+  }
   
   #big-o-tires-container {
     width: 57.5%;
@@ -143,6 +149,13 @@
     display: flex;
     max-width: 80vw;
     max-height: 550px;
+  }
+
+  #walmart-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(88deg, #083460 -4.32%, #034484 6.01%, #1C7FF2 96.87%);
+    flex-direction: row;
   }
 
   .img-container{
@@ -210,12 +223,23 @@
 }
 
 @media only screen and (max-width: 721px) {
+  #projects {
+    margin-top: 20px;
+    padding-top: 85px;
+    gap: 85px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+    background-color: white;
+    transition: all 0.25s ease-in, opacity 0s;
+  }
+
   .projects-box-container {
     margin: auto;
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    width: 350px;
+    max-width: 370px;
+    width: 370px;
     max-height: 341px;
     height: 341px;
     overflow: hidden;
@@ -231,8 +255,16 @@
     height: 714px;
   }
 
+  #walmart-container {
+    width: 350px;
+    height: 341px;
+    margin: auto;
+    background: linear-gradient(88deg, #083460 -4.32%, #034484 6.01%, #1C7FF2 96.87%);
+    flex-direction: row;
+  }
+
   #quantify-container {
-    width: 100%;
+    width: 350px;
     height: 341px;
   }
 
@@ -315,12 +347,12 @@
 }
 
 /* Walmart styles */
-#walmart-container {
+/* #walmart-container {
   width: 100%;
   height: 100%;
   background: linear-gradient(88deg, #083460 -4.32%, #034484 6.01%, #1C7FF2 96.87%);
   flex-direction: row;
-}
+} */
 
 /* textbox */
 #walmart-textbox {
