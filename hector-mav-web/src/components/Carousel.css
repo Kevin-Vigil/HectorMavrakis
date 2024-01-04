@@ -1,10 +1,18 @@
 @media only screen and (max-width: 720px) {
-  #caro-desktop{
+  /* #caro-desktop{
     display: none;
   }
   #caro-mobile{
     display: inherit;
+  } */
+  /* Placeholder code until mobile feature is worked */
+  #caro-mobile{
+    display: none;
   }
+  #caro-desktop{
+    display: inherit;
+  }
+  /* placeholder */
   .caro-text{
     gap: 11px;
   }
