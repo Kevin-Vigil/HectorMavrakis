@@ -194,7 +194,7 @@
 
     margin: auto;
     width: 100%;
-    margin-top: -170px;
+    margin-top: -100px;
     animation: contentL 0.25s ease-in forwards;
   }
 
@@ -431,4 +431,11 @@
 .loadin #scroll-container {
   opacity: 0;
   animation: load-in 0.75s 1.5s ease-in-out forwards;
+}
+
+.one-time{
+  opacity: 0;
+  transform: translateY(40px);
+
+  transition: all 0.5s ease-in-out, opacity .5s !important;
 }
