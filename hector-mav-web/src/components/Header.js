@@ -29,12 +29,12 @@ function Header() {
 
   }
   document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentListener fired")
+    // console.log("DOMContentListener fired")
     load();
 
   });
   function setDarkModeLocalStorage(state) {
-    console.log("Local storage function entered")
+    // console.log("Local storage function entered")
     localStorage.setItem("dark-mode", state);
   }
 
@@ -52,7 +52,7 @@ function Header() {
   darkModeState = (localStorage.getItem("dark-mode") == "true")
   toggleDarkMode(darkModeState)
 
-  console.log("Returning Header")
+  // console.log("Returning Header")
   
   return (
     <>
