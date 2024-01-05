@@ -383,14 +383,3 @@
 #walmart-phone {
   margin: auto;
 }
-
-.projets-active-comp{
-  opacity: 1;
-  transform: translateY(0px);
-  transition: all 1s ease-in-out;
-}
-.projects-inactive-comp{
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 1s ease-out;
-}
