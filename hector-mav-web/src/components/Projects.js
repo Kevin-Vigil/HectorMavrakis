@@ -13,7 +13,7 @@ import { useElementOnScreen } from './IntersectionTrigger';
 
 export default function Projects() {
   const [ containerRef, isVisible] = useElementOnScreen({
-    rootMargin: "-20% 0% -30% 0%",
+    rootMargin: "-15% 0% -30% 0%",
     threshold: 0
   })
   return (
