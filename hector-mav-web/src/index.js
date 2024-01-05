@@ -7,9 +7,6 @@ import { BrowserRouter } from 'react-router-dom';
 import scrollTrigger from "./components/scrollTrigger";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
 root.render(
   <React.StrictMode>
     <BrowserRouter>
