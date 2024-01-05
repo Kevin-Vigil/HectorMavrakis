@@ -5,10 +5,15 @@ import '../fonts/Fonts.css'
 import { ReactComponent as ComputerIcon } from '../assets/computer.svg'
 import { ReactComponent as DataIcon } from '../assets/dataBlocks.svg'
 import { ReactComponent as PenIcon } from '../assets/pen.svg'
+import { useElementOnScreen } from './IntersectionTrigger';
 
 export default function About(){
+  const [ containerRef, isVisible] = useElementOnScreen({
+    rootMargin: "-20% 0% -30% 0%",
+    threshold: 0
+  })
   return(
-    <div id='about' className='active-listener'>
+    <div id='about' ref={containerRef} className={isVisible? "active-comp" : "inactive-comp"}>
       <div id='about-textbox'>
         <div id='about-title'>ABOUT ME</div>
         <div id='about-statement'>An ambitious, data-driven designer.</div>

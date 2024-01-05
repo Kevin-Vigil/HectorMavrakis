@@ -16,8 +16,7 @@ function Header() {
     document.documentElement.classList.toggle("dark-mode", state)
   }
   function load() {
-    darkModeState = (localStorage.getItem("dark-mode") == "true")
-    toggleDarkMode(darkModeState)
+    
 
     // button.addEventListener("click", () => {
     //   // document.documentElement.classList.toggle("light-mode", darkModeState)
@@ -29,11 +28,13 @@ function Header() {
     // console.log(darkModeState)
 
   }
-  window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
+    // console.log("DOMContentListener fired")
     load();
 
   });
   function setDarkModeLocalStorage(state) {
+    // console.log("Local storage function entered")
     localStorage.setItem("dark-mode", state);
   }
 
@@ -44,12 +45,15 @@ function Header() {
   }
 
   function menuToggle() {
+    // console.log("Local storage function entered")
     setShowMenu(showMenu => !showMenu)
   }
 
+  darkModeState = (localStorage.getItem("dark-mode") == "true")
+  toggleDarkMode(darkModeState)
 
-
-
+  // console.log("Returning Header")
+  
   return (
     <>
       <div className='header'>

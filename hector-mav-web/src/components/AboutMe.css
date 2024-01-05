@@ -16,15 +16,15 @@
     display: flex;
     flex-direction: column;
     gap: 112px;
-    background-color: white;
-    transition: all 0.25s ease-in, opacity 0s;
+    /* background-color: white; */
+    transition: all 0.5s ease-in-out;
   }
 }
 
 
 .dark-mode #about{
-  background-color: #151515;
-  transition: all 0.25s ease-in, opacity 0s;
+  /* background-color: #151515; */
+  transition: all 0.5s ease-in-out;
 }
 
 /* TEXT BOX */

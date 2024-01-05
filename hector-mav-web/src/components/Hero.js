@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import phoneLight from '../assets/lightPhoneDemo.png'
 import phoneDark from "../assets/darkPhoneDemo.png"
 import { ReactComponent as Arrow } from '../assets/Vectorarrow.svg'
+import scrollTrigger from "./scrollTrigger";
 
 export default function Hero(props) {
 
@@ -17,6 +18,13 @@ export default function Hero(props) {
       if (event.animationName === 'load-in')
         document.documentElement.classList.toggle("loadin", false)
     })
+    // console.log("Inside hero load function for scroll container listener")
+    document.addEventListener('scroll', ()=>{
+      console.log("Scroll happened")
+      aniEnd.classList.add("one-time")
+    })
+
+    // scrollTrigger("#scroll-container", {rootMargin: "-40% 0% -50% 0%", threshold: 0}, false, "one-time", true)
   }
 
   document.addEventListener("DOMContentLoaded", () => {
