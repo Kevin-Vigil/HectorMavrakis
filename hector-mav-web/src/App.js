@@ -8,7 +8,9 @@ import Header from './components/Header';
 import Quantify from './pages/Quantify';
 // import ProjectTemplate from './components/ProjectTemplate';
 
+
 function App() {
+  
   return (
     <div id='app'>
       <script>0</script>

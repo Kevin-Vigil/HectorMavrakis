@@ -97,7 +97,7 @@
   width: calc(325px*36);
   display: flex;
   gap: 20px;
-  animation: carousel-move 90s linear infinite;
+  animation: carousel-move 80s linear infinite;
   transition: all 0.25s ease-in;
 }
 

@@ -45,11 +45,16 @@
   padding-top: 95px;
   padding-bottom: 10px;
 }
-.active-listener{
-  opacity: 0;
-  transform: translateY(20px);
-}
 .active-comp{
-  opacity: 0%;
-  animation: scroll-load-in 0.5s ease-in-out forwards;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.5s ease-in-out;
+  /* animation: scroll-load-in 0.5s ease-in-out forwards; */
+}
+.inactive-comp{
+  opacity: 0;
+  transform: translateY(40px);
+
+  transition: all 0.5s ease-in-out;
+  /* animation: scroll-load-out 0.5s ease-in-out forwards; */
 }

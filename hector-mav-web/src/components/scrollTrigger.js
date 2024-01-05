@@ -1,10 +1,10 @@
-
-
-
 export default function scrollTrigger(selector, options, constant) {
+  console.log("WTF")
   let eventListenerArr = document.querySelectorAll(selector)
   eventListenerArr = Array.from(eventListenerArr)
+  console.log("Event Listener Array created")
   eventListenerArr.forEach(el => {
+    console.log(el)
     constant ?
       addConstObserver(el, options) :
       addObserver(el, options);
@@ -12,23 +12,30 @@ export default function scrollTrigger(selector, options, constant) {
 }
 
 function addConstObserver(el, options) {
+  console.log("Const Observer function entered")
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       console.log("Test: " + entry.target.classList + " \tFor: " + entry.target.id)
       const intersecting = entry.isIntersecting
-      intersecting ? entry.target.classList.add("active-comp") : entry.target.classList.remove("active-comp")
-
+      if (intersecting){
+        entry.target.classList.add("active-comp")
+        entry.target.classList.remove("inactive-comp")
+      }else{
+        entry.target.classList.add("inactive-comp")
+        entry.target.classList.remove("active-comp")
+      }
     })
   },
-    options);
+  options);
   observer.observe(el)
 }
 
 function addObserver(el, options) {
+  console.log("Observer function entered")
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // console.log("Test: " + entry.target.classList + " \tFor: " + entry.target.id)
+        console.log("Test: " + entry.target.classList + " \tFor: " + entry.target.id)
         entry.target.classList.add('active-comp')
         entry.target.classList.remove('active-listener')
         observer.unobserve(entry.target)

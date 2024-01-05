@@ -17,14 +17,14 @@
     flex-direction: column;
     gap: 112px;
     background-color: white;
-    transition: all 0.25s ease-in, opacity 0s;
+    transition: all 0.25s ease-in;
   }
 }
 
 
 .dark-mode #about{
   background-color: #151515;
-  transition: all 0.25s ease-in, opacity 0s;
+  transition: all 0.25s ease-in;
 }
 
 /* TEXT BOX */
