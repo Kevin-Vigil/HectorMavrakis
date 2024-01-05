@@ -10,7 +10,7 @@ export default function Carousel(props) {
     rootMargin: "-15% 0% -30% 0%",
     threshold: 0
   })
-  console.log(isVisible)
+  // console.log(isVisible)
   return (
     <div id="brands" ref={containerRef} className={isVisible? "active-comp" : "inactive-comp"}>
       <div className='caro-text'>
