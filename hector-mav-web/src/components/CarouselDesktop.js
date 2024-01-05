@@ -28,6 +28,7 @@ export default function CarouselDesktop(props) {
       <div className='carousel-box'>
         <div className='carousel'>
           <div className='card-box'>
+<<<<<<< HEAD
             <Keurig className="keurig-svg" />
             <KeurigD className="keurig-d-svg" />
           </div>
@@ -40,10 +41,13 @@ export default function CarouselDesktop(props) {
             <DiscoverD className="discover-d-svg" />
           </div>
           <div className='card-box'>
+=======
+>>>>>>> main
             <Ups className="ups-svg" />
             <UpsD className="ups-d-svg" />
           </div>
           <div className='card-box'>
+<<<<<<< HEAD
             <McDonalds className="mcdonalds-svg" />
             <McDonaldsD className="mcdonalds-d-svg" />
           </div>
@@ -56,38 +60,52 @@ export default function CarouselDesktop(props) {
             <WalgreensD className="walgreens-d-svg" />
           </div>
           <div className='card-box'>
+=======
+>>>>>>> main
             <Disney className="disney-svg" />
             <DisneyD className="disney-d-svg" />
           </div>
           <div className='card-box'>
+<<<<<<< HEAD
             <BigO className="big-svg" />
             <BigOD className="big-d-svg" />
           </div>
           <div className='card-box'>
+=======
+>>>>>>> main
             <Keurig className="keurig-svg" />
             <KeurigD className="keurig-d-svg" />
           </div>
           <div className='card-box'>
+<<<<<<< HEAD
             <Verizon className="verizon-svg" />
             <VerizonD className="verizon-d-svg" />
           </div>
           <div className='card-box'>
+=======
+>>>>>>> main
             <Discover className="discover-svg" />
             <DiscoverD className="discover-d-svg" />
           </div>
           <div className='card-box'>
+<<<<<<< HEAD
             <Ups className="ups-svg" />
             <UpsD className="ups-d-svg" />
           </div>
           <div className='card-box'>
             <McDonalds className="mcdonalds-svg" />
             <McDonaldsD className="mcdonalds-d-svg" />
+=======
+            <Walgreens className="walgreens-svg" />
+            <WalgreensD className="walgreens-d-svg" />
+>>>>>>> main
           </div>
           <div className='card-box'>
             <Lowes className="lowes-svg" />
             <LowesD className="lowes-d-svg" />
           </div>
           <div className='card-box'>
+<<<<<<< HEAD
             <Walgreens className="walgreens-svg" />
             <WalgreensD className="walgreens-d-svg" />
           </div>
@@ -96,12 +114,19 @@ export default function CarouselDesktop(props) {
             <DisneyD className="disney-d-svg" />
           </div>
           <div className='card-box'>
+=======
+>>>>>>> main
             <BigO className="big-svg" />
             <BigOD className="big-d-svg" />
           </div>
           <div className='card-box'>
+<<<<<<< HEAD
             <Keurig className="keurig-svg" />
             <KeurigD className="keurig-d-svg" />
+=======
+            <McDonalds className="mcdonalds-svg" />
+            <McDonaldsD className="mcdonalds-d-svg" />
+>>>>>>> main
           </div>
           <div className='card-box'>
             <Verizon className="verizon-svg" />
