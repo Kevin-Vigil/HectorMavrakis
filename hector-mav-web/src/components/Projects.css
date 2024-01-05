@@ -5,12 +5,12 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 120px;
-  background-color: white;
-  transition: all 0.25s ease-in;
+  /* background-color: white; */
+  transition: all 0.5s ease-in-out;
 }
 .dark-mode #projects{
-  background-color: #151515;
-  transition: all 0.25s ease-in;
+  /* background-color: #151515; */
+  transition: all 0.5s ease-in-out;
 }
 
 /* projects textbox */
@@ -231,7 +231,7 @@
     flex-direction: column;
     padding-bottom: 120px;
     background-color: white;
-    transition: all 0.25s ease-in, opacity 0s;
+    transition: all 0.25s ease-in;
   }
 
   .projects-box-container {
@@ -384,16 +384,13 @@
   margin: auto;
 }
 
-.active-comp{
+.projets-active-comp{
   opacity: 1;
   transform: translateY(0px);
-  transition: all 0.5s ease-in-out;
-  /* animation: scroll-load-in 0.5s ease-in-out forwards; */
+  transition: all 1s ease-in-out;
 }
-.inactive-comp{
+.projects-inactive-comp{
   opacity: 0;
   transform: translateY(40px);
-
-  transition: all 0.5s ease-in-out;
-  /* animation: scroll-load-out 0.5s ease-in-out forwards; */
+  transition: all 1s ease-out;
 }
