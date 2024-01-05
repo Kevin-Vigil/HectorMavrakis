@@ -18,7 +18,7 @@ export default function Hero(props) {
       if (event.animationName === 'load-in')
         document.documentElement.classList.toggle("loadin", false)
     })
-    console.log("Inside hero load function for scroll container listener")
+    // console.log("Inside hero load function for scroll container listener")
     document.addEventListener('scroll', ()=>{
       console.log("Scroll happened")
       aniEnd.classList.add("one-time")
