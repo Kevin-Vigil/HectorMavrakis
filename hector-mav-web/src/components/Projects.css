@@ -1,16 +1,16 @@
 #projects {
-  margin-top: 140px;
-  padding-top: 85px;
+  margin-top: 115px;
+  padding-top: 110px;
   gap: 85px;
   display: flex;
   flex-direction: column;
   padding-bottom: 120px;
-  background-color: white;
-  transition: all 0.25s ease-in, opacity 0s;
+  /* background-color: white; */
+  transition: all 0.5s ease-in-out;
 }
 .dark-mode #projects{
-  background-color: #151515;
-  transition: all 0.25s ease-in, opacity 0s;
+  /* background-color: #151515; */
+  transition: all 0.5s ease-in-out;
 }
 
 /* projects textbox */
@@ -136,6 +136,7 @@
   }
   #fund-img{
     margin: auto;
+    margin-left: 45px;
     margin-bottom: 0;
     /* transform: translateY(6px); */
   }
@@ -231,7 +232,7 @@
     flex-direction: column;
     padding-bottom: 120px;
     background-color: white;
-    transition: all 0.25s ease-in, opacity 0s;
+    transition: all 0.25s ease-in;
   }
 
   .projects-box-container {

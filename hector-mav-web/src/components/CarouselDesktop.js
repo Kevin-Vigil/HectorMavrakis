@@ -28,148 +28,148 @@ export default function CarouselDesktop(props) {
       <div className='carousel-box'>
         <div className='carousel'>
           <div className='card-box'>
-            <Ups className="ups-svg" />
-            <UpsD className="ups-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Disney className="disney-svg" />
-            <DisneyD className="disney-d-svg" />
-          </div>
-          <div className='card-box'>
             <Keurig className="keurig-svg" />
             <KeurigD className="keurig-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Discover className="discover-svg" />
-            <DiscoverD className="discover-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Walgreens className="walgreens-svg" />
-            <WalgreensD className="walgreens-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Lowes className="lowes-svg" />
-            <LowesD className="lowes-d-svg" />
-          </div>
-          <div className='card-box'>
-            <BigO className="big-svg" />
-            <BigOD className="big-d-svg" />
-          </div>
-          <div className='card-box'>
-            <McDonalds className="mcdonalds-svg" />
-            <McDonaldsD className="mcdonalds-d-svg" />
           </div>
           <div className='card-box'>
             <Verizon className="verizon-svg" />
             <VerizonD className="verizon-d-svg" />
           </div>
           <div className='card-box'>
-            <Ups className="ups-svg" />
-            <UpsD className="ups-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Disney className="disney-svg" />
-            <DisneyD className="disney-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Keurig className="keurig-svg" />
-            <KeurigD className="keurig-d-svg" />
-          </div>
-          <div className='card-box'>
             <Discover className="discover-svg" />
             <DiscoverD className="discover-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Walgreens className="walgreens-svg" />
-            <WalgreensD className="walgreens-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Lowes className="lowes-svg" />
-            <LowesD className="lowes-d-svg" />
-          </div>
-          <div className='card-box'>
-            <BigO className="big-svg" />
-            <BigOD className="big-d-svg" />
-          </div>
-          <div className='card-box'>
-            <McDonalds className="mcdonalds-svg" />
-            <McDonaldsD className="mcdonalds-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Verizon className="verizon-svg" />
-            <VerizonD className="verizon-d-svg" />
           </div>
           <div className='card-box'>
             <Ups className="ups-svg" />
             <UpsD className="ups-d-svg" />
           </div>
           <div className='card-box'>
-            <Disney className="disney-svg" />
-            <DisneyD className="disney-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Keurig className="keurig-svg" />
-            <KeurigD className="keurig-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Discover className="discover-svg" />
-            <DiscoverD className="discover-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Walgreens className="walgreens-svg" />
-            <WalgreensD className="walgreens-d-svg" />
+            <McDonalds className="mcdonalds-svg" />
+            <McDonaldsD className="mcdonalds-d-svg" />
           </div>
           <div className='card-box'>
             <Lowes className="lowes-svg" />
             <LowesD className="lowes-d-svg" />
           </div>
           <div className='card-box'>
+            <Walgreens className="walgreens-svg" />
+            <WalgreensD className="walgreens-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
             <BigO className="big-svg" />
             <BigOD className="big-d-svg" />
           </div>
           <div className='card-box'>
-            <McDonalds className="mcdonalds-svg" />
-            <McDonaldsD className="mcdonalds-d-svg" />
+            <Keurig className="keurig-svg" />
+            <KeurigD className="keurig-d-svg" />
           </div>
           <div className='card-box'>
             <Verizon className="verizon-svg" />
             <VerizonD className="verizon-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Discover className="discover-svg" />
+            <DiscoverD className="discover-d-svg" />
           </div>
           <div className='card-box'>
             <Ups className="ups-svg" />
             <UpsD className="ups-d-svg" />
           </div>
           <div className='card-box'>
-            <Disney className="disney-svg" />
-            <DisneyD className="disney-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Keurig className="keurig-svg" />
-            <KeurigD className="keurig-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Discover className="discover-svg" />
-            <DiscoverD className="discover-d-svg" />
-          </div>
-          <div className='card-box'>
-            <Walgreens className="walgreens-svg" />
-            <WalgreensD className="walgreens-d-svg" />
+            <McDonalds className="mcdonalds-svg" />
+            <McDonaldsD className="mcdonalds-d-svg" />
           </div>
           <div className='card-box'>
             <Lowes className="lowes-svg" />
             <LowesD className="lowes-d-svg" />
           </div>
           <div className='card-box'>
+            <Walgreens className="walgreens-svg" />
+            <WalgreensD className="walgreens-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
             <BigO className="big-svg" />
             <BigOD className="big-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Keurig className="keurig-svg" />
+            <KeurigD className="keurig-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Verizon className="verizon-svg" />
+            <VerizonD className="verizon-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Discover className="discover-svg" />
+            <DiscoverD className="discover-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Ups className="ups-svg" />
+            <UpsD className="ups-d-svg" />
           </div>
           <div className='card-box'>
             <McDonalds className="mcdonalds-svg" />
             <McDonaldsD className="mcdonalds-d-svg" />
           </div>
           <div className='card-box'>
+            <Lowes className="lowes-svg" />
+            <LowesD className="lowes-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Walgreens className="walgreens-svg" />
+            <WalgreensD className="walgreens-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
+            <BigO className="big-svg" />
+            <BigOD className="big-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Keurig className="keurig-svg" />
+            <KeurigD className="keurig-d-svg" />
+          </div>
+          <div className='card-box'>
             <Verizon className="verizon-svg" />
             <VerizonD className="verizon-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Discover className="discover-svg" />
+            <DiscoverD className="discover-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Ups className="ups-svg" />
+            <UpsD className="ups-d-svg" />
+          </div>
+          <div className='card-box'>
+            <McDonalds className="mcdonalds-svg" />
+            <McDonaldsD className="mcdonalds-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Lowes className="lowes-svg" />
+            <LowesD className="lowes-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Walgreens className="walgreens-svg" />
+            <WalgreensD className="walgreens-d-svg" />
+          </div>
+          <div className='card-box'>
+            <Disney className="disney-svg" />
+            <DisneyD className="disney-d-svg" />
+          </div>
+          <div className='card-box'>
+            <BigO className="big-svg" />
+            <BigOD className="big-d-svg" />
           </div>
         </div>
       </div>

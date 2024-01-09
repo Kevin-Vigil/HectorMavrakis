@@ -9,10 +9,15 @@ import BigOPhone from '../assets/bigOTiresDemo.png'
 import DiscoverPhone from '../assets/discoverPhoneDemo.png'
 import FundPhone from "../assets/fundPhoneDemo.png"
 import { Link } from "react-router-dom";
+import { useElementOnScreen } from './IntersectionTrigger';
 
 export default function Projects() {
+  const [ containerRef, isVisible] = useElementOnScreen({
+    rootMargin: "-15% 0% -30% 0%",
+    threshold: 0
+  })
   return (
-    <div id="projects" className="active-listener">
+    <div id="projects" ref={containerRef} className={isVisible? "active-comp" : "inactive-comp"}>
       <div id="projects-list-textbox">
         <div id="projects-list-header">PROJECTS</div>
         <div id="projects-list-statement">Take a look at what I've designed.</div>

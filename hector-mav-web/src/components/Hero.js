@@ -6,30 +6,10 @@ import { Link } from "react-router-dom";
 import phoneLight from '../assets/lightPhoneDemo.png'
 import phoneDark from "../assets/darkPhoneDemo.png"
 import { ReactComponent as Arrow } from '../assets/Vectorarrow.svg'
+import scrollTrigger from "./scrollTrigger";
 
 export default function Hero(props) {
-
-  function load() {
-    document.documentElement.classList.toggle("loadin", true)
-
-    const aniEnd = document.querySelector("#scroll-container")
-    aniEnd.addEventListener("animationend", (event) => {
-      if (event.animationName === 'load-in')
-        document.documentElement.classList.toggle("loadin", false)
-    })
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    // document.documentElement.classList.toggle("loadin", false)
-    // const cta = document.querySelector("#cta");
-    // cta.addEventListener("mouseover", () => {
-    //   cta.classList.add("hover")
-    // });
-    // cta.addEventListener("mouseout", () => {
-    //   cta.classList.remove("hover")
-    // });
-    load();
-  });
+  console.log("Returning Hero component")
   return (
     <>
       <div id="hero-container">
@@ -42,11 +22,11 @@ export default function Hero(props) {
           <div id="scroll-endLine" />
         </div>
         <div id="hero-textbox">
-          <div id="hero-statement">I DESIGN WHAT PEOPLE</div>
+          <div id="hero-statement" >I DESIGN WHAT PEOPLE</div>
           <div id="envision-scaler">
             <div id="hero-envision">ENVISION</div>
           </div>
-          <div id="hero-purpose">Alleviating end-users' frustrations through unique solutions.</div>
+          <div id="hero-purpose" >Alleviating end-users' frustrations through unique solutions.</div>
         </div>
         <a href='#projects' id="cta" >
           <div id="hero-cta-textbox">
