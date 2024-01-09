@@ -9,7 +9,7 @@ import { useElementOnScreen } from './IntersectionTrigger';
 
 export default function About(){
   const [ containerRef, isVisible] = useElementOnScreen({
-    rootMargin: "-20% 0% -30% 0%",
+    rootMargin: "-20% 0% -10% 0%",
     threshold: 0
   })
   return(
@@ -37,7 +37,7 @@ export default function About(){
           <PenIcon id="design-icon"/>
           <div id='design-textbox' className='points-textbox'>
             <div id='design-title' className='points-title'>Hybrid skill set</div>
-            <div id='design-statement' className='points-statement'>Proficient in both UX and UI form start to launch of products/services</div>
+            <div id='design-statement' className='points-statement'>Proficient in both UX and UI from start to launch of products/services</div>
           </div>
         </div>
       </div>

@@ -137,7 +137,7 @@
 /* UPS SVGs */
 .ups-svg{
   opacity: 1;
-  transform: scale(.5) translateY(-35px) translateX(175px);
+  transform: scale(.4) translateY(-45px) translateX(208px);
   transition: all 0.25s ease-in;
 }
 .dark-mode .ups-svg{
@@ -146,7 +146,7 @@
 }
 .ups-d-svg{
   opacity: 0;
-  transform: scale(.5) translateY(-35px) translateX(-110px);
+  transform: scale(.4) translateY(-45px) translateX(-144px);
   transition: all 0.25s ease-in;
 }
 .dark-mode .ups-d-svg{
@@ -237,7 +237,7 @@
 /* Lowes SVGs */
 .lowes-svg{
   opacity: 1;
-  transform: scale(.5) translateX(25px);
+  transform: scale(.45) translateY(-2px) translateX(25px);
   transition: all 0.25s ease-in;
 }
 .dark-mode .lowes-svg{
@@ -246,7 +246,7 @@
 }
 .lowes-d-svg{
   opacity: 0;
-  transform: scale(.5) translateY(-269px) translateX(25px);
+  transform: scale(.45) translateY(-300px) translateX(25px);
   transition: all 0.25s ease-in;
 }
 .dark-mode .lowes-d-svg{
@@ -277,7 +277,7 @@
 /* Mcdonald's SVGs */
 .mcdonalds-svg{
   opacity: 1;
-  transform: scale(.5) translateY(-10px) translateX(140px);
+  transform: scale(.4) translateY(-20px) translateX(170px);
   transition: all 0.25s ease-in;
 }
 .dark-mode .mcdonalds-svg{
@@ -286,7 +286,7 @@
 }
 .mcdonalds-d-svg{
   opacity: 0;
-  transform: scale(.5) translateY(-317px) translateX(140px);
+  transform: scale(.4) translateY(-405px) translateX(170px);
   transition: all 0.25s ease-in;
 }
 .dark-mode .mcdonalds-d-svg{

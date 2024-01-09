@@ -290,7 +290,7 @@
 
 .dark-mode #hero-statement {
   color: white;
-  transition: all 0.25s ease-in, opacity 0s;
+  transition: all 0.25s ease-in;
 }
 
 .loadin #hero-statement {
