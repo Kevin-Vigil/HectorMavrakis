@@ -15,7 +15,7 @@ export default function Carousel(props) {
     <div id="brands" ref={containerRef} className={isVisible? "active-comp" : "inactive-comp"}>
       <div className='caro-text'>
         <div className='text'>EXPERIENCE</div>
-        <div className='subtitle'>Brands that I've worked with as clients.</div>
+        <div className='subtitle'>Brands that I've worked with.</div>
       </div>
         <CarouselDesktop id="caro-desktop" />
         {/* <CarouselMobile id="caro-mobile" /> */}
