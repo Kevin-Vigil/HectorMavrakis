@@ -9,7 +9,6 @@ import { ReactComponent as Arrow } from '../assets/Vectorarrow.svg'
 import scrollTrigger from "./scrollTrigger";
 
 export default function Hero(props) {
-
   console.log("Returning Hero component")
   return (
     <>
