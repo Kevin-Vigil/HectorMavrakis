@@ -9,7 +9,7 @@ import { ReactComponent as WalmartPhone } from '../assets/walmart-phone-demo.svg
 
 import QuantifyPhone from '../assets/quantifyPhoneDemo.png'
 import BigOPhone from '../assets/bigOTiresDemo.png'
-import DiscoverPhone from '../assets/discoverPhoneDemo.png'
+// import DiscoverPhone from '../assets/discoverPhoneDemo.png'
 import FundPhone from "../assets/fundPhoneDemo.png"
 import { Link } from "react-router-dom";
 import { useElementOnScreen } from './IntersectionTrigger';
