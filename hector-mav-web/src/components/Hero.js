@@ -4,7 +4,7 @@ import '../fonts/Fonts.css'
 import './Animations.css'
 import { Link } from "react-router-dom";
 import phoneLight from '../assets/lightPhoneDemo.png'
-import phoneDark from "../assets/darkPhoneDemo.png"
+import phoneDark from "../assets/Phone_Mockup_3.png"
 import { ReactComponent as Arrow } from '../assets/Vectorarrow.svg'
 import scrollTrigger from "./scrollTrigger";
 

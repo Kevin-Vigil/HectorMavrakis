@@ -378,7 +378,7 @@
 @keyframes contentL {
   0% {
     opacity: 100%;
-    content: url("../assets/darkPhoneDemo.png");
+    content: url("../assets/Phone_Mockup_3.png");
   }
 
   50% {
@@ -408,7 +408,7 @@
 
   100% {
     opacity: 100%;
-    content: url("../assets/darkPhoneDemo.png");
+    content: url("../assets/Phone_Mockup_3.png");
   }
 
 

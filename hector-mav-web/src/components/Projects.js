@@ -1,5 +1,8 @@
 import React from "react";
 import './Projects.css';
+
+import LockPNG from '../assets/lock.png'
+
 import { ReactComponent as Subtract } from "../assets/Subtract.svg"
 import { ReactComponent as WalmartPhone } from '../assets/walmart-phone-demo.svg'
 // import { ReactComponent as FundPhone} from "../assets/fundPhoneDemo.svg"
@@ -70,19 +73,27 @@ export default function Projects() {
           </div>
         </div>
         <div id="row-3" className="projects-box-container two-contain">
+          
           <div id="discover-container" className="project-box">
             <div id="discover-textbox" className="project-textbox">
               <div id="discover-title" className="project-title">
-                Discover Soft Pull
+                Discover
               </div>
-              <div id="discover-subtitle" className="project-subtitle">
+              {/* <div id="discover-subtitle" className="project-subtitle">
                 A reimagined end-to-end omni-channel Soft Pull flow
+              </div> */}
+            </div>
+            <img id="discover-lock" src={LockPNG} loading="lazy" />
+            <div id="discover-lockbox">
+              
+            </div>
+            <div id="lockbox-container">
+              
+              <div className="img-container">
+                {/* <img src={DiscoverPhone} id='discover-img' className="project-img"/> */}
               </div>
+              {/* <Subtract className="project-arrow-icon" /> */}
             </div>
-            <div className="img-container">
-              <img src={DiscoverPhone} id='discover-img' className="project-img"/>
-            </div>
-            <Subtract className="project-arrow-icon" />
           </div>
           <div id="fund-container" className="project-box">
             <div id="fund-textbox" className="project-textbox">
