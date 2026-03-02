@@ -3,7 +3,7 @@
 # Release 1.2.4
 
 #### The full release for [Hector Mavrakis' portfolio](https://hectormavrakis.com)
-##PLEASE NOTE: This code is out of date and is not shown on the website.
+## PLEASE NOTE: This code is out of date and is not shown on the website.
 
 ## Technologies used:
 
